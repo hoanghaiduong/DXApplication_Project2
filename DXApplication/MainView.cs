@@ -27,7 +27,8 @@ namespace DXApplication
                 InitializeBindings();
         }
         UC__Users uC__Users;
-
+        Uc__designDashboard uc__designDashboard;
+        Uc_DashboardViewer uc__designDashboardViewer;
         void InitializeBindings()
         {
             var fluent = mvvmContext1.OfType<MainViewModel>();
@@ -42,40 +43,41 @@ namespace DXApplication
             {
                 Thread.Sleep(10);
             }
-           
-            if (uC__Users==null)
+
+            if (uC__Users == null)
             {
-                uC__Users=new UC__Users();
+                uc__designDashboardViewer.Controls.Clear();
+                uC__Users = new UC__Users();
                 uC__Users.Dock = DockStyle.Fill;
                 mainContainer.Controls.Add(uC__Users);
                 uC__Users.BringToFront();
                 SplashScreenManager.CloseForm();
-            }    
+            }
             else
             {
                 uC__Users.BringToFront();
                 SplashScreenManager.CloseForm();
-            }    
+            }
         }
-   
+
         private void frm_Dashboard_Load(object sender, EventArgs e)
         {
             //loading Splash Screen
-            for(int i=0;i<50;i++)
+            for (int i = 0; i < 50; i++)
             {
                 Thread.Sleep(100);
             }
             try
             {
-               
-                mainContainer.Controls.Add(new Uc_DashboardViewer() { Dock = DockStyle.Fill });
+                loadDesignDashboardViewer();
+
             }
             catch (Exception ex)
             {
 
-                MessageBox.Show("Lỗi nè",ex.Message);
+                MessageBox.Show("Lỗi nè", ex.Message);
             }
-         
+
         }
 
         private void mainContainer_Click(object sender, EventArgs e)
@@ -90,7 +92,26 @@ namespace DXApplication
 
         private void mniSettingDashboard_Click(object sender, EventArgs e)
         {
-            mainContainer.Controls.Add(new Uc__designDashboard() { Dock = DockStyle.Fill });
+            loadDesignDashboard();
+      
+        }
+        private void loadDesignDashboard()
+        {
+              uc__designDashboard= new Uc__designDashboard();
+            uc__designDashboard.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(uc__designDashboard);
+            uc__designDashboard.BringToFront();
+         }
+        private void loadDesignDashboardViewer()
+        {
+            uc__designDashboardViewer = new Uc_DashboardViewer();
+            uc__designDashboardViewer.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(uc__designDashboardViewer);
+            uc__designDashboardViewer.BringToFront();
+        }
+        private void mnDashboard_Click(object sender, EventArgs e)
+        {
+            loadDesignDashboardViewer();
         }
     }
 }

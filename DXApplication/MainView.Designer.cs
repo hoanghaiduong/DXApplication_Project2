@@ -42,10 +42,11 @@
             this.mnBU = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mnRes = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mnExit = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
-            this.mvvmContext1 = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.mngrSetting = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
+            this.mvvmContext1 = new DevExpress.Utils.MVVM.MVVMContext(this.components);
+            this.mnDashboard = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -83,6 +84,7 @@
             this.accordionControl1.Appearance.Item.Normal.Options.UseFont = true;
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.mnDashboard,
             this.accordionControlElement1,
             this.accordionControlElement5,
             this.mngrSetting});
@@ -159,21 +161,6 @@
             this.mnExit.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.mnExit.Text = "Exit";
             // 
-            // fluentDesignFormControl1
-            // 
-            this.fluentDesignFormControl1.FluentDesignForm = this;
-            this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
-            this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
-            this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1430, 39);
-            this.fluentDesignFormControl1.TabIndex = 2;
-            this.fluentDesignFormControl1.TabStop = false;
-            // 
-            // mvvmContext1
-            // 
-            this.mvvmContext1.ContainerControl = this;
-            this.mvvmContext1.ViewModelType = typeof(DXApplication.MainViewModel);
-            // 
             // mngrSetting
             // 
             this.mngrSetting.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
@@ -190,6 +177,33 @@
             this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement2.Text = "Sửa DashBoard";
             this.accordionControlElement2.Click += new System.EventHandler(this.mniSettingDashboard_Click);
+            // 
+            // fluentDesignFormControl1
+            // 
+            this.fluentDesignFormControl1.FluentDesignForm = this;
+            this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
+            this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
+            this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1430, 39);
+            this.fluentDesignFormControl1.TabIndex = 2;
+            this.fluentDesignFormControl1.TabStop = false;
+            // 
+            // mvvmContext1
+            // 
+            this.mvvmContext1.ContainerControl = this;
+            this.mvvmContext1.ViewModelType = typeof(DXApplication.MainViewModel);
+            // 
+            // mnDashboard
+            // 
+            this.mnDashboard.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.mnDashboard.Appearance.Hovered.Options.UseFont = true;
+            this.mnDashboard.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.mnDashboard.Appearance.Normal.Options.UseFont = true;
+            this.mnDashboard.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mnDashboard.ImageOptions.Image")));
+            this.mnDashboard.Name = "mnDashboard";
+            this.mnDashboard.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.mnDashboard.Text = "Trang chủ";
+            this.mnDashboard.Click += new System.EventHandler(this.mnDashboard_Click);
             // 
             // frm_Dashboard
             // 
@@ -232,6 +246,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement mnExit;
         private DevExpress.XtraBars.Navigation.AccordionControlElement mngrSetting;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement mnDashboard;
     }
 }
 
