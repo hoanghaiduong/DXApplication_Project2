@@ -1,22 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
+
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
+using System.IO;
+
 using System.Windows.Forms;
 
 namespace DXApplication
 {
     public class cls_ConnectSQL
     {
+        public static Image Base64ToImage(string base64Image)
+        {
+            using (MemoryStream ms = new MemoryStream(Convert.FromBase64String(base64Image)))
+            {
+                Image image = Image.FromStream(ms, true);
+                return image;
+            }
+        }
         //
         public static SqlConnection conn=new SqlConnection();
         public static void createConnect()
         {
             //Cấu trúc chuỗi kết nối
-            conn.ConnectionString = @"Data Source =localhost; Initial Catalog =dev_express_database; User ID=hoanghaiduong; Password=Yeutuan1";
+            conn.ConnectionString = @"Data Source =localhost; Initial Catalog =db_final_winform; User ID=hoanghaiduong; Password=Yeutuan1";
             try
             {
                 conn.Open();

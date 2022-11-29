@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using DXApplication.Form;
 
 namespace DXApplication
 {
@@ -17,7 +18,7 @@ namespace DXApplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_Dashboard());
+            Application.Run(new Frm_Login());
         }
     }
 }

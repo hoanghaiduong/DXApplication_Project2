@@ -1,34 +1,40 @@
-﻿using DevExpress.ClipboardSource.SpreadsheetML;
-using DevExpress.DashboardWin.Design;
-using DevExpress.DataAccess.Native.EntityFramework;
-using DevExpress.Utils.About;
-using DevExpress.XtraBars;
+﻿
+using DevExpress.Utils;
+using DevExpress.XtraBars.Alerter;
+using DevExpress.XtraBars.Navigation;
+using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
+using DXApplication.Entity;
+using DXApplication.Form;
+using DXApplication.Global;
 using DXApplication.UI;
+using NETWORKLIST;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Windows.Forms;
-using static DevExpress.XtraEditors.Mask.MaskSettings;
 
 namespace DXApplication
 {
-    public partial class frm_Dashboard : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
+    public partial class Frm_Dashboard : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
-        public frm_Dashboard()
+        CheckerInternetHelper helper;
+       
+        public Frm_Dashboard()
         {
             InitializeComponent();
+           
+            helper = new CheckerInternetHelper(this);
             if (!mvvmContext1.IsDesignMode)
                 InitializeBindings();
         }
-        UC__Users uC__Users;
+      
+        UC_UserManagement uC__UserManagement;
         Uc__designDashboard uc__designDashboard;
         Uc_DashboardViewer uc__designDashboardViewer;
+        UC_RoleManagement uC__RoleManagement;
+        UC_FunctionManagement uC__FunctionRoleManagement;
+        UC_AuthenticationManager UC_AuthenticationManager;
         void InitializeBindings()
         {
             var fluent = mvvmContext1.OfType<MainViewModel>();
@@ -44,32 +50,83 @@ namespace DXApplication
                 Thread.Sleep(10);
             }
 
-            if (uC__Users == null)
-            {
-                uc__designDashboardViewer.Controls.Clear();
-                uC__Users = new UC__Users();
-                uC__Users.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(uC__Users);
-                uC__Users.BringToFront();
+     
+                mainContainer.Controls.Clear();
+                uC__UserManagement = new UC_UserManagement();
+                uC__UserManagement.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(uC__UserManagement);
+                uC__UserManagement.BringToFront();
                 SplashScreenManager.CloseForm();
-            }
-            else
-            {
-                uC__Users.BringToFront();
-                SplashScreenManager.CloseForm();
-            }
+          
         }
-
+       
         private void frm_Dashboard_Load(object sender, EventArgs e)
         {
+            //db = new db_final_winformEntities();
+
+            //var sql = db.Users.Join(db.FunctionRoles,
+            //    usr => usr,
+            //    fr => fr,
+            //    (usr, fr) => usr.RoleId.Equals(fr.RoleId)
+
+            // );
+            accordionControl1.BeginUpdate();
+         
+            AccordionControlElement acItemActivity = new AccordionControlElement();
+            AccordionControlElement acItemNews = new AccordionControlElement();
+        
+            // 
+            // Root Group 'Home'
+            // 
+            mnCollapseManagement.Elements.AddRange(new AccordionControlElement[] {
+            acItemActivity,
+            acItemNews});
+            // 
+            // Child Item 'Activity'
+            // 
+            acItemActivity.Name = "acItemActivity";
+            acItemActivity.Style = ElementStyle.Item;
+            acItemActivity.Tag = "idActivity";
+            acItemActivity.Text = "Activity";
+            // 
+            // Child Item 'News'
+            // 
+            acItemNews.Name = "acItemNews";
+            acItemNews.Style = ElementStyle.Item;
+            acItemNews.Tag = "idNews";
+            acItemNews.Text = "News";
+
+           
+
+            accordionControl1.EndUpdate();
+
+
+            using (db_final_winformEntities db=new db_final_winformEntities())
+            {
+                var sql = from usr in db.Users
+                          join fr in db.FunctionRoles on usr.RoleId equals fr.RoleId
+                          join f in db.Functions on fr.FunctionId equals f.FunctionId
+                          where usr.UserName == Cls_Main.UserInfo.UserName
+                          select new
+                          {
+                              FunctionName = f.FormName,
+                              FormName = f.FormName,
+                          };
+                foreach (var obj in sql.ToList())
+                {
+                   //
+                }
+            }    
+
             //loading Splash Screen
             for (int i = 0; i < 50; i++)
             {
                 Thread.Sleep(100);
             }
+            
             try
             {
-                loadDesignDashboardViewer();
+              loadDesignDashboardViewer();
 
             }
             catch (Exception ex)
@@ -93,25 +150,124 @@ namespace DXApplication
         private void mniSettingDashboard_Click(object sender, EventArgs e)
         {
             loadDesignDashboard();
-      
+
         }
         private void loadDesignDashboard()
         {
-              uc__designDashboard= new Uc__designDashboard();
+            uc__designDashboard = new Uc__designDashboard();
             uc__designDashboard.Dock = DockStyle.Fill;
             mainContainer.Controls.Add(uc__designDashboard);
             uc__designDashboard.BringToFront();
-         }
+        }
         private void loadDesignDashboardViewer()
         {
-            uc__designDashboardViewer = new Uc_DashboardViewer();
-            uc__designDashboardViewer.Dock = DockStyle.Fill;
-            mainContainer.Controls.Add(uc__designDashboardViewer);
-            uc__designDashboardViewer.BringToFront();
+            SplashScreenManager.ShowForm(this, typeof(Global_WaitForm), true, true, false);
+            SplashScreenManager.Default.SetWaitFormCaption("Loading ...");
+            for (int i = 0; i < 50; i++)
+            {
+                Thread.Sleep(10);
+            }
+
+       
+                mainContainer.Controls.Clear();
+                uc__designDashboardViewer = new Uc_DashboardViewer();
+                uc__designDashboardViewer.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(uc__designDashboardViewer);
+                uc__designDashboardViewer.BringToFront();
+                SplashScreenManager.CloseForm();
+    
+          
         }
         private void mnDashboard_Click(object sender, EventArgs e)
         {
             loadDesignDashboardViewer();
+        }
+
+        private void accordionControlElement3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void accordionControlElement4_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void accordionControlElement1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Frm_Dashboard_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            helper.UnAdviseforNetworklistManager();
+        }
+
+        private void mnBU_Click(object sender, EventArgs e)
+        {
+            XtraMessageBox.Show("Đăng kí kiểm tra kết nối mạng thành công.");
+            helper.AdviseforNetworklistManager();
+        }
+
+        private void fluentDesignFormControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnQLRole_Click(object sender, EventArgs e)
+        {
+            SplashScreenManager.ShowForm(this, typeof(Global_WaitForm), true, true, false);
+            SplashScreenManager.Default.SetWaitFormCaption("Loading ...");
+            for (int i = 0; i < 100; i++)
+            {
+                Thread.Sleep(10);
+            }
+
+          
+                mainContainer.Controls.Clear();
+                uC__RoleManagement = new UC_RoleManagement();
+                uC__RoleManagement.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(uC__RoleManagement);
+                uC__RoleManagement.BringToFront();
+                SplashScreenManager.CloseForm();
+         
+            
+        }
+
+        private void mnQLFunctions_Click(object sender, EventArgs e)
+        {
+            SplashScreenManager.ShowForm(this, typeof(Global_WaitForm), true, true, false);
+            SplashScreenManager.Default.SetWaitFormCaption("Loading ...");
+            for (int i = 0; i < 100; i++)
+            {
+                Thread.Sleep(10);
+            }
+
+                mainContainer.Controls.Clear();
+                uC__FunctionRoleManagement = new UC_FunctionManagement();
+                uC__FunctionRoleManagement.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(uC__FunctionRoleManagement);
+                uC__FunctionRoleManagement.BringToFront();
+                SplashScreenManager.CloseForm();
+            
+        }
+
+        private void mnQLFunctionRole_Click(object sender, EventArgs e)
+        {
+            SplashScreenManager.ShowForm(this, typeof(Global_WaitForm), true, true, false);
+            SplashScreenManager.Default.SetWaitFormCaption("Loading ...");
+            for (int i = 0; i < 100; i++)
+            {
+                Thread.Sleep(10);
+            }
+
+            mainContainer.Controls.Clear();
+            UC_AuthenticationManager = new UC_AuthenticationManager();
+            UC_AuthenticationManager.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(UC_AuthenticationManager);
+            UC_AuthenticationManager.BringToFront();
+            SplashScreenManager.CloseForm();
+
         }
     }
 }

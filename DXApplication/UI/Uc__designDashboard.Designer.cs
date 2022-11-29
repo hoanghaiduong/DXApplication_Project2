@@ -208,16 +208,8 @@
             DevExpress.DashboardWin.Bars.MapWeightedLegendBottomRightGalleryItem mapWeightedLegendBottomRightGalleryItem1 = new DevExpress.DashboardWin.Bars.MapWeightedLegendBottomRightGalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup5 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             this.dashboardDesigner1 = new DevExpress.DashboardWin.DashboardDesigner();
-            this.Uc__designDashboardlayoutControl1ConvertedLayout = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.DashboardDesigneritem = new DevExpress.XtraLayout.LayoutControlItem();
-            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.dashboardBarAndDockingController1 = new DevExpress.DashboardWin.Native.DashboardBarAndDockingController(this.components);
-            this.dashboardBarController1 = new DevExpress.DashboardWin.Bars.DashboardBarController(this.components);
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.homeBar1 = new DevExpress.DashboardWin.Bars.HomeBar();
             this.fileNewBarItem1 = new DevExpress.DashboardWin.Bars.FileNewBarItem();
             this.fileOpenBarItem1 = new DevExpress.DashboardWin.Bars.FileOpenBarItem();
@@ -234,24 +226,25 @@
             this.insertCardsBarItem1 = new DevExpress.DashboardWin.Bars.InsertCardsBarItem();
             this.insertTreemapBarItem1 = new DevExpress.DashboardWin.Bars.InsertTreemapBarItem();
             this.insertChoroplethMapBarItem1 = new DevExpress.DashboardWin.Bars.InsertChoroplethMapBarItem();
+            this.insertGeoPointMapBarSubItem1 = new DevExpress.DashboardWin.Bars.InsertGeoPointMapBarSubItem();
             this.insertGeoPointMapBarItem1 = new DevExpress.DashboardWin.Bars.InsertGeoPointMapBarItem();
             this.insertBubbleMapBarItem1 = new DevExpress.DashboardWin.Bars.InsertBubbleMapBarItem();
             this.insertPieMapBarItem1 = new DevExpress.DashboardWin.Bars.InsertPieMapBarItem();
-            this.insertGeoPointMapBarSubItem1 = new DevExpress.DashboardWin.Bars.InsertGeoPointMapBarSubItem();
             this.insertRangeFilterBarItem1 = new DevExpress.DashboardWin.Bars.InsertRangeFilterBarItem();
+            this.insertFilterElementSubItem1 = new DevExpress.DashboardWin.Bars.InsertFilterElementSubItem();
             this.insertComboBoxBarItem1 = new DevExpress.DashboardWin.Bars.InsertComboBoxBarItem();
             this.insertListBoxBarItem1 = new DevExpress.DashboardWin.Bars.InsertListBoxBarItem();
             this.insertTreeViewBarItem1 = new DevExpress.DashboardWin.Bars.InsertTreeViewBarItem();
             this.insertDateFilterBarItem1 = new DevExpress.DashboardWin.Bars.InsertDateFilterBarItem();
-            this.insertFilterElementSubItem1 = new DevExpress.DashboardWin.Bars.InsertFilterElementSubItem();
+            this.insertImagesBarSubItem1 = new DevExpress.DashboardWin.Bars.InsertImagesBarSubItem();
             this.insertImageBarItem1 = new DevExpress.DashboardWin.Bars.InsertImageBarItem();
             this.insertBoundImageBarItem1 = new DevExpress.DashboardWin.Bars.InsertBoundImageBarItem();
-            this.insertImagesBarSubItem1 = new DevExpress.DashboardWin.Bars.InsertImagesBarSubItem();
             this.insertTextBoxBarItem1 = new DevExpress.DashboardWin.Bars.InsertTextBoxBarItem();
             this.insertGroupBarItem1 = new DevExpress.DashboardWin.Bars.InsertGroupBarItem();
             this.insertTabContainerBarItem1 = new DevExpress.DashboardWin.Bars.InsertTabContainerBarItem();
             this.duplicateItemBarItem1 = new DevExpress.DashboardWin.Bars.DuplicateItemBarItem();
             this.deleteItemBarItem1 = new DevExpress.DashboardWin.Bars.DeleteItemBarItem();
+            this.convertDashboardItemTypeBarItem1 = new DevExpress.DashboardWin.Bars.ConvertDashboardItemTypeBarItem();
             this.convertToPivotBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToPivotBarItem();
             this.convertToGridBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToGridBarItem();
             this.convertToChartBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToChartBarItem();
@@ -261,19 +254,18 @@
             this.convertToCardBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToCardBarItem();
             this.convertToTreemapBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToTreemapBarItem();
             this.convertToChoroplethMapBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToChoroplethMapBarItem();
+            this.convertGeoPointMapBaseBarItem1 = new DevExpress.DashboardWin.Bars.ConvertGeoPointMapBaseBarItem();
             this.convertToGeoPointMapBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToGeoPointMapBarItem();
             this.convertToBubbleMapBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToBubbleMapBarItem();
             this.convertToPieMapBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToPieMapBarItem();
-            this.convertGeoPointMapBaseBarItem1 = new DevExpress.DashboardWin.Bars.ConvertGeoPointMapBaseBarItem();
             this.convertToRangeFilterBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToRangeFilterBarItem();
+            this.convertToFilterElementsBaseBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToFilterElementsBaseBarItem();
             this.convertToComboBoxBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToComboBoxBarItem();
             this.convertToListBoxBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToListBoxBarItem();
             this.convertToTreeViewBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToTreeViewBarItem();
             this.convertToDateFilterBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToDateFilterBarItem();
-            this.convertToFilterElementsBaseBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToFilterElementsBaseBarItem();
             this.convertToBoundImageBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToBoundImageBarItem();
             this.convertToTextBoxBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToTextBoxBarItem();
-            this.convertDashboardItemTypeBarItem1 = new DevExpress.DashboardWin.Bars.ConvertDashboardItemTypeBarItem();
             this.removeDataItemsBarItem1 = new DevExpress.DashboardWin.Bars.RemoveDataItemsBarItem();
             this.transposeItemBarItem1 = new DevExpress.DashboardWin.Bars.TransposeItemBarItem();
             this.editRulesBarItem1 = new DevExpress.DashboardWin.Bars.EditRulesBarItem();
@@ -330,27 +322,27 @@
             this.ignoreMasterFiltersBarItem1 = new DevExpress.DashboardWin.Bars.IgnoreMasterFiltersBarItem();
             this.showItemCaptionBarItem1 = new DevExpress.DashboardWin.Bars.ShowItemCaptionBarItem();
             this.editItemNamesBarItem1 = new DevExpress.DashboardWin.Bars.EditItemNamesBarItem();
+            this.pivotInitialStateBarItem1 = new DevExpress.DashboardWin.Bars.PivotInitialStateBarItem();
             this.pivotAutoExpandColumnBarItem1 = new DevExpress.DashboardWin.Bars.PivotAutoExpandColumnBarItem();
             this.pivotAutoExpandRowBarItem1 = new DevExpress.DashboardWin.Bars.PivotAutoExpandRowBarItem();
-            this.pivotInitialStateBarItem1 = new DevExpress.DashboardWin.Bars.PivotInitialStateBarItem();
+            this.pivotShowTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowTotalsBarItem();
             this.pivotShowColumnTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowColumnTotalsBarItem();
             this.pivotShowRowTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowRowTotalsBarItem();
-            this.pivotShowTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowTotalsBarItem();
+            this.pivotShowGrandTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowGrandTotalsBarItem();
             this.pivotShowColumnGrandTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowColumnGrandTotalsBarItem();
             this.pivotShowRowGrandTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowRowGrandTotalsBarItem();
-            this.pivotShowGrandTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowGrandTotalsBarItem();
+            this.pivotLayoutTypeBarItem1 = new DevExpress.DashboardWin.Bars.PivotLayoutTypeBarItem();
             this.pivotLayoutTypeCompactBarItem1 = new DevExpress.DashboardWin.Bars.PivotLayoutTypeCompactBarItem();
             this.pivotLayoutTypeTabularBarItem1 = new DevExpress.DashboardWin.Bars.PivotLayoutTypeTabularBarItem();
-            this.pivotLayoutTypeBarItem1 = new DevExpress.DashboardWin.Bars.PivotLayoutTypeBarItem();
+            this.pivotRowTotalsPositionBarItem1 = new DevExpress.DashboardWin.Bars.PivotRowTotalsPositionBarItem();
             this.pivotRowTotalsPositionTopBarItem1 = new DevExpress.DashboardWin.Bars.PivotRowTotalsPositionTopBarItem();
             this.pivotRowTotalsPositionBottomBarItem1 = new DevExpress.DashboardWin.Bars.PivotRowTotalsPositionBottomBarItem();
-            this.pivotRowTotalsPositionBarItem1 = new DevExpress.DashboardWin.Bars.PivotRowTotalsPositionBarItem();
+            this.pivotColumnTotalsPositionBarItem1 = new DevExpress.DashboardWin.Bars.PivotColumnTotalsPositionBarItem();
             this.pivotColumnTotalsPositionNearBarItem1 = new DevExpress.DashboardWin.Bars.PivotColumnTotalsPositionNearBarItem();
             this.pivotColumnTotalsPositionFarBarItem1 = new DevExpress.DashboardWin.Bars.PivotColumnTotalsPositionFarBarItem();
-            this.pivotColumnTotalsPositionBarItem1 = new DevExpress.DashboardWin.Bars.PivotColumnTotalsPositionBarItem();
+            this.pivotValuesPositionBarItem1 = new DevExpress.DashboardWin.Bars.PivotValuesPositionBarItem();
             this.pivotValuesPositionColumnsBarItem1 = new DevExpress.DashboardWin.Bars.PivotValuesPositionColumnsBarItem();
             this.pivotValuesPositionRowsBarItem1 = new DevExpress.DashboardWin.Bars.PivotValuesPositionRowsBarItem();
-            this.pivotValuesPositionBarItem1 = new DevExpress.DashboardWin.Bars.PivotValuesPositionBarItem();
             this.pivotResetLayoutOptionsBarItem1 = new DevExpress.DashboardWin.Bars.PivotResetLayoutOptionsBarItem();
             this.gridToolsBar1 = new DevExpress.DashboardWin.Bars.GridToolsBar();
             this.masterFilterBarItem1 = new DevExpress.DashboardWin.Bars.MasterFilterBarItem();
@@ -395,6 +387,7 @@
             this.contentArrangeInRowsBarItem1 = new DevExpress.DashboardWin.Bars.ContentArrangeInRowsBarItem();
             this.contentArrangementCountBarItem1 = new DevExpress.DashboardWin.Bars.ContentArrangementCountBarItem();
             this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
+            this.pieLabelsDataLabelsBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsDataLabelsBarItem();
             this.pieLabelsDataLabelsNoneBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsDataLabelsNoneBarItem();
             this.pieLabelsDataLabelArgumentBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsDataLabelArgumentBarItem();
             this.pieLabelsDataLabelsValueBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsDataLabelsValueBarItem();
@@ -403,10 +396,10 @@
             this.pieLabelsDataLabelsValueAndPercentBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsDataLabelsValueAndPercentBarItem();
             this.pieLabelsDataLabelsArgumentAndPercentBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsDataLabelsArgumentAndPercentBarItem();
             this.pieLabelsDataLabelsArgumentValueAndPercentBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsDataLabelsArgumentValueAndPercentBarItem();
-            this.pieLabelsDataLabelsBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsDataLabelsBarItem();
+            this.pieLabelPositionBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelPositionBarItem();
             this.pieLabelPositionOutsideBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelPositionOutsideBarItem();
             this.pieLabelPositionInsideBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelPositionInsideBarItem();
-            this.pieLabelPositionBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelPositionBarItem();
+            this.pieTooltipsBarItem1 = new DevExpress.DashboardWin.Bars.PieTooltipsBarItem();
             this.pieLabelsTooltipsNoneBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsTooltipsNoneBarItem();
             this.pieLabelsTooltipsArgumentBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsTooltipsArgumentBarItem();
             this.pieLabelsTooltipsValueBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsTooltipsValueBarItem();
@@ -415,7 +408,6 @@
             this.pieLabelsTooltipsValueAndPercentBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsTooltipsValueAndPercentBarItem();
             this.pieLabelsTooltipsArgumentAndPercentBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsTooltipsArgumentAndPercentBarItem();
             this.pieLabelsTooltipsArgumentValueAndPercentBarItem1 = new DevExpress.DashboardWin.Bars.PieLabelsTooltipsArgumentValueAndPercentBarItem();
-            this.pieTooltipsBarItem1 = new DevExpress.DashboardWin.Bars.PieTooltipsBarItem();
             this.pieStylePieBarItem1 = new DevExpress.DashboardWin.Bars.PieStylePieBarItem();
             this.pieStyleDonutBarItem1 = new DevExpress.DashboardWin.Bars.PieStyleDonutBarItem();
             this.pieShowCaptionsBarItem1 = new DevExpress.DashboardWin.Bars.PieShowCaptionsBarItem();
@@ -435,6 +427,7 @@
             this.choroplethMapToolsBar1 = new DevExpress.DashboardWin.Bars.ChoroplethMapToolsBar();
             this.mapLoadBarItem1 = new DevExpress.DashboardWin.Bars.MapLoadBarItem();
             this.mapImportBarItem1 = new DevExpress.DashboardWin.Bars.MapImportBarItem();
+            this.mapDefaultShapefileBarItem1 = new DevExpress.DashboardWin.Bars.MapDefaultShapefileBarItem();
             this.mapWorldCountriesBarItem1 = new DevExpress.DashboardWin.Bars.MapWorldCountriesBarItem();
             this.mapEuropeBarItem1 = new DevExpress.DashboardWin.Bars.MapEuropeBarItem();
             this.mapAsiaBarItem1 = new DevExpress.DashboardWin.Bars.MapAsiaBarItem();
@@ -443,7 +436,6 @@
             this.mapAfricaBarItem1 = new DevExpress.DashboardWin.Bars.MapAfricaBarItem();
             this.mapUSABarItem1 = new DevExpress.DashboardWin.Bars.MapUSABarItem();
             this.mapCanadaBarItem1 = new DevExpress.DashboardWin.Bars.MapCanadaBarItem();
-            this.mapDefaultShapefileBarItem1 = new DevExpress.DashboardWin.Bars.MapDefaultShapefileBarItem();
             this.mapLockNavigationBarItem1 = new DevExpress.DashboardWin.Bars.MapLockNavigationBarItem();
             this.mapFullExtentBarItem1 = new DevExpress.DashboardWin.Bars.MapFullExtentBarItem();
             this.choroplethMapShapeLabelsAttributeBarItem1 = new DevExpress.DashboardWin.Bars.ChoroplethMapShapeLabelsAttributeBarItem();
@@ -453,10 +445,10 @@
             this.geoPointMapClusterizationBarItem1 = new DevExpress.DashboardWin.Bars.GeoPointMapClusterizationBarItem();
             this.mapShapeTitleAttributeBarItem1 = new DevExpress.DashboardWin.Bars.MapShapeTitleAttributeBarItem();
             this.bubbleMapToolsBar1 = new DevExpress.DashboardWin.Bars.BubbleMapToolsBar();
+            this.changeWeightedLegendTypeBarItem1 = new DevExpress.DashboardWin.Bars.ChangeWeightedLegendTypeBarItem();
             this.weightedLegendNoneBarItem1 = new DevExpress.DashboardWin.Bars.WeightedLegendNoneBarItem();
             this.weightedLegendLinearBarItem1 = new DevExpress.DashboardWin.Bars.WeightedLegendLinearBarItem();
             this.weightedLegendNestedBarItem1 = new DevExpress.DashboardWin.Bars.WeightedLegendNestedBarItem();
-            this.changeWeightedLegendTypeBarItem1 = new DevExpress.DashboardWin.Bars.ChangeWeightedLegendTypeBarItem();
             this.galleryWeightedLegendPositionItem1 = new DevExpress.DashboardWin.Bars.GalleryWeightedLegendPositionItem();
             this.pieMapToolsBar1 = new DevExpress.DashboardWin.Bars.PieMapToolsBar();
             this.pieMapIsWeightedBarItem1 = new DevExpress.DashboardWin.Bars.PieMapIsWeightedBarItem();
@@ -469,19 +461,19 @@
             this.filterElementEnableSearchBarItem1 = new DevExpress.DashboardWin.Bars.FilterElementEnableSearchBarItem();
             this.treeViewAutoExpandBarItem1 = new DevExpress.DashboardWin.Bars.TreeViewAutoExpandBarItem();
             this.dateFilterToolsBar1 = new DevExpress.DashboardWin.Bars.DateFilterToolsBar();
+            this.dateFilterTypeBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterTypeBarItem();
             this.dateFilterExactTypeBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterExactTypeBarItem();
             this.dateFilterFromTypeBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterFromTypeBarItem();
             this.dateFilterToTypeBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterToTypeBarItem();
             this.dateFilterRangeTypeBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterRangeTypeBarItem();
-            this.dateFilterTypeBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterTypeBarItem();
+            this.dateFilterArrangementModeBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterArrangementModeBarItem();
             this.dateFilterAutoHeightArrangementModeBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterAutoHeightArrangementModeBarItem();
             this.dateFilterHorizontalArrangementModeBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterHorizontalArrangementModeBarItem();
             this.dateFilterVerticalArrangementModeBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterVerticalArrangementModeBarItem();
-            this.dateFilterArrangementModeBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterArrangementModeBarItem();
+            this.dateFilterDatePickerLocationBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterDatePickerLocationBarItem();
             this.dateFilterFarDatePickerLocationBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterFarDatePickerLocationBarItem();
             this.dateFilterNearDatePickerLocationBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterNearDatePickerLocationBarItem();
             this.dateFilterHiddenDatePickerLocationBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterHiddenDatePickerLocationBarItem();
-            this.dateFilterDatePickerLocationBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterDatePickerLocationBarItem();
             this.dateFilterEditDateTimePeriodsBarItem1 = new DevExpress.DashboardWin.Bars.DateFilterEditDateTimePeriodsBarItem();
             this.boundImageToolsBar1 = new DevExpress.DashboardWin.Bars.BoundImageToolsBar();
             this.imageSizeModeClipBarItem1 = new DevExpress.DashboardWin.Bars.ImageSizeModeClipBarItem();
@@ -504,31 +496,31 @@
             this.treemapSliceAndDiceLayoutAlgorithmBarItem1 = new DevExpress.DashboardWin.Bars.TreemapSliceAndDiceLayoutAlgorithmBarItem();
             this.treemapSquarifiedLayoutAlgorithmBarItem1 = new DevExpress.DashboardWin.Bars.TreemapSquarifiedLayoutAlgorithmBarItem();
             this.treemapStripedLayoutAlgorithmBarItem1 = new DevExpress.DashboardWin.Bars.TreemapStripedLayoutAlgorithmBarItem();
+            this.treemapLayoutDirectionBarItem1 = new DevExpress.DashboardWin.Bars.TreemapLayoutDirectionBarItem();
             this.treemapBottomLeftToTopRightLayoutDirectionBarItem1 = new DevExpress.DashboardWin.Bars.TreemapBottomLeftToTopRightLayoutDirectionBarItem();
             this.treemapBottomRightToTopLeftLayoutDirectionBarItem1 = new DevExpress.DashboardWin.Bars.TreemapBottomRightToTopLeftLayoutDirectionBarItem();
             this.treemapTopLeftToBottomRightLayoutDirectionBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTopLeftToBottomRightLayoutDirectionBarItem();
             this.treemapTopRightToBottomLeftLayoutDirectionBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTopRightToBottomLeftLayoutDirectionBarItem();
-            this.treemapLayoutDirectionBarItem1 = new DevExpress.DashboardWin.Bars.TreemapLayoutDirectionBarItem();
+            this.treemapTileLabelsBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTileLabelsBarItem();
             this.treemapTileLabelsNoneBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTileLabelsNoneBarItem();
             this.treemapTileLabelsArgumentBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTileLabelsArgumentBarItem();
             this.treemapTileLabelsValueBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTileLabelsValueBarItem();
             this.treemapTileLabelsArgumentAndValueBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTileLabelsArgumentAndValueBarItem();
-            this.treemapTileLabelsBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTileLabelsBarItem();
+            this.treemapTileTooltipsBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTileTooltipsBarItem();
             this.treemapTileTooltipsNoneBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTileTooltipsNoneBarItem();
             this.treemapTileTooltipsArgumentBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTileTooltipsArgumentBarItem();
             this.treemapTileTooltipsValueBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTileTooltipsValueBarItem();
             this.treemapTileTooltipsArgumentAndValueBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTileTooltipsArgumentAndValueBarItem();
-            this.treemapTileTooltipsBarItem1 = new DevExpress.DashboardWin.Bars.TreemapTileTooltipsBarItem();
+            this.treemapGroupLabelsBarItem1 = new DevExpress.DashboardWin.Bars.TreemapGroupLabelsBarItem();
             this.treemapGroupLabelsNoneBarItem1 = new DevExpress.DashboardWin.Bars.TreemapGroupLabelsNoneBarItem();
             this.treemapGroupLabelsArgumentBarItem1 = new DevExpress.DashboardWin.Bars.TreemapGroupLabelsArgumentBarItem();
             this.treemapGroupLabelsValueBarItem1 = new DevExpress.DashboardWin.Bars.TreemapGroupLabelsValueBarItem();
             this.treemapGroupLabelsArgumentAndValueBarItem1 = new DevExpress.DashboardWin.Bars.TreemapGroupLabelsArgumentAndValueBarItem();
-            this.treemapGroupLabelsBarItem1 = new DevExpress.DashboardWin.Bars.TreemapGroupLabelsBarItem();
+            this.treemapGroupTooltipsBarItem1 = new DevExpress.DashboardWin.Bars.TreemapGroupTooltipsBarItem();
             this.treemapGroupTooltipsNoneBarItem1 = new DevExpress.DashboardWin.Bars.TreemapGroupTooltipsNoneBarItem();
             this.treemapGroupTooltipsArgumentBarItem1 = new DevExpress.DashboardWin.Bars.TreemapGroupTooltipsArgumentBarItem();
             this.treemapGroupTooltipsValueBarItem1 = new DevExpress.DashboardWin.Bars.TreemapGroupTooltipsValueBarItem();
             this.treemapGroupTooltipsArgumentAndValueBarItem1 = new DevExpress.DashboardWin.Bars.TreemapGroupTooltipsArgumentAndValueBarItem();
-            this.treemapGroupTooltipsBarItem1 = new DevExpress.DashboardWin.Bars.TreemapGroupTooltipsBarItem();
             this.imageToolsBar1 = new DevExpress.DashboardWin.Bars.ImageToolsBar();
             this.imageLoadBarItem1 = new DevExpress.DashboardWin.Bars.ImageLoadBarItem();
             this.imageImportBarItem1 = new DevExpress.DashboardWin.Bars.ImageImportBarItem();
@@ -545,7 +537,6 @@
             this.displayItemAsTabPageBarItem1 = new DevExpress.DashboardWin.Bars.DisplayItemAsTabPageBarItem();
             this.tabContainerToolsBar1 = new DevExpress.DashboardWin.Bars.TabContainerToolsBar();
             this.reorderTabsBarItem1 = new DevExpress.DashboardWin.Bars.ReorderTabsBarItem();
-            this.textBoxEditorBarController1 = new DevExpress.DashboardWin.Bars.TextBoxEditorBarController(this.components);
             this.commonBar1 = new DevExpress.XtraRichEdit.UI.CommonBar();
             this.undoItem1 = new DevExpress.XtraRichEdit.UI.UndoItem();
             this.redoItem1 = new DevExpress.XtraRichEdit.UI.RedoItem();
@@ -557,7 +548,9 @@
             this.pasteSpecialItem1 = new DevExpress.XtraRichEdit.UI.PasteSpecialItem();
             this.fontBar1 = new DevExpress.XtraRichEdit.UI.FontBar();
             this.changeFontNameItem1 = new DevExpress.XtraRichEdit.UI.ChangeFontNameItem();
+            this.repositoryItemFontEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemFontEdit();
             this.changeFontSizeItem1 = new DevExpress.XtraRichEdit.UI.ChangeFontSizeItem();
+            this.repositoryItemRichEditFontSizeEdit1 = new DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit();
             this.fontSizeIncreaseItem1 = new DevExpress.XtraRichEdit.UI.FontSizeIncreaseItem();
             this.fontSizeDecreaseItem1 = new DevExpress.XtraRichEdit.UI.FontSizeDecreaseItem();
             this.toggleFontBoldItem1 = new DevExpress.XtraRichEdit.UI.ToggleFontBoldItem();
@@ -570,15 +563,13 @@
             this.toggleFontSubscriptItem1 = new DevExpress.XtraRichEdit.UI.ToggleFontSubscriptItem();
             this.changeFontColorItem1 = new DevExpress.XtraRichEdit.UI.ChangeFontColorItem();
             this.changeFontHighlightColorItem1 = new DevExpress.XtraRichEdit.UI.ChangeFontHighlightColorItem();
+            this.changeTextCaseItem1 = new DevExpress.XtraRichEdit.UI.ChangeTextCaseItem();
             this.makeTextUpperCaseItem1 = new DevExpress.XtraRichEdit.UI.MakeTextUpperCaseItem();
             this.makeTextLowerCaseItem1 = new DevExpress.XtraRichEdit.UI.MakeTextLowerCaseItem();
             this.capitalizeEachWordCaseItem1 = new DevExpress.XtraRichEdit.UI.CapitalizeEachWordCaseItem();
             this.toggleTextCaseItem1 = new DevExpress.XtraRichEdit.UI.ToggleTextCaseItem();
-            this.changeTextCaseItem1 = new DevExpress.XtraRichEdit.UI.ChangeTextCaseItem();
             this.clearFormattingItem1 = new DevExpress.XtraRichEdit.UI.ClearFormattingItem();
             this.showFontFormItem1 = new DevExpress.XtraRichEdit.UI.ShowFontFormItem();
-            this.repositoryItemFontEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemFontEdit();
-            this.repositoryItemRichEditFontSizeEdit1 = new DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit();
             this.paragraphBar1 = new DevExpress.XtraRichEdit.UI.ParagraphBar();
             this.toggleBulletedListItem1 = new DevExpress.XtraRichEdit.UI.ToggleBulletedListItem();
             this.toggleNumberingListItem1 = new DevExpress.XtraRichEdit.UI.ToggleNumberingListItem();
@@ -596,14 +587,15 @@
             this.toggleParagraphAlignmentCenterItem1 = new DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentCenterItem();
             this.toggleParagraphAlignmentRightItem1 = new DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentRightItem();
             this.toggleParagraphAlignmentJustifyItem1 = new DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentJustifyItem();
+            this.toggleParagraphAlignmentArabicJustifyGroupItem1 = new DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentArabicJustifyGroupItem();
             this.toggleParagraphAlignmentArabicJustifyItem1 = new DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentArabicJustifyItem();
             this.toggleParagraphAlignmentJustifyLowItem1 = new DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentJustifyLowItem();
             this.toggleParagraphAlignmentJustifyMediumItem1 = new DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentJustifyMediumItem();
             this.toggleParagraphAlignmentJustifyHighItem1 = new DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentJustifyHighItem();
-            this.toggleParagraphAlignmentArabicJustifyGroupItem1 = new DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentArabicJustifyGroupItem();
             this.toggleParagraphAlignmentDistributeItem1 = new DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentDistributeItem();
             this.toggleParagraphAlignmentThaiDistributeItem1 = new DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentThaiDistributeItem();
             this.toggleShowWhitespaceItem1 = new DevExpress.XtraRichEdit.UI.ToggleShowWhitespaceItem();
+            this.changeParagraphLineSpacingItem1 = new DevExpress.XtraRichEdit.UI.ChangeParagraphLineSpacingItem();
             this.setSingleParagraphSpacingItem1 = new DevExpress.XtraRichEdit.UI.SetSingleParagraphSpacingItem();
             this.setSesquialteralParagraphSpacingItem1 = new DevExpress.XtraRichEdit.UI.SetSesquialteralParagraphSpacingItem();
             this.setDoubleParagraphSpacingItem1 = new DevExpress.XtraRichEdit.UI.SetDoubleParagraphSpacingItem();
@@ -612,13 +604,12 @@
             this.removeSpacingBeforeParagraphItem1 = new DevExpress.XtraRichEdit.UI.RemoveSpacingBeforeParagraphItem();
             this.addSpacingAfterParagraphItem1 = new DevExpress.XtraRichEdit.UI.AddSpacingAfterParagraphItem();
             this.removeSpacingAfterParagraphItem1 = new DevExpress.XtraRichEdit.UI.RemoveSpacingAfterParagraphItem();
-            this.changeParagraphLineSpacingItem1 = new DevExpress.XtraRichEdit.UI.ChangeParagraphLineSpacingItem();
             this.changeParagraphBackColorItem1 = new DevExpress.XtraRichEdit.UI.ChangeParagraphBackColorItem();
             this.showParagraphFormItem1 = new DevExpress.XtraRichEdit.UI.ShowParagraphFormItem();
             this.stylesBar1 = new DevExpress.XtraRichEdit.UI.StylesBar();
             this.changeStyleItem1 = new DevExpress.XtraRichEdit.UI.ChangeStyleItem();
-            this.showEditStyleFormItem1 = new DevExpress.XtraRichEdit.UI.ShowEditStyleFormItem();
             this.repositoryItemRichEditStyleEdit1 = new DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit();
+            this.showEditStyleFormItem1 = new DevExpress.XtraRichEdit.UI.ShowEditStyleFormItem();
             this.editingBar1 = new DevExpress.XtraRichEdit.UI.EditingBar();
             this.findItem1 = new DevExpress.XtraRichEdit.UI.FindItem();
             this.replaceItem1 = new DevExpress.XtraRichEdit.UI.ReplaceItem();
@@ -644,8 +635,11 @@
             this.galleryChangeTableStyleItem1 = new DevExpress.XtraRichEdit.UI.GalleryChangeTableStyleItem();
             this.tableDrawBordersBar1 = new DevExpress.XtraRichEdit.UI.TableDrawBordersBar();
             this.changeTableBorderLineStyleItem1 = new DevExpress.XtraRichEdit.UI.ChangeTableBorderLineStyleItem();
+            this.repositoryItemBorderLineStyle1 = new DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle();
             this.changeTableBorderLineWeightItem1 = new DevExpress.XtraRichEdit.UI.ChangeTableBorderLineWeightItem();
+            this.repositoryItemBorderLineWeight1 = new DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineWeight();
             this.changeTableBorderColorItem1 = new DevExpress.XtraRichEdit.UI.ChangeTableBorderColorItem();
+            this.changeTableBordersItem1 = new DevExpress.XtraRichEdit.UI.ChangeTableBordersItem();
             this.toggleTableCellsBottomBorderItem1 = new DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomBorderItem();
             this.toggleTableCellsTopBorderItem1 = new DevExpress.XtraRichEdit.UI.ToggleTableCellsTopBorderItem();
             this.toggleTableCellsLeftBorderItem1 = new DevExpress.XtraRichEdit.UI.ToggleTableCellsLeftBorderItem();
@@ -657,24 +651,21 @@
             this.toggleTableCellsInsideHorizontalBorderItem1 = new DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideHorizontalBorderItem();
             this.toggleTableCellsInsideVerticalBorderItem1 = new DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideVerticalBorderItem();
             this.toggleShowTableGridLinesItem1 = new DevExpress.XtraRichEdit.UI.ToggleShowTableGridLinesItem();
-            this.changeTableBordersItem1 = new DevExpress.XtraRichEdit.UI.ChangeTableBordersItem();
             this.changeTableCellsShadingItem1 = new DevExpress.XtraRichEdit.UI.ChangeTableCellsShadingItem();
             this.showBorderShadingFormItem1 = new DevExpress.XtraRichEdit.UI.ShowBorderShadingFormItem();
-            this.repositoryItemBorderLineStyle1 = new DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle();
-            this.repositoryItemBorderLineWeight1 = new DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineWeight();
             this.tableTableBar1 = new DevExpress.XtraRichEdit.UI.TableTableBar();
+            this.selectTableElementsItem1 = new DevExpress.XtraRichEdit.UI.SelectTableElementsItem();
             this.selectTableCellItem1 = new DevExpress.XtraRichEdit.UI.SelectTableCellItem();
             this.selectTableColumnItem1 = new DevExpress.XtraRichEdit.UI.SelectTableColumnItem();
             this.selectTableRowItem1 = new DevExpress.XtraRichEdit.UI.SelectTableRowItem();
             this.selectTableItem1 = new DevExpress.XtraRichEdit.UI.SelectTableItem();
-            this.selectTableElementsItem1 = new DevExpress.XtraRichEdit.UI.SelectTableElementsItem();
             this.showTablePropertiesFormItem1 = new DevExpress.XtraRichEdit.UI.ShowTablePropertiesFormItem();
             this.tableRowsAndColumnsBar1 = new DevExpress.XtraRichEdit.UI.TableRowsAndColumnsBar();
+            this.deleteTableElementsItem1 = new DevExpress.XtraRichEdit.UI.DeleteTableElementsItem();
             this.showDeleteTableCellsFormItem1 = new DevExpress.XtraRichEdit.UI.ShowDeleteTableCellsFormItem();
             this.deleteTableColumnsItem1 = new DevExpress.XtraRichEdit.UI.DeleteTableColumnsItem();
             this.deleteTableRowsItem1 = new DevExpress.XtraRichEdit.UI.DeleteTableRowsItem();
             this.deleteTableItem1 = new DevExpress.XtraRichEdit.UI.DeleteTableItem();
-            this.deleteTableElementsItem1 = new DevExpress.XtraRichEdit.UI.DeleteTableElementsItem();
             this.insertTableRowAboveItem1 = new DevExpress.XtraRichEdit.UI.InsertTableRowAboveItem();
             this.insertTableRowBelowItem1 = new DevExpress.XtraRichEdit.UI.InsertTableRowBelowItem();
             this.insertTableColumnToLeftItem1 = new DevExpress.XtraRichEdit.UI.InsertTableColumnToLeftItem();
@@ -685,10 +676,10 @@
             this.showSplitTableCellsForm1 = new DevExpress.XtraRichEdit.UI.ShowSplitTableCellsForm();
             this.splitTableItem1 = new DevExpress.XtraRichEdit.UI.SplitTableItem();
             this.tableCellSizeBar1 = new DevExpress.XtraRichEdit.UI.TableCellSizeBar();
+            this.toggleTableAutoFitItem1 = new DevExpress.XtraRichEdit.UI.ToggleTableAutoFitItem();
             this.toggleTableAutoFitContentsItem1 = new DevExpress.XtraRichEdit.UI.ToggleTableAutoFitContentsItem();
             this.toggleTableAutoFitWindowItem1 = new DevExpress.XtraRichEdit.UI.ToggleTableAutoFitWindowItem();
             this.toggleTableFixedColumnWidthItem1 = new DevExpress.XtraRichEdit.UI.ToggleTableFixedColumnWidthItem();
-            this.toggleTableAutoFitItem1 = new DevExpress.XtraRichEdit.UI.ToggleTableAutoFitItem();
             this.tableAlignmentBar1 = new DevExpress.XtraRichEdit.UI.TableAlignmentBar();
             this.toggleTableCellsTopLeftAlignmentItem1 = new DevExpress.XtraRichEdit.UI.ToggleTableCellsTopLeftAlignmentItem();
             this.toggleTableCellsMiddleLeftAlignmentItem1 = new DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleLeftAlignmentItem();
@@ -706,6 +697,7 @@
             this.changeFloatingObjectOutlineWeightItem1 = new DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineWeightItem();
             this.repositoryItemFloatingObjectOutlineWeight1 = new DevExpress.XtraRichEdit.Forms.Design.RepositoryItemFloatingObjectOutlineWeight();
             this.floatingPictureArrangeBar1 = new DevExpress.XtraRichEdit.UI.FloatingPictureArrangeBar();
+            this.changeFloatingObjectTextWrapTypeItem1 = new DevExpress.XtraRichEdit.UI.ChangeFloatingObjectTextWrapTypeItem();
             this.setFloatingObjectInlineTextWrapTypeItem1 = new DevExpress.XtraRichEdit.UI.SetFloatingObjectInlineTextWrapTypeItem();
             this.setFloatingObjectSquareTextWrapTypeItem1 = new DevExpress.XtraRichEdit.UI.SetFloatingObjectSquareTextWrapTypeItem();
             this.setFloatingObjectTightTextWrapTypeItem1 = new DevExpress.XtraRichEdit.UI.SetFloatingObjectTightTextWrapTypeItem();
@@ -713,7 +705,7 @@
             this.setFloatingObjectTopAndBottomTextWrapTypeItem1 = new DevExpress.XtraRichEdit.UI.SetFloatingObjectTopAndBottomTextWrapTypeItem();
             this.setFloatingObjectBehindTextWrapTypeItem1 = new DevExpress.XtraRichEdit.UI.SetFloatingObjectBehindTextWrapTypeItem();
             this.setFloatingObjectInFrontOfTextWrapTypeItem1 = new DevExpress.XtraRichEdit.UI.SetFloatingObjectInFrontOfTextWrapTypeItem();
-            this.changeFloatingObjectTextWrapTypeItem1 = new DevExpress.XtraRichEdit.UI.ChangeFloatingObjectTextWrapTypeItem();
+            this.changeFloatingObjectAlignmentItem1 = new DevExpress.XtraRichEdit.UI.ChangeFloatingObjectAlignmentItem();
             this.setFloatingObjectTopLeftAlignmentItem1 = new DevExpress.XtraRichEdit.UI.SetFloatingObjectTopLeftAlignmentItem();
             this.setFloatingObjectTopCenterAlignmentItem1 = new DevExpress.XtraRichEdit.UI.SetFloatingObjectTopCenterAlignmentItem();
             this.setFloatingObjectTopRightAlignmentItem1 = new DevExpress.XtraRichEdit.UI.SetFloatingObjectTopRightAlignmentItem();
@@ -723,26 +715,28 @@
             this.setFloatingObjectBottomLeftAlignmentItem1 = new DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomLeftAlignmentItem();
             this.setFloatingObjectBottomCenterAlignmentItem1 = new DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomCenterAlignmentItem();
             this.setFloatingObjectBottomRightAlignmentItem1 = new DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomRightAlignmentItem();
-            this.changeFloatingObjectAlignmentItem1 = new DevExpress.XtraRichEdit.UI.ChangeFloatingObjectAlignmentItem();
+            this.floatingObjectBringForwardSubItem1 = new DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardSubItem();
             this.floatingObjectBringForwardItem1 = new DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardItem();
             this.floatingObjectBringToFrontItem1 = new DevExpress.XtraRichEdit.UI.FloatingObjectBringToFrontItem();
             this.floatingObjectBringInFrontOfTextItem1 = new DevExpress.XtraRichEdit.UI.FloatingObjectBringInFrontOfTextItem();
-            this.floatingObjectBringForwardSubItem1 = new DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardSubItem();
+            this.floatingObjectSendBackwardSubItem1 = new DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardSubItem();
             this.floatingObjectSendBackwardItem1 = new DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardItem();
             this.floatingObjectSendToBackItem1 = new DevExpress.XtraRichEdit.UI.FloatingObjectSendToBackItem();
             this.floatingObjectSendBehindTextItem1 = new DevExpress.XtraRichEdit.UI.FloatingObjectSendBehindTextItem();
-            this.floatingObjectSendBackwardSubItem1 = new DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardSubItem();
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.dashboardPopupMenu1 = new DevExpress.DashboardWin.DashboardPopupMenu(this.components);
+            this.Uc__designDashboardlayoutControl1ConvertedLayout = new DevExpress.XtraLayout.LayoutControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.DashboardDesigneritem = new DevExpress.XtraLayout.LayoutControlItem();
+            this.dashboardBarController1 = new DevExpress.DashboardWin.Bars.DashboardBarController(this.components);
+            this.textBoxEditorBarController1 = new DevExpress.DashboardWin.Bars.TextBoxEditorBarController(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dashboardDesigner1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Uc__designDashboardlayoutControl1ConvertedLayout)).BeginInit();
-            this.Uc__designDashboardlayoutControl1ConvertedLayout.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DashboardDesigneritem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardBarAndDockingController1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dashboardBarController1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxEditorBarController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichEditFontSizeEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichEditStyleEdit1)).BeginInit();
@@ -750,6 +744,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBorderLineWeight1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFloatingObjectOutlineWeight1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPopupMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Uc__designDashboardlayoutControl1ConvertedLayout)).BeginInit();
+            this.Uc__designDashboardlayoutControl1ConvertedLayout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DashboardDesigneritem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardBarController1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textBoxEditorBarController1)).BeginInit();
             this.SuspendLayout();
             // 
             // dashboardDesigner1
@@ -761,37 +761,8 @@
             this.dashboardDesigner1.MenuManager = this.barManager1;
             this.dashboardDesigner1.Name = "dashboardDesigner1";
             this.dashboardDesigner1.PopupMenu = this.dashboardPopupMenu1;
-            this.dashboardDesigner1.Size = new System.Drawing.Size(1218, 498);
+            this.dashboardDesigner1.Size = new System.Drawing.Size(1244, 498);
             this.dashboardDesigner1.TabIndex = 0;
-            // 
-            // Uc__designDashboardlayoutControl1ConvertedLayout
-            // 
-            this.Uc__designDashboardlayoutControl1ConvertedLayout.Controls.Add(this.dashboardDesigner1);
-            this.Uc__designDashboardlayoutControl1ConvertedLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Uc__designDashboardlayoutControl1ConvertedLayout.Location = new System.Drawing.Point(0, 89);
-            this.Uc__designDashboardlayoutControl1ConvertedLayout.Name = "Uc__designDashboardlayoutControl1ConvertedLayout";
-            this.Uc__designDashboardlayoutControl1ConvertedLayout.Root = this.layoutControlGroup1;
-            this.Uc__designDashboardlayoutControl1ConvertedLayout.Size = new System.Drawing.Size(1242, 522);
-            this.Uc__designDashboardlayoutControl1ConvertedLayout.TabIndex = 1;
-            // 
-            // layoutControlGroup1
-            // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.DashboardDesigneritem});
-            this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1242, 522);
-            this.layoutControlGroup1.TextVisible = false;
-            // 
-            // DashboardDesigneritem
-            // 
-            this.DashboardDesigneritem.Control = this.dashboardDesigner1;
-            this.DashboardDesigneritem.Location = new System.Drawing.Point(0, 0);
-            this.DashboardDesigneritem.Name = "DashboardDesigneritem";
-            this.DashboardDesigneritem.Size = new System.Drawing.Size(1222, 502);
-            this.DashboardDesigneritem.TextSize = new System.Drawing.Size(0, 0);
-            this.DashboardDesigneritem.TextVisible = false;
             // 
             // barManager1
             // 
@@ -1318,344 +1289,6 @@
             this.repositoryItemBorderLineWeight1,
             this.repositoryItemFloatingObjectOutlineWeight1});
             // 
-            // barDockControlTop
-            // 
-            this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1242, 89);
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 611);
-            this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1242, 0);
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 89);
-            this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 522);
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1242, 89);
-            this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 522);
-            // 
-            // dashboardBarController1
-            // 
-            this.dashboardBarController1.BarItems.Add(this.fileNewBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.fileOpenBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.fileSaveBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.fileSaveAsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.undoBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.redoBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertPivotBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertGridBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertChartBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertScatterChartBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertPiesBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertGaugesBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertCardsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertTreemapBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertChoroplethMapBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertGeoPointMapBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertBubbleMapBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertPieMapBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertGeoPointMapBarSubItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertRangeFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertComboBoxBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertListBoxBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertTreeViewBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertDateFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertFilterElementSubItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertImageBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertBoundImageBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertImagesBarSubItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertTextBoxBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertGroupBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.insertTabContainerBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.duplicateItemBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.deleteItemBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToPivotBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToGridBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToChartBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToScatterChartBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToPieBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToGaugeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToCardBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToTreemapBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToChoroplethMapBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToGeoPointMapBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToBubbleMapBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToPieMapBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertGeoPointMapBaseBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToRangeFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToComboBoxBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToListBoxBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToTreeViewBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToDateFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToFilterElementsBaseBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToBoundImageBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertToTextBoxBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertDashboardItemTypeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.removeDataItemsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.transposeItemBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editRulesBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.deleteGroupBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.deleteTabContainerBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.deleteTabPageBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dashboardTitleBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.setCurrencyCultureBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dashboardColorSchemeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dashboardParametersBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.layoutOptionsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dashboardAutomaticUpdatesBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.updateDataBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.newDataSourceBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editSqlConnectionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editMongoDBConnectionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editXpoConnectionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editOlapConnectionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editObjectDataSourceBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editExcelDataSourceBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editEFDataSourceBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editExtractOptionsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.renameDataSourceBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.deleteDataSourceBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.serverModeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.upateDataExtractBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.addCalculatedFieldBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editJsonDataSourceBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.addQueryBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editQueryBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.renameQueryBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editQueryFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.deleteQueryBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editExtractSourceConnectionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editExtractSourceBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editExtractSourceQueryBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.addFederationQueryBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editFederationQueryBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.renameFederationQueryBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.deleteFederationQueryBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.manageMongoDBQueriesBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.renameMongoDBQueryBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.deleteMongoDBQueryBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editDataSourceFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.clearDataSourceFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dashboardSkinsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dashboardSkinDropDownButtonItem1);
-            this.dashboardBarController1.BarItems.Add(this.editFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.clearFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editVisibleDataFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.ignoreMasterFiltersBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.showItemCaptionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editItemNamesBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotAutoExpandColumnBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotAutoExpandRowBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotInitialStateBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotShowColumnTotalsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotShowRowTotalsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotShowTotalsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotShowColumnGrandTotalsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotShowRowGrandTotalsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotShowGrandTotalsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotLayoutTypeCompactBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotLayoutTypeTabularBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotLayoutTypeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotRowTotalsPositionTopBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotRowTotalsPositionBottomBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotRowTotalsPositionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotColumnTotalsPositionNearBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotColumnTotalsPositionFarBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotColumnTotalsPositionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotValuesPositionColumnsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotValuesPositionRowsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotValuesPositionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pivotResetLayoutOptionsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.masterFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.multipleValuesMasterFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.drillDownBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.crossDataSourceFilteringBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gridHorizontalLinesBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gridVerticalLinesBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gridBandedRowsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gridMergeCellsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gridColumnHeadersBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gridWordWrapBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gridAutoFitToContentsColumnWidthModeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gridAutoFitToGridColumnWidthModeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.manualGridColumnWidthModeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.chartTargetDimensionsArgumentsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.chartTargetDimensionsSeriesBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.chartTargetDimensionsPointsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.chartRotateBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.chartXAxisSettingsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.chartYAxisSettingsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.chartShowLegendBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.galleryChartLegendPositionItem1);
-            this.dashboardBarController1.BarItems.Add(this.galleryChartSeriesTypeItem1);
-            this.dashboardBarController1.BarItems.Add(this.useGlobalColorsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.useLocalColorsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editActualColorsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.scatterChartRotateBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.scatterChartXAxisSettingsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.scatterChartYAxisSettingsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.scatterChartPointLabelOptionsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.scatterChartShowLegendBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.galleryScatterChartLegendPositionItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieTargetDimensionsArgumentsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieTargetDimensionsSeriesBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieTargetDimensionsPointsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.contentAutoArrangeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.contentArrangeInColumnsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.contentArrangeInRowsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.contentArrangementCountBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsNoneBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelArgumentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsValueBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsArgumentAndValueBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsPercentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsValueAndPercentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsArgumentAndPercentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsArgumentValueAndPercentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelPositionOutsideBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelPositionInsideBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelPositionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsNoneBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsArgumentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsValueBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsArgumentAndValueBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsPercentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsValueAndPercentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsArgumentAndPercentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsArgumentValueAndPercentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieTooltipsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieStylePieBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieStyleDonutBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieShowCaptionsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gaugeStyleFullCircularBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gaugeStyleHalfCircularBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gaugeStyleLeftQuarterCircularBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gaugeStyleRightQuarterCircularBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gaugeStyleThreeForthCircularBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gaugeStyleLinearHorizontalBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gaugeStyleLinearVerticalBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.gaugeShowCaptionsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.galleryRangeFilterSeriesTypeItem1);
-            this.dashboardBarController1.BarItems.Add(this.rangeFilterEditDateTimePeriodsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapLoadBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapImportBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapWorldCountriesBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapEuropeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapAsiaBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapNorthAmericaBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapSouthAmericaBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapAfricaBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapUSABarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapCanadaBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapDefaultShapefileBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapLockNavigationBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapFullExtentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.choroplethMapShapeLabelsAttributeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapShowLegendBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.galleryMapLegendPositionItem1);
-            this.dashboardBarController1.BarItems.Add(this.geoPointMapClusterizationBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.mapShapeTitleAttributeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.weightedLegendNoneBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.weightedLegendLinearBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.weightedLegendNestedBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.changeWeightedLegendTypeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.galleryWeightedLegendPositionItem1);
-            this.dashboardBarController1.BarItems.Add(this.pieMapIsWeightedBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.comboBoxStandardTypeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.comboBoxCheckedTypeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.listBoxCheckedTypeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.listBoxRadioTypeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.filterElementShowAllValueBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.filterElementEnableSearchBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treeViewAutoExpandBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterExactTypeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterFromTypeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterToTypeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterRangeTypeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterTypeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterAutoHeightArrangementModeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterHorizontalArrangementModeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterVerticalArrangementModeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterArrangementModeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterFarDatePickerLocationBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterNearDatePickerLocationBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterHiddenDatePickerLocationBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterDatePickerLocationBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dateFilterEditDateTimePeriodsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageSizeModeClipBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageSizeModeStretchBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageSizeModeSqueezeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageSizeModeZoomBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageAlignmentTopLeftBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageAlignmentCenterLeftBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageAlignmentBottomLeftBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageAlignmentTopCenterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageAlignmentCenterCenterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageAlignmentBottomCenterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageAlignmentTopRightBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageAlignmentCenterRightBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageAlignmentBottomRightBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.textBoxEditTextBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.textBoxInsertFieldBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapSliceAndDiceLayoutAlgorithmBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapSquarifiedLayoutAlgorithmBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapStripedLayoutAlgorithmBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapBottomLeftToTopRightLayoutDirectionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapBottomRightToTopLeftLayoutDirectionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapTopLeftToBottomRightLayoutDirectionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapTopRightToBottomLeftLayoutDirectionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapLayoutDirectionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapTileLabelsNoneBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapTileLabelsArgumentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapTileLabelsValueBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapTileLabelsArgumentAndValueBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapTileLabelsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapTileTooltipsNoneBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapTileTooltipsArgumentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapTileTooltipsValueBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapTileTooltipsArgumentAndValueBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapTileTooltipsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapGroupLabelsNoneBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapGroupLabelsArgumentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapGroupLabelsValueBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapGroupLabelsArgumentAndValueBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapGroupLabelsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapGroupTooltipsNoneBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapGroupTooltipsArgumentBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapGroupTooltipsValueBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapGroupTooltipsArgumentAndValueBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.treemapGroupTooltipsBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageLoadBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.imageImportBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.groupMasterFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.groupIgnoreMasterFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.showGroupCaptionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editGroupNamesBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.tabPageMasterFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.tabPageIgnoreMasterFilterBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.showTabPageCaptionBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editTabPageNamesBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.displayItemAsTabPageBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.reorderTabsBarItem1);
-            this.dashboardBarController1.Control = this.dashboardDesigner1;
-            // 
             // homeBar1
             // 
             this.homeBar1.Control = this.dashboardDesigner1;
@@ -1777,6 +1410,16 @@
             this.insertChoroplethMapBarItem1.Id = 14;
             this.insertChoroplethMapBarItem1.Name = "insertChoroplethMapBarItem1";
             // 
+            // insertGeoPointMapBarSubItem1
+            // 
+            this.insertGeoPointMapBarSubItem1.Id = 15;
+            this.insertGeoPointMapBarSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.insertGeoPointMapBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.insertBubbleMapBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.insertPieMapBarItem1)});
+            this.insertGeoPointMapBarSubItem1.Name = "insertGeoPointMapBarSubItem1";
+            this.insertGeoPointMapBarSubItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            // 
             // insertGeoPointMapBarItem1
             // 
             this.insertGeoPointMapBarItem1.Id = 16;
@@ -1792,20 +1435,21 @@
             this.insertPieMapBarItem1.Id = 18;
             this.insertPieMapBarItem1.Name = "insertPieMapBarItem1";
             // 
-            // insertGeoPointMapBarSubItem1
-            // 
-            this.insertGeoPointMapBarSubItem1.Id = 15;
-            this.insertGeoPointMapBarSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.insertGeoPointMapBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.insertBubbleMapBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.insertPieMapBarItem1)});
-            this.insertGeoPointMapBarSubItem1.Name = "insertGeoPointMapBarSubItem1";
-            this.insertGeoPointMapBarSubItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
-            // 
             // insertRangeFilterBarItem1
             // 
             this.insertRangeFilterBarItem1.Id = 19;
             this.insertRangeFilterBarItem1.Name = "insertRangeFilterBarItem1";
+            // 
+            // insertFilterElementSubItem1
+            // 
+            this.insertFilterElementSubItem1.Id = 20;
+            this.insertFilterElementSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.insertComboBoxBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.insertListBoxBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.insertTreeViewBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.insertDateFilterBarItem1)});
+            this.insertFilterElementSubItem1.Name = "insertFilterElementSubItem1";
+            this.insertFilterElementSubItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // insertComboBoxBarItem1
             // 
@@ -1827,16 +1471,14 @@
             this.insertDateFilterBarItem1.Id = 24;
             this.insertDateFilterBarItem1.Name = "insertDateFilterBarItem1";
             // 
-            // insertFilterElementSubItem1
+            // insertImagesBarSubItem1
             // 
-            this.insertFilterElementSubItem1.Id = 20;
-            this.insertFilterElementSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.insertComboBoxBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.insertListBoxBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.insertTreeViewBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.insertDateFilterBarItem1)});
-            this.insertFilterElementSubItem1.Name = "insertFilterElementSubItem1";
-            this.insertFilterElementSubItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            this.insertImagesBarSubItem1.Id = 25;
+            this.insertImagesBarSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.insertImageBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.insertBoundImageBarItem1)});
+            this.insertImagesBarSubItem1.Name = "insertImagesBarSubItem1";
+            this.insertImagesBarSubItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // insertImageBarItem1
             // 
@@ -1847,15 +1489,6 @@
             // 
             this.insertBoundImageBarItem1.Id = 27;
             this.insertBoundImageBarItem1.Name = "insertBoundImageBarItem1";
-            // 
-            // insertImagesBarSubItem1
-            // 
-            this.insertImagesBarSubItem1.Id = 25;
-            this.insertImagesBarSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.insertImageBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.insertBoundImageBarItem1)});
-            this.insertImagesBarSubItem1.Name = "insertImagesBarSubItem1";
-            this.insertImagesBarSubItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // insertTextBoxBarItem1
             // 
@@ -1881,6 +1514,26 @@
             // 
             this.deleteItemBarItem1.Id = 32;
             this.deleteItemBarItem1.Name = "deleteItemBarItem1";
+            // 
+            // convertDashboardItemTypeBarItem1
+            // 
+            this.convertDashboardItemTypeBarItem1.Id = 33;
+            this.convertDashboardItemTypeBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPivotBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGridBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToChartBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToScatterChartBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPieBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGaugeBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToCardBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToTreemapBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToChoroplethMapBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertGeoPointMapBaseBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToRangeFilterBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToFilterElementsBaseBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToBoundImageBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToTextBoxBarItem1)});
+            this.convertDashboardItemTypeBarItem1.Name = "convertDashboardItemTypeBarItem1";
             // 
             // convertToPivotBarItem1
             // 
@@ -1927,6 +1580,15 @@
             this.convertToChoroplethMapBarItem1.Id = 42;
             this.convertToChoroplethMapBarItem1.Name = "convertToChoroplethMapBarItem1";
             // 
+            // convertGeoPointMapBaseBarItem1
+            // 
+            this.convertGeoPointMapBaseBarItem1.Id = 43;
+            this.convertGeoPointMapBaseBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGeoPointMapBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToBubbleMapBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPieMapBarItem1)});
+            this.convertGeoPointMapBaseBarItem1.Name = "convertGeoPointMapBaseBarItem1";
+            // 
             // convertToGeoPointMapBarItem1
             // 
             this.convertToGeoPointMapBarItem1.Id = 44;
@@ -1942,19 +1604,20 @@
             this.convertToPieMapBarItem1.Id = 46;
             this.convertToPieMapBarItem1.Name = "convertToPieMapBarItem1";
             // 
-            // convertGeoPointMapBaseBarItem1
-            // 
-            this.convertGeoPointMapBaseBarItem1.Id = 43;
-            this.convertGeoPointMapBaseBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGeoPointMapBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToBubbleMapBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPieMapBarItem1)});
-            this.convertGeoPointMapBaseBarItem1.Name = "convertGeoPointMapBaseBarItem1";
-            // 
             // convertToRangeFilterBarItem1
             // 
             this.convertToRangeFilterBarItem1.Id = 47;
             this.convertToRangeFilterBarItem1.Name = "convertToRangeFilterBarItem1";
+            // 
+            // convertToFilterElementsBaseBarItem1
+            // 
+            this.convertToFilterElementsBaseBarItem1.Id = 48;
+            this.convertToFilterElementsBaseBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToComboBoxBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToListBoxBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToTreeViewBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToDateFilterBarItem1)});
+            this.convertToFilterElementsBaseBarItem1.Name = "convertToFilterElementsBaseBarItem1";
             // 
             // convertToComboBoxBarItem1
             // 
@@ -1976,16 +1639,6 @@
             this.convertToDateFilterBarItem1.Id = 52;
             this.convertToDateFilterBarItem1.Name = "convertToDateFilterBarItem1";
             // 
-            // convertToFilterElementsBaseBarItem1
-            // 
-            this.convertToFilterElementsBaseBarItem1.Id = 48;
-            this.convertToFilterElementsBaseBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToComboBoxBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToListBoxBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToTreeViewBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToDateFilterBarItem1)});
-            this.convertToFilterElementsBaseBarItem1.Name = "convertToFilterElementsBaseBarItem1";
-            // 
             // convertToBoundImageBarItem1
             // 
             this.convertToBoundImageBarItem1.Id = 53;
@@ -1995,26 +1648,6 @@
             // 
             this.convertToTextBoxBarItem1.Id = 54;
             this.convertToTextBoxBarItem1.Name = "convertToTextBoxBarItem1";
-            // 
-            // convertDashboardItemTypeBarItem1
-            // 
-            this.convertDashboardItemTypeBarItem1.Id = 33;
-            this.convertDashboardItemTypeBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPivotBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGridBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToChartBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToScatterChartBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPieBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGaugeBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToCardBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToTreemapBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToChoroplethMapBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertGeoPointMapBaseBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToRangeFilterBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToFilterElementsBaseBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToBoundImageBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToTextBoxBarItem1)});
-            this.convertDashboardItemTypeBarItem1.Name = "convertDashboardItemTypeBarItem1";
             // 
             // removeDataItemsBarItem1
             // 
@@ -2765,6 +2398,15 @@
             this.editItemNamesBarItem1.Id = 107;
             this.editItemNamesBarItem1.Name = "editItemNamesBarItem1";
             // 
+            // pivotInitialStateBarItem1
+            // 
+            this.pivotInitialStateBarItem1.Id = 108;
+            this.pivotInitialStateBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotAutoExpandColumnBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotAutoExpandRowBarItem1)});
+            this.pivotInitialStateBarItem1.Name = "pivotInitialStateBarItem1";
+            this.pivotInitialStateBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            // 
             // pivotAutoExpandColumnBarItem1
             // 
             this.pivotAutoExpandColumnBarItem1.Id = 109;
@@ -2775,14 +2417,14 @@
             this.pivotAutoExpandRowBarItem1.Id = 110;
             this.pivotAutoExpandRowBarItem1.Name = "pivotAutoExpandRowBarItem1";
             // 
-            // pivotInitialStateBarItem1
+            // pivotShowTotalsBarItem1
             // 
-            this.pivotInitialStateBarItem1.Id = 108;
-            this.pivotInitialStateBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotAutoExpandColumnBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotAutoExpandRowBarItem1)});
-            this.pivotInitialStateBarItem1.Name = "pivotInitialStateBarItem1";
-            this.pivotInitialStateBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            this.pivotShowTotalsBarItem1.Id = 111;
+            this.pivotShowTotalsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotShowColumnTotalsBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotShowRowTotalsBarItem1)});
+            this.pivotShowTotalsBarItem1.Name = "pivotShowTotalsBarItem1";
+            this.pivotShowTotalsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // pivotShowColumnTotalsBarItem1
             // 
@@ -2794,14 +2436,14 @@
             this.pivotShowRowTotalsBarItem1.Id = 113;
             this.pivotShowRowTotalsBarItem1.Name = "pivotShowRowTotalsBarItem1";
             // 
-            // pivotShowTotalsBarItem1
+            // pivotShowGrandTotalsBarItem1
             // 
-            this.pivotShowTotalsBarItem1.Id = 111;
-            this.pivotShowTotalsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotShowColumnTotalsBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotShowRowTotalsBarItem1)});
-            this.pivotShowTotalsBarItem1.Name = "pivotShowTotalsBarItem1";
-            this.pivotShowTotalsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            this.pivotShowGrandTotalsBarItem1.Id = 114;
+            this.pivotShowGrandTotalsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotShowColumnGrandTotalsBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotShowRowGrandTotalsBarItem1)});
+            this.pivotShowGrandTotalsBarItem1.Name = "pivotShowGrandTotalsBarItem1";
+            this.pivotShowGrandTotalsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // pivotShowColumnGrandTotalsBarItem1
             // 
@@ -2813,14 +2455,14 @@
             this.pivotShowRowGrandTotalsBarItem1.Id = 116;
             this.pivotShowRowGrandTotalsBarItem1.Name = "pivotShowRowGrandTotalsBarItem1";
             // 
-            // pivotShowGrandTotalsBarItem1
+            // pivotLayoutTypeBarItem1
             // 
-            this.pivotShowGrandTotalsBarItem1.Id = 114;
-            this.pivotShowGrandTotalsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotShowColumnGrandTotalsBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotShowRowGrandTotalsBarItem1)});
-            this.pivotShowGrandTotalsBarItem1.Name = "pivotShowGrandTotalsBarItem1";
-            this.pivotShowGrandTotalsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            this.pivotLayoutTypeBarItem1.Id = 117;
+            this.pivotLayoutTypeBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotLayoutTypeCompactBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotLayoutTypeTabularBarItem1)});
+            this.pivotLayoutTypeBarItem1.Name = "pivotLayoutTypeBarItem1";
+            this.pivotLayoutTypeBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // pivotLayoutTypeCompactBarItem1
             // 
@@ -2832,14 +2474,14 @@
             this.pivotLayoutTypeTabularBarItem1.Id = 119;
             this.pivotLayoutTypeTabularBarItem1.Name = "pivotLayoutTypeTabularBarItem1";
             // 
-            // pivotLayoutTypeBarItem1
+            // pivotRowTotalsPositionBarItem1
             // 
-            this.pivotLayoutTypeBarItem1.Id = 117;
-            this.pivotLayoutTypeBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotLayoutTypeCompactBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotLayoutTypeTabularBarItem1)});
-            this.pivotLayoutTypeBarItem1.Name = "pivotLayoutTypeBarItem1";
-            this.pivotLayoutTypeBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            this.pivotRowTotalsPositionBarItem1.Id = 120;
+            this.pivotRowTotalsPositionBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotRowTotalsPositionTopBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotRowTotalsPositionBottomBarItem1)});
+            this.pivotRowTotalsPositionBarItem1.Name = "pivotRowTotalsPositionBarItem1";
+            this.pivotRowTotalsPositionBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // pivotRowTotalsPositionTopBarItem1
             // 
@@ -2851,14 +2493,14 @@
             this.pivotRowTotalsPositionBottomBarItem1.Id = 122;
             this.pivotRowTotalsPositionBottomBarItem1.Name = "pivotRowTotalsPositionBottomBarItem1";
             // 
-            // pivotRowTotalsPositionBarItem1
+            // pivotColumnTotalsPositionBarItem1
             // 
-            this.pivotRowTotalsPositionBarItem1.Id = 120;
-            this.pivotRowTotalsPositionBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotRowTotalsPositionTopBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotRowTotalsPositionBottomBarItem1)});
-            this.pivotRowTotalsPositionBarItem1.Name = "pivotRowTotalsPositionBarItem1";
-            this.pivotRowTotalsPositionBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            this.pivotColumnTotalsPositionBarItem1.Id = 123;
+            this.pivotColumnTotalsPositionBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotColumnTotalsPositionNearBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotColumnTotalsPositionFarBarItem1)});
+            this.pivotColumnTotalsPositionBarItem1.Name = "pivotColumnTotalsPositionBarItem1";
+            this.pivotColumnTotalsPositionBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // pivotColumnTotalsPositionNearBarItem1
             // 
@@ -2870,14 +2512,14 @@
             this.pivotColumnTotalsPositionFarBarItem1.Id = 125;
             this.pivotColumnTotalsPositionFarBarItem1.Name = "pivotColumnTotalsPositionFarBarItem1";
             // 
-            // pivotColumnTotalsPositionBarItem1
+            // pivotValuesPositionBarItem1
             // 
-            this.pivotColumnTotalsPositionBarItem1.Id = 123;
-            this.pivotColumnTotalsPositionBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotColumnTotalsPositionNearBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotColumnTotalsPositionFarBarItem1)});
-            this.pivotColumnTotalsPositionBarItem1.Name = "pivotColumnTotalsPositionBarItem1";
-            this.pivotColumnTotalsPositionBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            this.pivotValuesPositionBarItem1.Id = 126;
+            this.pivotValuesPositionBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotValuesPositionColumnsBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotValuesPositionRowsBarItem1)});
+            this.pivotValuesPositionBarItem1.Name = "pivotValuesPositionBarItem1";
+            this.pivotValuesPositionBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // pivotValuesPositionColumnsBarItem1
             // 
@@ -2888,15 +2530,6 @@
             // 
             this.pivotValuesPositionRowsBarItem1.Id = 128;
             this.pivotValuesPositionRowsBarItem1.Name = "pivotValuesPositionRowsBarItem1";
-            // 
-            // pivotValuesPositionBarItem1
-            // 
-            this.pivotValuesPositionBarItem1.Id = 126;
-            this.pivotValuesPositionBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotValuesPositionColumnsBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pivotValuesPositionRowsBarItem1)});
-            this.pivotValuesPositionBarItem1.Name = "pivotValuesPositionBarItem1";
-            this.pivotValuesPositionBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // pivotResetLayoutOptionsBarItem1
             // 
@@ -3415,6 +3048,21 @@
             0});
             this.repositoryItemSpinEdit1.Name = "repositoryItemSpinEdit1";
             // 
+            // pieLabelsDataLabelsBarItem1
+            // 
+            this.pieLabelsDataLabelsBarItem1.Id = 168;
+            this.pieLabelsDataLabelsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsNoneBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelArgumentBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsValueBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsArgumentAndValueBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsPercentBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsValueAndPercentBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsArgumentAndPercentBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsArgumentValueAndPercentBarItem1)});
+            this.pieLabelsDataLabelsBarItem1.Name = "pieLabelsDataLabelsBarItem1";
+            this.pieLabelsDataLabelsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            // 
             // pieLabelsDataLabelsNoneBarItem1
             // 
             this.pieLabelsDataLabelsNoneBarItem1.Id = 169;
@@ -3455,20 +3103,14 @@
             this.pieLabelsDataLabelsArgumentValueAndPercentBarItem1.Id = 176;
             this.pieLabelsDataLabelsArgumentValueAndPercentBarItem1.Name = "pieLabelsDataLabelsArgumentValueAndPercentBarItem1";
             // 
-            // pieLabelsDataLabelsBarItem1
+            // pieLabelPositionBarItem1
             // 
-            this.pieLabelsDataLabelsBarItem1.Id = 168;
-            this.pieLabelsDataLabelsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsNoneBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelArgumentBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsValueBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsArgumentAndValueBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsPercentBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsValueAndPercentBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsArgumentAndPercentBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsDataLabelsArgumentValueAndPercentBarItem1)});
-            this.pieLabelsDataLabelsBarItem1.Name = "pieLabelsDataLabelsBarItem1";
-            this.pieLabelsDataLabelsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            this.pieLabelPositionBarItem1.Id = 177;
+            this.pieLabelPositionBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelPositionOutsideBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelPositionInsideBarItem1)});
+            this.pieLabelPositionBarItem1.Name = "pieLabelPositionBarItem1";
+            this.pieLabelPositionBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // pieLabelPositionOutsideBarItem1
             // 
@@ -3480,14 +3122,20 @@
             this.pieLabelPositionInsideBarItem1.Id = 179;
             this.pieLabelPositionInsideBarItem1.Name = "pieLabelPositionInsideBarItem1";
             // 
-            // pieLabelPositionBarItem1
+            // pieTooltipsBarItem1
             // 
-            this.pieLabelPositionBarItem1.Id = 177;
-            this.pieLabelPositionBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelPositionOutsideBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelPositionInsideBarItem1)});
-            this.pieLabelPositionBarItem1.Name = "pieLabelPositionBarItem1";
-            this.pieLabelPositionBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            this.pieTooltipsBarItem1.Id = 180;
+            this.pieTooltipsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsNoneBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsArgumentBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsValueBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsArgumentAndValueBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsPercentBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsValueAndPercentBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsArgumentAndPercentBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsArgumentValueAndPercentBarItem1)});
+            this.pieTooltipsBarItem1.Name = "pieTooltipsBarItem1";
+            this.pieTooltipsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // pieLabelsTooltipsNoneBarItem1
             // 
@@ -3528,21 +3176,6 @@
             // 
             this.pieLabelsTooltipsArgumentValueAndPercentBarItem1.Id = 188;
             this.pieLabelsTooltipsArgumentValueAndPercentBarItem1.Name = "pieLabelsTooltipsArgumentValueAndPercentBarItem1";
-            // 
-            // pieTooltipsBarItem1
-            // 
-            this.pieTooltipsBarItem1.Id = 180;
-            this.pieTooltipsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsNoneBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsArgumentBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsValueBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsArgumentAndValueBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsPercentBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsValueAndPercentBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsArgumentAndPercentBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pieLabelsTooltipsArgumentValueAndPercentBarItem1)});
-            this.pieTooltipsBarItem1.Name = "pieTooltipsBarItem1";
-            this.pieTooltipsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // pieStylePieBarItem1
             // 
@@ -3750,6 +3383,21 @@
             this.mapImportBarItem1.Id = 203;
             this.mapImportBarItem1.Name = "mapImportBarItem1";
             // 
+            // mapDefaultShapefileBarItem1
+            // 
+            this.mapDefaultShapefileBarItem1.Id = 204;
+            this.mapDefaultShapefileBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.mapWorldCountriesBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.mapEuropeBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.mapAsiaBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.mapNorthAmericaBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.mapSouthAmericaBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.mapAfricaBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.mapUSABarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.mapCanadaBarItem1)});
+            this.mapDefaultShapefileBarItem1.Name = "mapDefaultShapefileBarItem1";
+            this.mapDefaultShapefileBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            // 
             // mapWorldCountriesBarItem1
             // 
             this.mapWorldCountriesBarItem1.Id = 205;
@@ -3789,21 +3437,6 @@
             // 
             this.mapCanadaBarItem1.Id = 212;
             this.mapCanadaBarItem1.Name = "mapCanadaBarItem1";
-            // 
-            // mapDefaultShapefileBarItem1
-            // 
-            this.mapDefaultShapefileBarItem1.Id = 204;
-            this.mapDefaultShapefileBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.mapWorldCountriesBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.mapEuropeBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.mapAsiaBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.mapNorthAmericaBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.mapSouthAmericaBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.mapAfricaBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.mapUSABarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.mapCanadaBarItem1)});
-            this.mapDefaultShapefileBarItem1.Name = "mapDefaultShapefileBarItem1";
-            this.mapDefaultShapefileBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // mapLockNavigationBarItem1
             // 
@@ -3929,6 +3562,16 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.galleryWeightedLegendPositionItem1)});
             this.bubbleMapToolsBar1.Visible = false;
             // 
+            // changeWeightedLegendTypeBarItem1
+            // 
+            this.changeWeightedLegendTypeBarItem1.Id = 220;
+            this.changeWeightedLegendTypeBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.weightedLegendNoneBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.weightedLegendLinearBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.weightedLegendNestedBarItem1)});
+            this.changeWeightedLegendTypeBarItem1.Name = "changeWeightedLegendTypeBarItem1";
+            this.changeWeightedLegendTypeBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            // 
             // weightedLegendNoneBarItem1
             // 
             this.weightedLegendNoneBarItem1.Id = 221;
@@ -3943,16 +3586,6 @@
             // 
             this.weightedLegendNestedBarItem1.Id = 223;
             this.weightedLegendNestedBarItem1.Name = "weightedLegendNestedBarItem1";
-            // 
-            // changeWeightedLegendTypeBarItem1
-            // 
-            this.changeWeightedLegendTypeBarItem1.Id = 220;
-            this.changeWeightedLegendTypeBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.weightedLegendNoneBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.weightedLegendLinearBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.weightedLegendNestedBarItem1)});
-            this.changeWeightedLegendTypeBarItem1.Name = "changeWeightedLegendTypeBarItem1";
-            this.changeWeightedLegendTypeBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // galleryWeightedLegendPositionItem1
             // 
@@ -4093,6 +3726,17 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.dateFilterEditDateTimePeriodsBarItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu)});
             this.dateFilterToolsBar1.Visible = false;
             // 
+            // dateFilterTypeBarItem1
+            // 
+            this.dateFilterTypeBarItem1.Id = 233;
+            this.dateFilterTypeBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterExactTypeBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterFromTypeBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterToTypeBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterRangeTypeBarItem1)});
+            this.dateFilterTypeBarItem1.Name = "dateFilterTypeBarItem1";
+            this.dateFilterTypeBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
             // dateFilterExactTypeBarItem1
             // 
             this.dateFilterExactTypeBarItem1.Id = 234;
@@ -4113,16 +3757,15 @@
             this.dateFilterRangeTypeBarItem1.Id = 237;
             this.dateFilterRangeTypeBarItem1.Name = "dateFilterRangeTypeBarItem1";
             // 
-            // dateFilterTypeBarItem1
+            // dateFilterArrangementModeBarItem1
             // 
-            this.dateFilterTypeBarItem1.Id = 233;
-            this.dateFilterTypeBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterExactTypeBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterFromTypeBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterToTypeBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterRangeTypeBarItem1)});
-            this.dateFilterTypeBarItem1.Name = "dateFilterTypeBarItem1";
-            this.dateFilterTypeBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.dateFilterArrangementModeBarItem1.Id = 238;
+            this.dateFilterArrangementModeBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterAutoHeightArrangementModeBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterHorizontalArrangementModeBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterVerticalArrangementModeBarItem1)});
+            this.dateFilterArrangementModeBarItem1.Name = "dateFilterArrangementModeBarItem1";
+            this.dateFilterArrangementModeBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // dateFilterAutoHeightArrangementModeBarItem1
             // 
@@ -4139,15 +3782,15 @@
             this.dateFilterVerticalArrangementModeBarItem1.Id = 241;
             this.dateFilterVerticalArrangementModeBarItem1.Name = "dateFilterVerticalArrangementModeBarItem1";
             // 
-            // dateFilterArrangementModeBarItem1
+            // dateFilterDatePickerLocationBarItem1
             // 
-            this.dateFilterArrangementModeBarItem1.Id = 238;
-            this.dateFilterArrangementModeBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterAutoHeightArrangementModeBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterHorizontalArrangementModeBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterVerticalArrangementModeBarItem1)});
-            this.dateFilterArrangementModeBarItem1.Name = "dateFilterArrangementModeBarItem1";
-            this.dateFilterArrangementModeBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.dateFilterDatePickerLocationBarItem1.Id = 242;
+            this.dateFilterDatePickerLocationBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterFarDatePickerLocationBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterNearDatePickerLocationBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterHiddenDatePickerLocationBarItem1)});
+            this.dateFilterDatePickerLocationBarItem1.Name = "dateFilterDatePickerLocationBarItem1";
+            this.dateFilterDatePickerLocationBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // dateFilterFarDatePickerLocationBarItem1
             // 
@@ -4163,16 +3806,6 @@
             // 
             this.dateFilterHiddenDatePickerLocationBarItem1.Id = 245;
             this.dateFilterHiddenDatePickerLocationBarItem1.Name = "dateFilterHiddenDatePickerLocationBarItem1";
-            // 
-            // dateFilterDatePickerLocationBarItem1
-            // 
-            this.dateFilterDatePickerLocationBarItem1.Id = 242;
-            this.dateFilterDatePickerLocationBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterFarDatePickerLocationBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterNearDatePickerLocationBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.dateFilterHiddenDatePickerLocationBarItem1)});
-            this.dateFilterDatePickerLocationBarItem1.Name = "dateFilterDatePickerLocationBarItem1";
-            this.dateFilterDatePickerLocationBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // dateFilterEditDateTimePeriodsBarItem1
             // 
@@ -4353,6 +3986,17 @@
             this.treemapStripedLayoutAlgorithmBarItem1.Id = 264;
             this.treemapStripedLayoutAlgorithmBarItem1.Name = "treemapStripedLayoutAlgorithmBarItem1";
             // 
+            // treemapLayoutDirectionBarItem1
+            // 
+            this.treemapLayoutDirectionBarItem1.Id = 265;
+            this.treemapLayoutDirectionBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapBottomLeftToTopRightLayoutDirectionBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapBottomRightToTopLeftLayoutDirectionBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTopLeftToBottomRightLayoutDirectionBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTopRightToBottomLeftLayoutDirectionBarItem1)});
+            this.treemapLayoutDirectionBarItem1.Name = "treemapLayoutDirectionBarItem1";
+            this.treemapLayoutDirectionBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
             // treemapBottomLeftToTopRightLayoutDirectionBarItem1
             // 
             this.treemapBottomLeftToTopRightLayoutDirectionBarItem1.Id = 266;
@@ -4373,16 +4017,16 @@
             this.treemapTopRightToBottomLeftLayoutDirectionBarItem1.Id = 269;
             this.treemapTopRightToBottomLeftLayoutDirectionBarItem1.Name = "treemapTopRightToBottomLeftLayoutDirectionBarItem1";
             // 
-            // treemapLayoutDirectionBarItem1
+            // treemapTileLabelsBarItem1
             // 
-            this.treemapLayoutDirectionBarItem1.Id = 265;
-            this.treemapLayoutDirectionBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapBottomLeftToTopRightLayoutDirectionBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapBottomRightToTopLeftLayoutDirectionBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTopLeftToBottomRightLayoutDirectionBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTopRightToBottomLeftLayoutDirectionBarItem1)});
-            this.treemapLayoutDirectionBarItem1.Name = "treemapLayoutDirectionBarItem1";
-            this.treemapLayoutDirectionBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.treemapTileLabelsBarItem1.Id = 270;
+            this.treemapTileLabelsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileLabelsNoneBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileLabelsArgumentBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileLabelsValueBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileLabelsArgumentAndValueBarItem1)});
+            this.treemapTileLabelsBarItem1.Name = "treemapTileLabelsBarItem1";
+            this.treemapTileLabelsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // treemapTileLabelsNoneBarItem1
             // 
@@ -4404,16 +4048,16 @@
             this.treemapTileLabelsArgumentAndValueBarItem1.Id = 274;
             this.treemapTileLabelsArgumentAndValueBarItem1.Name = "treemapTileLabelsArgumentAndValueBarItem1";
             // 
-            // treemapTileLabelsBarItem1
+            // treemapTileTooltipsBarItem1
             // 
-            this.treemapTileLabelsBarItem1.Id = 270;
-            this.treemapTileLabelsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileLabelsNoneBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileLabelsArgumentBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileLabelsValueBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileLabelsArgumentAndValueBarItem1)});
-            this.treemapTileLabelsBarItem1.Name = "treemapTileLabelsBarItem1";
-            this.treemapTileLabelsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            this.treemapTileTooltipsBarItem1.Id = 275;
+            this.treemapTileTooltipsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileTooltipsNoneBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileTooltipsArgumentBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileTooltipsValueBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileTooltipsArgumentAndValueBarItem1)});
+            this.treemapTileTooltipsBarItem1.Name = "treemapTileTooltipsBarItem1";
+            this.treemapTileTooltipsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // treemapTileTooltipsNoneBarItem1
             // 
@@ -4435,16 +4079,16 @@
             this.treemapTileTooltipsArgumentAndValueBarItem1.Id = 279;
             this.treemapTileTooltipsArgumentAndValueBarItem1.Name = "treemapTileTooltipsArgumentAndValueBarItem1";
             // 
-            // treemapTileTooltipsBarItem1
+            // treemapGroupLabelsBarItem1
             // 
-            this.treemapTileTooltipsBarItem1.Id = 275;
-            this.treemapTileTooltipsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileTooltipsNoneBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileTooltipsArgumentBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileTooltipsValueBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapTileTooltipsArgumentAndValueBarItem1)});
-            this.treemapTileTooltipsBarItem1.Name = "treemapTileTooltipsBarItem1";
-            this.treemapTileTooltipsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            this.treemapGroupLabelsBarItem1.Id = 280;
+            this.treemapGroupLabelsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupLabelsNoneBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupLabelsArgumentBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupLabelsValueBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupLabelsArgumentAndValueBarItem1)});
+            this.treemapGroupLabelsBarItem1.Name = "treemapGroupLabelsBarItem1";
+            this.treemapGroupLabelsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // treemapGroupLabelsNoneBarItem1
             // 
@@ -4466,16 +4110,16 @@
             this.treemapGroupLabelsArgumentAndValueBarItem1.Id = 284;
             this.treemapGroupLabelsArgumentAndValueBarItem1.Name = "treemapGroupLabelsArgumentAndValueBarItem1";
             // 
-            // treemapGroupLabelsBarItem1
+            // treemapGroupTooltipsBarItem1
             // 
-            this.treemapGroupLabelsBarItem1.Id = 280;
-            this.treemapGroupLabelsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupLabelsNoneBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupLabelsArgumentBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupLabelsValueBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupLabelsArgumentAndValueBarItem1)});
-            this.treemapGroupLabelsBarItem1.Name = "treemapGroupLabelsBarItem1";
-            this.treemapGroupLabelsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            this.treemapGroupTooltipsBarItem1.Id = 285;
+            this.treemapGroupTooltipsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupTooltipsNoneBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupTooltipsArgumentBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupTooltipsValueBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupTooltipsArgumentAndValueBarItem1)});
+            this.treemapGroupTooltipsBarItem1.Name = "treemapGroupTooltipsBarItem1";
+            this.treemapGroupTooltipsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // treemapGroupTooltipsNoneBarItem1
             // 
@@ -4496,17 +4140,6 @@
             // 
             this.treemapGroupTooltipsArgumentAndValueBarItem1.Id = 289;
             this.treemapGroupTooltipsArgumentAndValueBarItem1.Name = "treemapGroupTooltipsArgumentAndValueBarItem1";
-            // 
-            // treemapGroupTooltipsBarItem1
-            // 
-            this.treemapGroupTooltipsBarItem1.Id = 285;
-            this.treemapGroupTooltipsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupTooltipsNoneBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupTooltipsArgumentBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupTooltipsValueBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.treemapGroupTooltipsArgumentAndValueBarItem1)});
-            this.treemapGroupTooltipsBarItem1.Name = "treemapGroupTooltipsBarItem1";
-            this.treemapGroupTooltipsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             // 
             // imageToolsBar1
             // 
@@ -4631,169 +4264,6 @@
             this.reorderTabsBarItem1.Id = 301;
             this.reorderTabsBarItem1.Name = "reorderTabsBarItem1";
             // 
-            // textBoxEditorBarController1
-            // 
-            this.textBoxEditorBarController1.BarItems.Add(this.undoItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.redoItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.fileOpenItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.pasteItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.cutItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.copyItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.pasteSpecialItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeFontNameItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeFontSizeItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.fontSizeIncreaseItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.fontSizeDecreaseItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontBoldItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontItalicItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontUnderlineItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontDoubleUnderlineItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontStrikeoutItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontDoubleStrikeoutItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontSuperscriptItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontSubscriptItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeFontColorItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeFontHighlightColorItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.makeTextUpperCaseItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.makeTextLowerCaseItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.capitalizeEachWordCaseItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTextCaseItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeTextCaseItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.clearFormattingItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.showFontFormItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleBulletedListItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleNumberingListItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleMultiLevelListItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.decreaseIndentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.increaseIndentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.rtlToggleBulletedListItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.rtlToggleNumberingListItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.rtlToggleMultiLevelListItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.rtlDecreaseIndentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.rtlIncreaseIndentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphLeftToRightItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphRightToLeftItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentLeftItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentCenterItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentRightItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentJustifyItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentArabicJustifyItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentJustifyLowItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentJustifyMediumItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentJustifyHighItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentArabicJustifyGroupItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentDistributeItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentThaiDistributeItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleShowWhitespaceItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setSingleParagraphSpacingItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setSesquialteralParagraphSpacingItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setDoubleParagraphSpacingItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.showLineSpacingFormItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.addSpacingBeforeParagraphItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.removeSpacingBeforeParagraphItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.addSpacingAfterParagraphItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.removeSpacingAfterParagraphItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeParagraphLineSpacingItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeParagraphBackColorItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.showParagraphFormItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeStyleItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.showEditStyleFormItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.findItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.replaceItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.insertTableItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.insertFloatingPictureItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.insertBookmarkItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.insertHyperlinkItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.insertSymbolItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changePageColorItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleFirstRowItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleLastRowItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleBandedRowsItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleFirstColumnItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleLastColumnItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleBandedColumnsItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.galleryChangeTableStyleItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeTableBorderLineStyleItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeTableBorderLineWeightItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeTableBorderColorItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsBottomBorderItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsTopBorderItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsLeftBorderItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsRightBorderItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.resetTableCellsAllBordersItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsAllBordersItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsOutsideBorderItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsInsideBorderItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsInsideHorizontalBorderItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsInsideVerticalBorderItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleShowTableGridLinesItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeTableBordersItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeTableCellsShadingItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.showBorderShadingFormItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.selectTableCellItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.selectTableColumnItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.selectTableRowItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.selectTableItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.selectTableElementsItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.showTablePropertiesFormItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.showDeleteTableCellsFormItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.deleteTableColumnsItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.deleteTableRowsItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.deleteTableItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.deleteTableElementsItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.insertTableRowAboveItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.insertTableRowBelowItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.insertTableColumnToLeftItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.insertTableColumnToRightItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.showInsertTableCellsFormItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.mergeTableCellsItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.showSplitTableCellsForm1);
-            this.textBoxEditorBarController1.BarItems.Add(this.splitTableItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableAutoFitContentsItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableAutoFitWindowItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableFixedColumnWidthItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableAutoFitItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsTopLeftAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsMiddleLeftAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsBottomLeftAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsTopCenterAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsMiddleCenterAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsBottomCenterAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsTopRightAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsMiddleRightAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsBottomRightAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.showTableOptionsFormItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeFloatingObjectFillColorItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeFloatingObjectOutlineColorItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeFloatingObjectOutlineWeightItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectInlineTextWrapTypeItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectSquareTextWrapTypeItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectTightTextWrapTypeItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectThroughTextWrapTypeItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectTopAndBottomTextWrapTypeItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectBehindTextWrapTypeItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectInFrontOfTextWrapTypeItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeFloatingObjectTextWrapTypeItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectTopLeftAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectTopCenterAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectTopRightAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectMiddleLeftAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectMiddleCenterAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectMiddleRightAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectBottomLeftAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectBottomCenterAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectBottomRightAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.changeFloatingObjectAlignmentItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectBringForwardItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectBringToFrontItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectBringInFrontOfTextItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectBringForwardSubItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectSendBackwardItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectSendToBackItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectSendBehindTextItem1);
-            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectSendBackwardSubItem1);
-            this.textBoxEditorBarController1.Designer = this.dashboardDesigner1;
-            // 
             // commonBar1
             // 
             this.commonBar1.Control = null;
@@ -4894,12 +4364,27 @@
             this.changeFontNameItem1.Id = 309;
             this.changeFontNameItem1.Name = "changeFontNameItem1";
             // 
+            // repositoryItemFontEdit1
+            // 
+            this.repositoryItemFontEdit1.AutoHeight = false;
+            this.repositoryItemFontEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemFontEdit1.Name = "repositoryItemFontEdit1";
+            // 
             // changeFontSizeItem1
             // 
             this.changeFontSizeItem1.Edit = this.repositoryItemRichEditFontSizeEdit1;
             this.changeFontSizeItem1.Enabled = false;
             this.changeFontSizeItem1.Id = 310;
             this.changeFontSizeItem1.Name = "changeFontSizeItem1";
+            // 
+            // repositoryItemRichEditFontSizeEdit1
+            // 
+            this.repositoryItemRichEditFontSizeEdit1.AutoHeight = false;
+            this.repositoryItemRichEditFontSizeEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemRichEditFontSizeEdit1.Control = null;
+            this.repositoryItemRichEditFontSizeEdit1.Name = "repositoryItemRichEditFontSizeEdit1";
             // 
             // fontSizeIncreaseItem1
             // 
@@ -4973,6 +4458,17 @@
             this.changeFontHighlightColorItem1.Id = 322;
             this.changeFontHighlightColorItem1.Name = "changeFontHighlightColorItem1";
             // 
+            // changeTextCaseItem1
+            // 
+            this.changeTextCaseItem1.Enabled = false;
+            this.changeTextCaseItem1.Id = 323;
+            this.changeTextCaseItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.makeTextUpperCaseItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.makeTextLowerCaseItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.capitalizeEachWordCaseItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTextCaseItem1)});
+            this.changeTextCaseItem1.Name = "changeTextCaseItem1";
+            // 
             // makeTextUpperCaseItem1
             // 
             this.makeTextUpperCaseItem1.Enabled = false;
@@ -4997,17 +4493,6 @@
             this.toggleTextCaseItem1.Id = 327;
             this.toggleTextCaseItem1.Name = "toggleTextCaseItem1";
             // 
-            // changeTextCaseItem1
-            // 
-            this.changeTextCaseItem1.Enabled = false;
-            this.changeTextCaseItem1.Id = 323;
-            this.changeTextCaseItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.makeTextUpperCaseItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.makeTextLowerCaseItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.capitalizeEachWordCaseItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTextCaseItem1)});
-            this.changeTextCaseItem1.Name = "changeTextCaseItem1";
-            // 
             // clearFormattingItem1
             // 
             this.clearFormattingItem1.Enabled = false;
@@ -5019,21 +4504,6 @@
             this.showFontFormItem1.Enabled = false;
             this.showFontFormItem1.Id = 329;
             this.showFontFormItem1.Name = "showFontFormItem1";
-            // 
-            // repositoryItemFontEdit1
-            // 
-            this.repositoryItemFontEdit1.AutoHeight = false;
-            this.repositoryItemFontEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemFontEdit1.Name = "repositoryItemFontEdit1";
-            // 
-            // repositoryItemRichEditFontSizeEdit1
-            // 
-            this.repositoryItemRichEditFontSizeEdit1.AutoHeight = false;
-            this.repositoryItemRichEditFontSizeEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemRichEditFontSizeEdit1.Control = null;
-            this.repositoryItemRichEditFontSizeEdit1.Name = "repositoryItemRichEditFontSizeEdit1";
             // 
             // paragraphBar1
             // 
@@ -5163,6 +4633,17 @@
             this.toggleParagraphAlignmentJustifyItem1.Id = 345;
             this.toggleParagraphAlignmentJustifyItem1.Name = "toggleParagraphAlignmentJustifyItem1";
             // 
+            // toggleParagraphAlignmentArabicJustifyGroupItem1
+            // 
+            this.toggleParagraphAlignmentArabicJustifyGroupItem1.Enabled = false;
+            this.toggleParagraphAlignmentArabicJustifyGroupItem1.Id = 346;
+            this.toggleParagraphAlignmentArabicJustifyGroupItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleParagraphAlignmentArabicJustifyItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleParagraphAlignmentJustifyLowItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleParagraphAlignmentJustifyMediumItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleParagraphAlignmentJustifyHighItem1)});
+            this.toggleParagraphAlignmentArabicJustifyGroupItem1.Name = "toggleParagraphAlignmentArabicJustifyGroupItem1";
+            // 
             // toggleParagraphAlignmentArabicJustifyItem1
             // 
             this.toggleParagraphAlignmentArabicJustifyItem1.Enabled = false;
@@ -5187,17 +4668,6 @@
             this.toggleParagraphAlignmentJustifyHighItem1.Id = 350;
             this.toggleParagraphAlignmentJustifyHighItem1.Name = "toggleParagraphAlignmentJustifyHighItem1";
             // 
-            // toggleParagraphAlignmentArabicJustifyGroupItem1
-            // 
-            this.toggleParagraphAlignmentArabicJustifyGroupItem1.Enabled = false;
-            this.toggleParagraphAlignmentArabicJustifyGroupItem1.Id = 346;
-            this.toggleParagraphAlignmentArabicJustifyGroupItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleParagraphAlignmentArabicJustifyItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleParagraphAlignmentJustifyLowItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleParagraphAlignmentJustifyMediumItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleParagraphAlignmentJustifyHighItem1)});
-            this.toggleParagraphAlignmentArabicJustifyGroupItem1.Name = "toggleParagraphAlignmentArabicJustifyGroupItem1";
-            // 
             // toggleParagraphAlignmentDistributeItem1
             // 
             this.toggleParagraphAlignmentDistributeItem1.Enabled = false;
@@ -5215,6 +4685,21 @@
             this.toggleShowWhitespaceItem1.Enabled = false;
             this.toggleShowWhitespaceItem1.Id = 353;
             this.toggleShowWhitespaceItem1.Name = "toggleShowWhitespaceItem1";
+            // 
+            // changeParagraphLineSpacingItem1
+            // 
+            this.changeParagraphLineSpacingItem1.Enabled = false;
+            this.changeParagraphLineSpacingItem1.Id = 354;
+            this.changeParagraphLineSpacingItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.setSingleParagraphSpacingItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setSesquialteralParagraphSpacingItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setDoubleParagraphSpacingItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.showLineSpacingFormItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.addSpacingBeforeParagraphItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.removeSpacingBeforeParagraphItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.addSpacingAfterParagraphItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.removeSpacingAfterParagraphItem1)});
+            this.changeParagraphLineSpacingItem1.Name = "changeParagraphLineSpacingItem1";
             // 
             // setSingleParagraphSpacingItem1
             // 
@@ -5264,21 +4749,6 @@
             this.removeSpacingAfterParagraphItem1.Id = 362;
             this.removeSpacingAfterParagraphItem1.Name = "removeSpacingAfterParagraphItem1";
             // 
-            // changeParagraphLineSpacingItem1
-            // 
-            this.changeParagraphLineSpacingItem1.Enabled = false;
-            this.changeParagraphLineSpacingItem1.Id = 354;
-            this.changeParagraphLineSpacingItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.setSingleParagraphSpacingItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setSesquialteralParagraphSpacingItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setDoubleParagraphSpacingItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.showLineSpacingFormItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.addSpacingBeforeParagraphItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.removeSpacingBeforeParagraphItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.addSpacingAfterParagraphItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.removeSpacingAfterParagraphItem1)});
-            this.changeParagraphLineSpacingItem1.Name = "changeParagraphLineSpacingItem1";
-            // 
             // changeParagraphBackColorItem1
             // 
             this.changeParagraphBackColorItem1.Enabled = false;
@@ -5309,12 +4779,6 @@
             this.changeStyleItem1.Id = 365;
             this.changeStyleItem1.Name = "changeStyleItem1";
             // 
-            // showEditStyleFormItem1
-            // 
-            this.showEditStyleFormItem1.Enabled = false;
-            this.showEditStyleFormItem1.Id = 366;
-            this.showEditStyleFormItem1.Name = "showEditStyleFormItem1";
-            // 
             // repositoryItemRichEditStyleEdit1
             // 
             this.repositoryItemRichEditStyleEdit1.AutoHeight = false;
@@ -5322,6 +4786,12 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemRichEditStyleEdit1.Control = null;
             this.repositoryItemRichEditStyleEdit1.Name = "repositoryItemRichEditStyleEdit1";
+            // 
+            // showEditStyleFormItem1
+            // 
+            this.showEditStyleFormItem1.Enabled = false;
+            this.showEditStyleFormItem1.Id = 366;
+            this.showEditStyleFormItem1.Name = "showEditStyleFormItem1";
             // 
             // editingBar1
             // 
@@ -5541,6 +5011,14 @@
             this.changeTableBorderLineStyleItem1.Id = 382;
             this.changeTableBorderLineStyleItem1.Name = "changeTableBorderLineStyleItem1";
             // 
+            // repositoryItemBorderLineStyle1
+            // 
+            this.repositoryItemBorderLineStyle1.AutoHeight = false;
+            this.repositoryItemBorderLineStyle1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemBorderLineStyle1.Control = null;
+            this.repositoryItemBorderLineStyle1.Name = "repositoryItemBorderLineStyle1";
+            // 
             // changeTableBorderLineWeightItem1
             // 
             this.changeTableBorderLineWeightItem1.Edit = this.repositoryItemBorderLineWeight1;
@@ -5549,11 +5027,37 @@
             this.changeTableBorderLineWeightItem1.Id = 383;
             this.changeTableBorderLineWeightItem1.Name = "changeTableBorderLineWeightItem1";
             // 
+            // repositoryItemBorderLineWeight1
+            // 
+            this.repositoryItemBorderLineWeight1.AutoHeight = false;
+            this.repositoryItemBorderLineWeight1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemBorderLineWeight1.Control = null;
+            this.repositoryItemBorderLineWeight1.Name = "repositoryItemBorderLineWeight1";
+            // 
             // changeTableBorderColorItem1
             // 
             this.changeTableBorderColorItem1.Enabled = false;
             this.changeTableBorderColorItem1.Id = 384;
             this.changeTableBorderColorItem1.Name = "changeTableBorderColorItem1";
+            // 
+            // changeTableBordersItem1
+            // 
+            this.changeTableBordersItem1.Enabled = false;
+            this.changeTableBordersItem1.Id = 385;
+            this.changeTableBordersItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsBottomBorderItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsTopBorderItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsLeftBorderItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsRightBorderItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.resetTableCellsAllBordersItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsAllBordersItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsOutsideBorderItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsInsideBorderItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsInsideHorizontalBorderItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsInsideVerticalBorderItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleShowTableGridLinesItem1)});
+            this.changeTableBordersItem1.Name = "changeTableBordersItem1";
             // 
             // toggleTableCellsBottomBorderItem1
             // 
@@ -5621,24 +5125,6 @@
             this.toggleShowTableGridLinesItem1.Id = 396;
             this.toggleShowTableGridLinesItem1.Name = "toggleShowTableGridLinesItem1";
             // 
-            // changeTableBordersItem1
-            // 
-            this.changeTableBordersItem1.Enabled = false;
-            this.changeTableBordersItem1.Id = 385;
-            this.changeTableBordersItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsBottomBorderItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsTopBorderItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsLeftBorderItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsRightBorderItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.resetTableCellsAllBordersItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsAllBordersItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsOutsideBorderItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsInsideBorderItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsInsideHorizontalBorderItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableCellsInsideVerticalBorderItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleShowTableGridLinesItem1)});
-            this.changeTableBordersItem1.Name = "changeTableBordersItem1";
-            // 
             // changeTableCellsShadingItem1
             // 
             this.changeTableCellsShadingItem1.Enabled = false;
@@ -5651,22 +5137,6 @@
             this.showBorderShadingFormItem1.Id = 398;
             this.showBorderShadingFormItem1.Name = "showBorderShadingFormItem1";
             // 
-            // repositoryItemBorderLineStyle1
-            // 
-            this.repositoryItemBorderLineStyle1.AutoHeight = false;
-            this.repositoryItemBorderLineStyle1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemBorderLineStyle1.Control = null;
-            this.repositoryItemBorderLineStyle1.Name = "repositoryItemBorderLineStyle1";
-            // 
-            // repositoryItemBorderLineWeight1
-            // 
-            this.repositoryItemBorderLineWeight1.AutoHeight = false;
-            this.repositoryItemBorderLineWeight1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemBorderLineWeight1.Control = null;
-            this.repositoryItemBorderLineWeight1.Name = "repositoryItemBorderLineWeight1";
-            // 
             // tableTableBar1
             // 
             this.tableTableBar1.Control = null;
@@ -5678,6 +5148,17 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.toggleShowTableGridLinesItem1),
             new DevExpress.XtraBars.LinkPersistInfo(this.showTablePropertiesFormItem1)});
             this.tableTableBar1.Visible = false;
+            // 
+            // selectTableElementsItem1
+            // 
+            this.selectTableElementsItem1.Enabled = false;
+            this.selectTableElementsItem1.Id = 399;
+            this.selectTableElementsItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.selectTableCellItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.selectTableColumnItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.selectTableRowItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.selectTableItem1)});
+            this.selectTableElementsItem1.Name = "selectTableElementsItem1";
             // 
             // selectTableCellItem1
             // 
@@ -5703,17 +5184,6 @@
             this.selectTableItem1.Id = 403;
             this.selectTableItem1.Name = "selectTableItem1";
             // 
-            // selectTableElementsItem1
-            // 
-            this.selectTableElementsItem1.Enabled = false;
-            this.selectTableElementsItem1.Id = 399;
-            this.selectTableElementsItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.selectTableCellItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.selectTableColumnItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.selectTableRowItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.selectTableItem1)});
-            this.selectTableElementsItem1.Name = "selectTableElementsItem1";
-            // 
             // showTablePropertiesFormItem1
             // 
             this.showTablePropertiesFormItem1.Enabled = false;
@@ -5734,6 +5204,17 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.insertTableColumnToRightItem1),
             new DevExpress.XtraBars.LinkPersistInfo(this.showInsertTableCellsFormItem1)});
             this.tableRowsAndColumnsBar1.Visible = false;
+            // 
+            // deleteTableElementsItem1
+            // 
+            this.deleteTableElementsItem1.Enabled = false;
+            this.deleteTableElementsItem1.Id = 405;
+            this.deleteTableElementsItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.showDeleteTableCellsFormItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.deleteTableColumnsItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.deleteTableRowsItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.deleteTableItem1)});
+            this.deleteTableElementsItem1.Name = "deleteTableElementsItem1";
             // 
             // showDeleteTableCellsFormItem1
             // 
@@ -5758,17 +5239,6 @@
             this.deleteTableItem1.Enabled = false;
             this.deleteTableItem1.Id = 409;
             this.deleteTableItem1.Name = "deleteTableItem1";
-            // 
-            // deleteTableElementsItem1
-            // 
-            this.deleteTableElementsItem1.Enabled = false;
-            this.deleteTableElementsItem1.Id = 405;
-            this.deleteTableElementsItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.showDeleteTableCellsFormItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.deleteTableColumnsItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.deleteTableRowsItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.deleteTableItem1)});
-            this.deleteTableElementsItem1.Name = "deleteTableElementsItem1";
             // 
             // insertTableRowAboveItem1
             // 
@@ -5840,6 +5310,16 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableAutoFitItem1)});
             this.tableCellSizeBar1.Visible = false;
             // 
+            // toggleTableAutoFitItem1
+            // 
+            this.toggleTableAutoFitItem1.Enabled = false;
+            this.toggleTableAutoFitItem1.Id = 418;
+            this.toggleTableAutoFitItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableAutoFitContentsItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableAutoFitWindowItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableFixedColumnWidthItem1)});
+            this.toggleTableAutoFitItem1.Name = "toggleTableAutoFitItem1";
+            // 
             // toggleTableAutoFitContentsItem1
             // 
             this.toggleTableAutoFitContentsItem1.Enabled = false;
@@ -5857,16 +5337,6 @@
             this.toggleTableFixedColumnWidthItem1.Enabled = false;
             this.toggleTableFixedColumnWidthItem1.Id = 421;
             this.toggleTableFixedColumnWidthItem1.Name = "toggleTableFixedColumnWidthItem1";
-            // 
-            // toggleTableAutoFitItem1
-            // 
-            this.toggleTableAutoFitItem1.Enabled = false;
-            this.toggleTableAutoFitItem1.Id = 418;
-            this.toggleTableAutoFitItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableAutoFitContentsItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableAutoFitWindowItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.toggleTableFixedColumnWidthItem1)});
-            this.toggleTableAutoFitItem1.Name = "toggleTableAutoFitItem1";
             // 
             // tableAlignmentBar1
             // 
@@ -5999,6 +5469,20 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.floatingObjectSendBackwardSubItem1)});
             this.floatingPictureArrangeBar1.Visible = false;
             // 
+            // changeFloatingObjectTextWrapTypeItem1
+            // 
+            this.changeFloatingObjectTextWrapTypeItem1.Enabled = false;
+            this.changeFloatingObjectTextWrapTypeItem1.Id = 435;
+            this.changeFloatingObjectTextWrapTypeItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectInlineTextWrapTypeItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectSquareTextWrapTypeItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectTightTextWrapTypeItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectThroughTextWrapTypeItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectTopAndBottomTextWrapTypeItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectBehindTextWrapTypeItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectInFrontOfTextWrapTypeItem1)});
+            this.changeFloatingObjectTextWrapTypeItem1.Name = "changeFloatingObjectTextWrapTypeItem1";
+            // 
             // setFloatingObjectInlineTextWrapTypeItem1
             // 
             this.setFloatingObjectInlineTextWrapTypeItem1.Enabled = false;
@@ -6041,19 +5525,21 @@
             this.setFloatingObjectInFrontOfTextWrapTypeItem1.Id = 442;
             this.setFloatingObjectInFrontOfTextWrapTypeItem1.Name = "setFloatingObjectInFrontOfTextWrapTypeItem1";
             // 
-            // changeFloatingObjectTextWrapTypeItem1
+            // changeFloatingObjectAlignmentItem1
             // 
-            this.changeFloatingObjectTextWrapTypeItem1.Enabled = false;
-            this.changeFloatingObjectTextWrapTypeItem1.Id = 435;
-            this.changeFloatingObjectTextWrapTypeItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectInlineTextWrapTypeItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectSquareTextWrapTypeItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectTightTextWrapTypeItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectThroughTextWrapTypeItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectTopAndBottomTextWrapTypeItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectBehindTextWrapTypeItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectInFrontOfTextWrapTypeItem1)});
-            this.changeFloatingObjectTextWrapTypeItem1.Name = "changeFloatingObjectTextWrapTypeItem1";
+            this.changeFloatingObjectAlignmentItem1.Enabled = false;
+            this.changeFloatingObjectAlignmentItem1.Id = 443;
+            this.changeFloatingObjectAlignmentItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectTopLeftAlignmentItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectTopCenterAlignmentItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectTopRightAlignmentItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectMiddleLeftAlignmentItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectMiddleCenterAlignmentItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectMiddleRightAlignmentItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectBottomLeftAlignmentItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectBottomCenterAlignmentItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectBottomRightAlignmentItem1)});
+            this.changeFloatingObjectAlignmentItem1.Name = "changeFloatingObjectAlignmentItem1";
             // 
             // setFloatingObjectTopLeftAlignmentItem1
             // 
@@ -6109,21 +5595,15 @@
             this.setFloatingObjectBottomRightAlignmentItem1.Id = 452;
             this.setFloatingObjectBottomRightAlignmentItem1.Name = "setFloatingObjectBottomRightAlignmentItem1";
             // 
-            // changeFloatingObjectAlignmentItem1
+            // floatingObjectBringForwardSubItem1
             // 
-            this.changeFloatingObjectAlignmentItem1.Enabled = false;
-            this.changeFloatingObjectAlignmentItem1.Id = 443;
-            this.changeFloatingObjectAlignmentItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectTopLeftAlignmentItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectTopCenterAlignmentItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectTopRightAlignmentItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectMiddleLeftAlignmentItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectMiddleCenterAlignmentItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectMiddleRightAlignmentItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectBottomLeftAlignmentItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectBottomCenterAlignmentItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.setFloatingObjectBottomRightAlignmentItem1)});
-            this.changeFloatingObjectAlignmentItem1.Name = "changeFloatingObjectAlignmentItem1";
+            this.floatingObjectBringForwardSubItem1.Enabled = false;
+            this.floatingObjectBringForwardSubItem1.Id = 453;
+            this.floatingObjectBringForwardSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.floatingObjectBringForwardItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.floatingObjectBringToFrontItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.floatingObjectBringInFrontOfTextItem1)});
+            this.floatingObjectBringForwardSubItem1.Name = "floatingObjectBringForwardSubItem1";
             // 
             // floatingObjectBringForwardItem1
             // 
@@ -6143,15 +5623,15 @@
             this.floatingObjectBringInFrontOfTextItem1.Id = 456;
             this.floatingObjectBringInFrontOfTextItem1.Name = "floatingObjectBringInFrontOfTextItem1";
             // 
-            // floatingObjectBringForwardSubItem1
+            // floatingObjectSendBackwardSubItem1
             // 
-            this.floatingObjectBringForwardSubItem1.Enabled = false;
-            this.floatingObjectBringForwardSubItem1.Id = 453;
-            this.floatingObjectBringForwardSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.floatingObjectBringForwardItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.floatingObjectBringToFrontItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.floatingObjectBringInFrontOfTextItem1)});
-            this.floatingObjectBringForwardSubItem1.Name = "floatingObjectBringForwardSubItem1";
+            this.floatingObjectSendBackwardSubItem1.Enabled = false;
+            this.floatingObjectSendBackwardSubItem1.Id = 457;
+            this.floatingObjectSendBackwardSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.floatingObjectSendBackwardItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.floatingObjectSendToBackItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.floatingObjectSendBehindTextItem1)});
+            this.floatingObjectSendBackwardSubItem1.Name = "floatingObjectSendBackwardSubItem1";
             // 
             // floatingObjectSendBackwardItem1
             // 
@@ -6171,15 +5651,37 @@
             this.floatingObjectSendBehindTextItem1.Id = 460;
             this.floatingObjectSendBehindTextItem1.Name = "floatingObjectSendBehindTextItem1";
             // 
-            // floatingObjectSendBackwardSubItem1
+            // barDockControlTop
             // 
-            this.floatingObjectSendBackwardSubItem1.Enabled = false;
-            this.floatingObjectSendBackwardSubItem1.Id = 457;
-            this.floatingObjectSendBackwardSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.floatingObjectSendBackwardItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.floatingObjectSendToBackItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.floatingObjectSendBehindTextItem1)});
-            this.floatingObjectSendBackwardSubItem1.Name = "floatingObjectSendBackwardSubItem1";
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(1268, 89);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 611);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(1268, 0);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 89);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 522);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(1268, 89);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 522);
             // 
             // dashboardPopupMenu1
             // 
@@ -6213,6 +5715,504 @@
             this.dashboardPopupMenu1.Manager = this.barManager1;
             this.dashboardPopupMenu1.Name = "dashboardPopupMenu1";
             // 
+            // Uc__designDashboardlayoutControl1ConvertedLayout
+            // 
+            this.Uc__designDashboardlayoutControl1ConvertedLayout.Controls.Add(this.dashboardDesigner1);
+            this.Uc__designDashboardlayoutControl1ConvertedLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Uc__designDashboardlayoutControl1ConvertedLayout.Location = new System.Drawing.Point(0, 89);
+            this.Uc__designDashboardlayoutControl1ConvertedLayout.Name = "Uc__designDashboardlayoutControl1ConvertedLayout";
+            this.Uc__designDashboardlayoutControl1ConvertedLayout.Root = this.layoutControlGroup1;
+            this.Uc__designDashboardlayoutControl1ConvertedLayout.Size = new System.Drawing.Size(1268, 522);
+            this.Uc__designDashboardlayoutControl1ConvertedLayout.TabIndex = 1;
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.DashboardDesigneritem});
+            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1268, 522);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // DashboardDesigneritem
+            // 
+            this.DashboardDesigneritem.Control = this.dashboardDesigner1;
+            this.DashboardDesigneritem.Location = new System.Drawing.Point(0, 0);
+            this.DashboardDesigneritem.Name = "DashboardDesigneritem";
+            this.DashboardDesigneritem.Size = new System.Drawing.Size(1248, 502);
+            this.DashboardDesigneritem.TextSize = new System.Drawing.Size(0, 0);
+            this.DashboardDesigneritem.TextVisible = false;
+            // 
+            // dashboardBarController1
+            // 
+            this.dashboardBarController1.BarItems.Add(this.fileNewBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.fileOpenBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.fileSaveBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.fileSaveAsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.undoBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.redoBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertPivotBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertGridBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertChartBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertScatterChartBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertPiesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertGaugesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertCardsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertTreemapBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertChoroplethMapBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertGeoPointMapBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertBubbleMapBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertPieMapBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertGeoPointMapBarSubItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertRangeFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertComboBoxBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertListBoxBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertTreeViewBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertDateFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertFilterElementSubItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertImageBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertBoundImageBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertImagesBarSubItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertTextBoxBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertGroupBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertTabContainerBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.duplicateItemBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.deleteItemBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToPivotBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToGridBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToChartBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToScatterChartBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToPieBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToGaugeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToCardBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToTreemapBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToChoroplethMapBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToGeoPointMapBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToBubbleMapBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToPieMapBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertGeoPointMapBaseBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToRangeFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToComboBoxBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToListBoxBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToTreeViewBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToDateFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToFilterElementsBaseBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToBoundImageBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToTextBoxBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertDashboardItemTypeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.removeDataItemsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.transposeItemBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editRulesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.deleteGroupBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.deleteTabContainerBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.deleteTabPageBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dashboardTitleBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.setCurrencyCultureBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dashboardColorSchemeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dashboardParametersBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.layoutOptionsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dashboardAutomaticUpdatesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.updateDataBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.newDataSourceBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editSqlConnectionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editMongoDBConnectionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editXpoConnectionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editOlapConnectionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editObjectDataSourceBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editExcelDataSourceBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editEFDataSourceBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editExtractOptionsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.renameDataSourceBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.deleteDataSourceBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.serverModeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.upateDataExtractBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.addCalculatedFieldBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editJsonDataSourceBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.addQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.renameQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editQueryFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.deleteQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editExtractSourceConnectionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editExtractSourceBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editExtractSourceQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.addFederationQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editFederationQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.renameFederationQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.deleteFederationQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.manageMongoDBQueriesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.renameMongoDBQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.deleteMongoDBQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editDataSourceFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.clearDataSourceFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dashboardSkinsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dashboardSkinDropDownButtonItem1);
+            this.dashboardBarController1.BarItems.Add(this.editFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.clearFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editVisibleDataFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.ignoreMasterFiltersBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.showItemCaptionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editItemNamesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotAutoExpandColumnBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotAutoExpandRowBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotInitialStateBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotShowColumnTotalsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotShowRowTotalsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotShowTotalsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotShowColumnGrandTotalsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotShowRowGrandTotalsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotShowGrandTotalsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotLayoutTypeCompactBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotLayoutTypeTabularBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotLayoutTypeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotRowTotalsPositionTopBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotRowTotalsPositionBottomBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotRowTotalsPositionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotColumnTotalsPositionNearBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotColumnTotalsPositionFarBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotColumnTotalsPositionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotValuesPositionColumnsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotValuesPositionRowsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotValuesPositionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotResetLayoutOptionsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.masterFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.multipleValuesMasterFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.drillDownBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.crossDataSourceFilteringBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gridHorizontalLinesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gridVerticalLinesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gridBandedRowsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gridMergeCellsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gridColumnHeadersBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gridWordWrapBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gridAutoFitToContentsColumnWidthModeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gridAutoFitToGridColumnWidthModeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.manualGridColumnWidthModeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.chartTargetDimensionsArgumentsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.chartTargetDimensionsSeriesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.chartTargetDimensionsPointsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.chartRotateBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.chartXAxisSettingsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.chartYAxisSettingsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.chartShowLegendBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.galleryChartLegendPositionItem1);
+            this.dashboardBarController1.BarItems.Add(this.galleryChartSeriesTypeItem1);
+            this.dashboardBarController1.BarItems.Add(this.useGlobalColorsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.useLocalColorsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editActualColorsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.scatterChartRotateBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.scatterChartXAxisSettingsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.scatterChartYAxisSettingsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.scatterChartPointLabelOptionsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.scatterChartShowLegendBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.galleryScatterChartLegendPositionItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieTargetDimensionsArgumentsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieTargetDimensionsSeriesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieTargetDimensionsPointsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.contentAutoArrangeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.contentArrangeInColumnsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.contentArrangeInRowsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.contentArrangementCountBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsNoneBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelArgumentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsArgumentAndValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsPercentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsValueAndPercentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsArgumentAndPercentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsArgumentValueAndPercentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsDataLabelsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelPositionOutsideBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelPositionInsideBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelPositionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsNoneBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsArgumentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsArgumentAndValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsPercentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsValueAndPercentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsArgumentAndPercentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieLabelsTooltipsArgumentValueAndPercentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieTooltipsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieStylePieBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieStyleDonutBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieShowCaptionsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gaugeStyleFullCircularBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gaugeStyleHalfCircularBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gaugeStyleLeftQuarterCircularBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gaugeStyleRightQuarterCircularBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gaugeStyleThreeForthCircularBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gaugeStyleLinearHorizontalBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gaugeStyleLinearVerticalBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.gaugeShowCaptionsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.galleryRangeFilterSeriesTypeItem1);
+            this.dashboardBarController1.BarItems.Add(this.rangeFilterEditDateTimePeriodsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapLoadBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapImportBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapWorldCountriesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapEuropeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapAsiaBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapNorthAmericaBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapSouthAmericaBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapAfricaBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapUSABarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapCanadaBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapDefaultShapefileBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapLockNavigationBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapFullExtentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.choroplethMapShapeLabelsAttributeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapShowLegendBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.galleryMapLegendPositionItem1);
+            this.dashboardBarController1.BarItems.Add(this.geoPointMapClusterizationBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.mapShapeTitleAttributeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.weightedLegendNoneBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.weightedLegendLinearBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.weightedLegendNestedBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.changeWeightedLegendTypeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.galleryWeightedLegendPositionItem1);
+            this.dashboardBarController1.BarItems.Add(this.pieMapIsWeightedBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.comboBoxStandardTypeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.comboBoxCheckedTypeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.listBoxCheckedTypeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.listBoxRadioTypeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.filterElementShowAllValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.filterElementEnableSearchBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treeViewAutoExpandBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterExactTypeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterFromTypeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterToTypeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterRangeTypeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterTypeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterAutoHeightArrangementModeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterHorizontalArrangementModeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterVerticalArrangementModeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterArrangementModeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterFarDatePickerLocationBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterNearDatePickerLocationBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterHiddenDatePickerLocationBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterDatePickerLocationBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dateFilterEditDateTimePeriodsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageSizeModeClipBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageSizeModeStretchBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageSizeModeSqueezeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageSizeModeZoomBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageAlignmentTopLeftBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageAlignmentCenterLeftBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageAlignmentBottomLeftBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageAlignmentTopCenterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageAlignmentCenterCenterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageAlignmentBottomCenterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageAlignmentTopRightBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageAlignmentCenterRightBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageAlignmentBottomRightBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.textBoxEditTextBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.textBoxInsertFieldBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapSliceAndDiceLayoutAlgorithmBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapSquarifiedLayoutAlgorithmBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapStripedLayoutAlgorithmBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapBottomLeftToTopRightLayoutDirectionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapBottomRightToTopLeftLayoutDirectionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapTopLeftToBottomRightLayoutDirectionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapTopRightToBottomLeftLayoutDirectionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapLayoutDirectionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapTileLabelsNoneBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapTileLabelsArgumentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapTileLabelsValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapTileLabelsArgumentAndValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapTileLabelsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapTileTooltipsNoneBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapTileTooltipsArgumentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapTileTooltipsValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapTileTooltipsArgumentAndValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapTileTooltipsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapGroupLabelsNoneBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapGroupLabelsArgumentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapGroupLabelsValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapGroupLabelsArgumentAndValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapGroupLabelsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapGroupTooltipsNoneBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapGroupTooltipsArgumentBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapGroupTooltipsValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapGroupTooltipsArgumentAndValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.treemapGroupTooltipsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageLoadBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.imageImportBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.groupMasterFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.groupIgnoreMasterFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.showGroupCaptionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editGroupNamesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.tabPageMasterFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.tabPageIgnoreMasterFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.showTabPageCaptionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editTabPageNamesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.displayItemAsTabPageBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.reorderTabsBarItem1);
+            this.dashboardBarController1.Control = this.dashboardDesigner1;
+            // 
+            // textBoxEditorBarController1
+            // 
+            this.textBoxEditorBarController1.BarItems.Add(this.undoItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.redoItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.fileOpenItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.pasteItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.cutItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.copyItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.pasteSpecialItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeFontNameItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeFontSizeItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.fontSizeIncreaseItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.fontSizeDecreaseItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontBoldItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontItalicItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontUnderlineItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontDoubleUnderlineItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontStrikeoutItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontDoubleStrikeoutItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontSuperscriptItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleFontSubscriptItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeFontColorItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeFontHighlightColorItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.makeTextUpperCaseItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.makeTextLowerCaseItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.capitalizeEachWordCaseItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTextCaseItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeTextCaseItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.clearFormattingItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.showFontFormItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleBulletedListItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleNumberingListItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleMultiLevelListItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.decreaseIndentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.increaseIndentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.rtlToggleBulletedListItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.rtlToggleNumberingListItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.rtlToggleMultiLevelListItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.rtlDecreaseIndentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.rtlIncreaseIndentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphLeftToRightItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphRightToLeftItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentLeftItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentCenterItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentRightItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentJustifyItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentArabicJustifyItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentJustifyLowItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentJustifyMediumItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentJustifyHighItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentArabicJustifyGroupItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentDistributeItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleParagraphAlignmentThaiDistributeItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleShowWhitespaceItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setSingleParagraphSpacingItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setSesquialteralParagraphSpacingItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setDoubleParagraphSpacingItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.showLineSpacingFormItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.addSpacingBeforeParagraphItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.removeSpacingBeforeParagraphItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.addSpacingAfterParagraphItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.removeSpacingAfterParagraphItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeParagraphLineSpacingItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeParagraphBackColorItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.showParagraphFormItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeStyleItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.showEditStyleFormItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.findItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.replaceItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.insertTableItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.insertFloatingPictureItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.insertBookmarkItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.insertHyperlinkItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.insertSymbolItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changePageColorItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleFirstRowItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleLastRowItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleBandedRowsItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleFirstColumnItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleLastColumnItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleBandedColumnsItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.galleryChangeTableStyleItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeTableBorderLineStyleItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeTableBorderLineWeightItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeTableBorderColorItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsBottomBorderItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsTopBorderItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsLeftBorderItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsRightBorderItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.resetTableCellsAllBordersItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsAllBordersItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsOutsideBorderItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsInsideBorderItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsInsideHorizontalBorderItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsInsideVerticalBorderItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleShowTableGridLinesItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeTableBordersItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeTableCellsShadingItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.showBorderShadingFormItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.selectTableCellItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.selectTableColumnItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.selectTableRowItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.selectTableItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.selectTableElementsItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.showTablePropertiesFormItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.showDeleteTableCellsFormItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.deleteTableColumnsItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.deleteTableRowsItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.deleteTableItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.deleteTableElementsItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.insertTableRowAboveItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.insertTableRowBelowItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.insertTableColumnToLeftItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.insertTableColumnToRightItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.showInsertTableCellsFormItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.mergeTableCellsItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.showSplitTableCellsForm1);
+            this.textBoxEditorBarController1.BarItems.Add(this.splitTableItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableAutoFitContentsItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableAutoFitWindowItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableFixedColumnWidthItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableAutoFitItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsTopLeftAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsMiddleLeftAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsBottomLeftAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsTopCenterAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsMiddleCenterAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsBottomCenterAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsTopRightAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsMiddleRightAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.toggleTableCellsBottomRightAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.showTableOptionsFormItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeFloatingObjectFillColorItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeFloatingObjectOutlineColorItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeFloatingObjectOutlineWeightItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectInlineTextWrapTypeItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectSquareTextWrapTypeItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectTightTextWrapTypeItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectThroughTextWrapTypeItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectTopAndBottomTextWrapTypeItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectBehindTextWrapTypeItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectInFrontOfTextWrapTypeItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeFloatingObjectTextWrapTypeItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectTopLeftAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectTopCenterAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectTopRightAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectMiddleLeftAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectMiddleCenterAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectMiddleRightAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectBottomLeftAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectBottomCenterAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.setFloatingObjectBottomRightAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.changeFloatingObjectAlignmentItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectBringForwardItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectBringToFrontItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectBringInFrontOfTextItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectBringForwardSubItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectSendBackwardItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectSendToBackItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectSendBehindTextItem1);
+            this.textBoxEditorBarController1.BarItems.Add(this.floatingObjectSendBackwardSubItem1);
+            this.textBoxEditorBarController1.Designer = this.dashboardDesigner1;
+            // 
             // Uc__designDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -6223,17 +6223,11 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "Uc__designDashboard";
-            this.Size = new System.Drawing.Size(1242, 611);
+            this.Size = new System.Drawing.Size(1268, 611);
             ((System.ComponentModel.ISupportInitialize)(this.dashboardDesigner1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Uc__designDashboardlayoutControl1ConvertedLayout)).EndInit();
-            this.Uc__designDashboardlayoutControl1ConvertedLayout.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DashboardDesigneritem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardBarAndDockingController1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dashboardBarController1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxEditorBarController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichEditFontSizeEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichEditStyleEdit1)).EndInit();
@@ -6241,6 +6235,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBorderLineWeight1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFloatingObjectOutlineWeight1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPopupMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Uc__designDashboardlayoutControl1ConvertedLayout)).EndInit();
+            this.Uc__designDashboardlayoutControl1ConvertedLayout.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DashboardDesigneritem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardBarController1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textBoxEditorBarController1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
