@@ -1,6 +1,7 @@
 ﻿
 using DevExpress.Utils;
 using DevExpress.XtraBars.Alerter;
+using DevExpress.XtraBars.FluentDesignSystem;
 using DevExpress.XtraBars.Navigation;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
@@ -59,30 +60,10 @@ namespace DXApplication
                 SplashScreenManager.CloseForm();
           
         }
-       
-        private void frm_Dashboard_Load(object sender, EventArgs e)
+       private void loadMenuItemForSQL()
         {
-            //db = new db_final_winformEntities();
 
-            //var sql = db.Users.Join(db.FunctionRoles,
-            //    usr => usr,
-            //    fr => fr,
-            //    (usr, fr) => usr.RoleId.Equals(fr.RoleId)
-
-            // );
-
-
-            //loading Splash Screen
-            for (int i = 0; i < 50; i++)
-            {
-                Thread.Sleep(100);
-            }
-            try
-            {
-                loadDesignDashboardViewer();
-
-
-                using (db_final_winformEntities db=new db_final_winformEntities())
+            using (db_final_winformEntities db = new db_final_winformEntities())
             {
                 var sql = from usr in db.Users
                           join fr in db.FunctionRoles on usr.RoleId equals fr.RoleId
@@ -90,33 +71,95 @@ namespace DXApplication
                           where usr.UserName == Cls_Main.UserInfo.UserName
                           select new
                           {
-                              FunctionName = f.FormName,
+                              FunctionName = f.FunctionName,
                               FormName = f.FormName,
                           };
                 accordionControl1.BeginUpdate();
-                
-               
 
                 foreach (var obj in sql.ToList())
                 {
                     AccordionControlElement item = new AccordionControlElement();
-                    
+
                     // 
                     // Child Item 
                     // 
-                    item.Name   ="item"+obj.FormName;
-                    item.Style  =ElementStyle.Item;
-                    item.Tag    =obj.FormName;
+                    item.Name = "item" + obj.FormName;
+                    item.Style = ElementStyle.Item;
+                    item.Tag = obj.FormName;
                     item.Click += Item_Click;
                     item.Text = obj.FunctionName;
                     mnCollapseManagement.Elements.AddRange(new AccordionControlElement[]
                   {item});
+                    MessageBox.Show(obj.ToString()+" | "+obj.FunctionName + " | " + obj.FormName);
                 }
 
-                accordionControl1.EndUpdate();
-            }    
+                AccordionControlElement acRootAccount = new AccordionControlElement();
+                AccordionControlElement acViewAccount = new AccordionControlElement();
+                AccordionControlElement acLogout= new AccordionControlElement();
+                // 
+                // Root Group 
+                // 
 
-        
+                acRootAccount.Expanded = true;
+                acRootAccount.ImageOptions.ImageUri.Uri = "Home;Office2013";
+                acRootAccount.Name = "acRootAccount";
+                acRootAccount.Text = "Tài Khoản";
+
+                // 
+                // Child Item 
+                // 
+                acViewAccount.Name = "acViewAccount";
+                acViewAccount.Style = ElementStyle.Item;
+                acViewAccount.Tag = "idAcViewAccount";
+                acViewAccount.Text = "Thông tin tài khoản";
+                acLogout.ImageOptions.ImageUri.Uri = "Customization;Office2013";
+                // 
+                // Child Item
+                // 
+                acLogout.Name = "acLogout";
+                acLogout.Style = ElementStyle.Item;
+                acLogout.Tag = "idAcLogout";
+                acLogout.Text = "Đăng Xuất";
+                acLogout.ImageOptions.ImageUri.Uri = "Customization;Office2013";
+                acLogout.Click += AcLogout_Click;
+                // 
+                // Root Item 'Settings' with ContentContainer
+                // 
+
+                //add item to group
+                acRootAccount.Elements.AddRange(new AccordionControlElement[] 
+                {
+                    acViewAccount,
+                    acLogout});
+                //add group to control
+                accordionControl1.Elements.Add(acRootAccount);
+
+                accordionControl1.EndUpdate();
+                
+            }
+        }
+
+        private void AcLogout_Click(object sender, EventArgs e)
+        {
+            Cls_Main.IsLogout = true;
+            Frm_Login.Instance.Show();
+            this.Hide();
+        }
+
+        private void frm_Dashboard_Load(object sender, EventArgs e)
+        {
+            
+            //loading Splash Screen
+            for (int i = 0; i < 50; i++)
+            {
+                Thread.Sleep(10);
+            }
+            try
+            {
+             
+                loadMenuItemForSQL();
+                loadDesignDashboardViewer();
+             
             }
             catch (Exception ex)
             {
@@ -130,7 +173,46 @@ namespace DXApplication
         {
             try
             {
-                MessageBox.Show("ok! +");
+                AccordionControlElement item = sender as AccordionControlElement;
+                if(item != null)
+                {
+                    Type type = Type.GetType(item.Tag.ToString());
+                   
+                    string str1=type.ToString().ToUpper();
+                    string str2 = "UC_";
+                    bool checkExists = str1.Contains(str2);
+                    if(checkExists)
+                    {
+                        //MessageBox.Show("DAy la usercontrol");
+                        var uc_ = (XtraUserControl)Activator.CreateInstance(type);
+                        if (uc_ != null)
+                        {
+                            SplashScreenManager.ShowForm(this, typeof(Global_WaitForm), true, true, false);
+                            SplashScreenManager.Default.SetWaitFormCaption("Loading ...");
+                            for (int i = 0; i < 50; i++)
+                            {
+                                Thread.Sleep(10);
+                            }
+                            mainContainer.Controls.Clear();
+                            uc_.Dock = DockStyle.Fill;
+                            mainContainer.Controls.Add(uc_);
+                            uc_.BringToFront();
+                            SplashScreenManager.CloseForm();
+
+
+                        }
+                    }
+                    else
+                    {
+                        //  MessageBox.Show("DAy la Form");
+                        var xtraform = (XtraForm)Activator.CreateInstance(type);
+                        if(xtraform!=null)
+                        {
+                            xtraform.ShowDialog();
+                        }    
+                    }
+                
+                }
             }
             catch (Exception ex)
             {
@@ -275,9 +357,11 @@ namespace DXApplication
 
         private void accordionControlElement1_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             Frm_Dashboard frm_Dashboard = new Frm_Dashboard();
             frm_Dashboard.ShowDialog();
+            
+
         }
 
         private void mnExit_Click(object sender, EventArgs e)

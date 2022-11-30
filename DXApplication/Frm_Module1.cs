@@ -17,5 +17,10 @@ namespace DXApplication
         {
             InitializeComponent();
         }
+
+        private void Frm_Module1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

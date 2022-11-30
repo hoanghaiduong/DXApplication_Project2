@@ -69,7 +69,7 @@ namespace DXApplication.Global
         {
             try
             {
-                Icp.Unadvise(m_cookie);
+               // Icp.Unadvise(m_cookie);
             }
             catch (Exception ex)
             {

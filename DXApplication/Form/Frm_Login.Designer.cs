@@ -48,6 +48,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.lblPassError = new DevExpress.XtraEditors.LabelControl();
+            this.lblMailOrUsernameErr = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
@@ -184,6 +186,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.lblPassError);
             this.groupBox1.Controls.Add(this.txbPassword);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(10, 97);
@@ -198,14 +201,22 @@
             this.txbPassword.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txbPassword.Location = new System.Drawing.Point(3, 18);
             this.txbPassword.Name = "txbPassword";
+            this.txbPassword.Properties.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.txbPassword.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txbPassword.Properties.ContextImageOptions.Alignment = DevExpress.XtraEditors.ContextImageAlignment.Far;
+            this.txbPassword.Properties.ContextImageOptions.AllowChangeAnimation = DevExpress.Utils.DefaultBoolean.True;
+            this.txbPassword.Properties.ContextImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.txbPassword.Properties.ContextImageOptions.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.Full;
             this.txbPassword.Properties.Padding = new System.Windows.Forms.Padding(10);
+            this.txbPassword.Properties.PasswordChar = '*';
             this.txbPassword.Size = new System.Drawing.Size(456, 54);
             this.txbPassword.TabIndex = 0;
+            this.txbPassword.EditValueChanged += new System.EventHandler(this.txbPassword_EditValueChanged);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.lblMailOrUsernameErr);
             this.groupBox2.Controls.Add(this.txbUsername);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -237,6 +248,7 @@
             this.switchToggleRemember.Properties.OnText = "Nhớ Mật Khẩu";
             this.switchToggleRemember.Size = new System.Drawing.Size(165, 29);
             this.switchToggleRemember.TabIndex = 10;
+            this.switchToggleRemember.Toggled += new System.EventHandler(this.switchToggleRemember_Toggled);
             // 
             // label1
             // 
@@ -276,6 +288,21 @@
             this.imageSlider1.TabIndex = 0;
             this.imageSlider1.Text = "imageSlider1";
             // 
+            // lblPassError
+            // 
+            this.lblPassError.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblPassError.Location = new System.Drawing.Point(3, 71);
+            this.lblPassError.Name = "lblPassError";
+            this.lblPassError.Size = new System.Drawing.Size(0, 16);
+            this.lblPassError.TabIndex = 1;
+            // 
+            // lblMailOrUsernameErr
+            // 
+            this.lblMailOrUsernameErr.Location = new System.Drawing.Point(7, 64);
+            this.lblMailOrUsernameErr.Name = "lblMailOrUsernameErr";
+            this.lblMailOrUsernameErr.Size = new System.Drawing.Size(0, 16);
+            this.lblMailOrUsernameErr.TabIndex = 1;
+            // 
             // Frm_Login
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -301,8 +328,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txbPassword.Properties)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txbUsername.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.switchToggleRemember.Properties)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -331,5 +360,7 @@
         private DevExpress.XtraEditors.TextEdit txbPassword;
         private System.Windows.Forms.GroupBox groupBox2;
         private DevExpress.XtraEditors.TextEdit txbUsername;
+        private DevExpress.XtraEditors.LabelControl lblPassError;
+        private DevExpress.XtraEditors.LabelControl lblMailOrUsernameErr;
     }
 }
