@@ -67,7 +67,15 @@ namespace DXApplication.Global
         //hàm hủy đăng kí kết nối mạng
         public void UnAdviseforNetworklistManager()
         {
-       //     Icp.Unadvise(m_cookie);
+            try
+            {
+                Icp.Unadvise(m_cookie);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
         }
     }
 }

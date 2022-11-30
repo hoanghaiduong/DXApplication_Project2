@@ -70,38 +70,19 @@ namespace DXApplication
             //    (usr, fr) => usr.RoleId.Equals(fr.RoleId)
 
             // );
-            accordionControl1.BeginUpdate();
-         
-            AccordionControlElement acItemActivity = new AccordionControlElement();
-            AccordionControlElement acItemNews = new AccordionControlElement();
-        
-            // 
-            // Root Group 'Home'
-            // 
-            mnCollapseManagement.Elements.AddRange(new AccordionControlElement[] {
-            acItemActivity,
-            acItemNews});
-            // 
-            // Child Item 'Activity'
-            // 
-            acItemActivity.Name = "acItemActivity";
-            acItemActivity.Style = ElementStyle.Item;
-            acItemActivity.Tag = "idActivity";
-            acItemActivity.Text = "Activity";
-            // 
-            // Child Item 'News'
-            // 
-            acItemNews.Name = "acItemNews";
-            acItemNews.Style = ElementStyle.Item;
-            acItemNews.Tag = "idNews";
-            acItemNews.Text = "News";
-
-           
-
-            accordionControl1.EndUpdate();
 
 
-            using (db_final_winformEntities db=new db_final_winformEntities())
+            //loading Splash Screen
+            for (int i = 0; i < 50; i++)
+            {
+                Thread.Sleep(100);
+            }
+            try
+            {
+                loadDesignDashboardViewer();
+
+
+                using (db_final_winformEntities db=new db_final_winformEntities())
             {
                 var sql = from usr in db.Users
                           join fr in db.FunctionRoles on usr.RoleId equals fr.RoleId
@@ -112,22 +93,30 @@ namespace DXApplication
                               FunctionName = f.FormName,
                               FormName = f.FormName,
                           };
+                accordionControl1.BeginUpdate();
+                
+               
+
                 foreach (var obj in sql.ToList())
                 {
-                   //
+                    AccordionControlElement item = new AccordionControlElement();
+                    
+                    // 
+                    // Child Item 
+                    // 
+                    item.Name   ="item"+obj.FormName;
+                    item.Style  =ElementStyle.Item;
+                    item.Tag    =obj.FormName;
+                    item.Click += Item_Click;
+                    item.Text = obj.FunctionName;
+                    mnCollapseManagement.Elements.AddRange(new AccordionControlElement[]
+                  {item});
                 }
+
+                accordionControl1.EndUpdate();
             }    
 
-            //loading Splash Screen
-            for (int i = 0; i < 50; i++)
-            {
-                Thread.Sleep(100);
-            }
-            
-            try
-            {
-              loadDesignDashboardViewer();
-
+        
             }
             catch (Exception ex)
             {
@@ -135,6 +124,19 @@ namespace DXApplication
                 MessageBox.Show("Lỗi nè", ex.Message);
             }
 
+        }
+
+        private void Item_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MessageBox.Show("ok! +");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void mainContainer_Click(object sender, EventArgs e)
@@ -201,6 +203,7 @@ namespace DXApplication
         private void Frm_Dashboard_FormClosing(object sender, FormClosingEventArgs e)
         {
             helper.UnAdviseforNetworklistManager();
+            Application.Exit();
         }
 
         private void mnBU_Click(object sender, EventArgs e)
@@ -268,6 +271,18 @@ namespace DXApplication
             UC_AuthenticationManager.BringToFront();
             SplashScreenManager.CloseForm();
 
+        }
+
+        private void accordionControlElement1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            Frm_Dashboard frm_Dashboard = new Frm_Dashboard();
+            frm_Dashboard.ShowDialog();
+        }
+
+        private void mnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -44,6 +44,7 @@
             this.mnQLFunctions = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mnQLFunctionRole = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.mnRefresh = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mnBU = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mnRes = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mnExit = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -179,12 +180,21 @@
             // accordionControlElement5
             // 
             this.accordionControlElement5.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.mnRefresh,
             this.mnBU,
             this.mnRes,
             this.mnExit});
             this.accordionControlElement5.Expanded = true;
             this.accordionControlElement5.Name = "accordionControlElement5";
             this.accordionControlElement5.Text = "Hệ Thống";
+            // 
+            // mnRefresh
+            // 
+            this.mnRefresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mnRefresh.ImageOptions.Image")));
+            this.mnRefresh.Name = "mnRefresh";
+            this.mnRefresh.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.mnRefresh.Text = "Làm Mới";
+            this.mnRefresh.Click += new System.EventHandler(this.accordionControlElement1_Click_1);
             // 
             // mnBU
             // 
@@ -207,6 +217,7 @@
             this.mnExit.Name = "mnExit";
             this.mnExit.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.mnExit.Text = "Exit";
+            this.mnExit.Click += new System.EventHandler(this.mnExit_Click);
             // 
             // mngrSetting
             // 
@@ -294,6 +305,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement mnQLRole;
         private DevExpress.XtraBars.Navigation.AccordionControlElement mnQLFunctions;
         private DevExpress.XtraBars.Navigation.AccordionControlElement mnQLFunctionRole;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement mnRefresh;
     }
 }
 

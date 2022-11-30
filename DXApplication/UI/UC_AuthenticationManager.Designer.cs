@@ -42,11 +42,11 @@
             this.repositoryItemUnderlineStyle1 = new DevExpress.XtraRichEdit.Design.RepositoryItemUnderlineStyle();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.cbRole = new System.Windows.Forms.ComboBox();
+            this.cblookupRole = new DevExpress.XtraEditors.LookUpEdit();
             this.roleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.dtgvFunctionRole = new System.Windows.Forms.DataGridView();
+            this.functionIdDataGridViewComboBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.functionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.functionRoleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
@@ -59,13 +59,12 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.functionIdDataGridViewComboBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemUnderlineStyle1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cblookupRole.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
@@ -81,8 +80,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -192,8 +190,7 @@
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.comboBox2);
-            this.layoutControl1.Controls.Add(this.cbRole);
+            this.layoutControl1.Controls.Add(this.cblookupRole);
             this.layoutControl1.Controls.Add(this.panelControl3);
             this.layoutControl1.Controls.Add(this.panelControl2);
             this.layoutControl1.Controls.Add(this.panelControl1);
@@ -212,25 +209,20 @@
             this.layoutControl1.TabIndex = 4;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // comboBox2
+            // cblookupRole
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(142, 469);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(909, 24);
-            this.comboBox2.TabIndex = 10;
-            // 
-            // cbRole
-            // 
-            this.cbRole.DataSource = this.roleBindingSource;
-            this.cbRole.DisplayMember = "RoleName";
-            this.cbRole.FormattingEnabled = true;
-            this.cbRole.Location = new System.Drawing.Point(142, 16);
-            this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(909, 24);
-            this.cbRole.TabIndex = 9;
-            this.cbRole.ValueMember = "RoleId";
-            this.cbRole.SelectionChangeCommitted += new System.EventHandler(this.cbRole_SelectionChangeCommitted);
+            this.cblookupRole.Location = new System.Drawing.Point(125, 16);
+            this.cblookupRole.MenuManager = this.ribbonControl;
+            this.cblookupRole.Name = "cblookupRole";
+            this.cblookupRole.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cblookupRole.Properties.DataSource = this.roleBindingSource;
+            this.cblookupRole.Properties.DisplayMember = "RoleName";
+            this.cblookupRole.Properties.ValueMember = "RoleId";
+            this.cblookupRole.Size = new System.Drawing.Size(926, 34);
+            this.cblookupRole.StyleController = this.layoutControl1;
+            this.cblookupRole.TabIndex = 10;
+            this.cblookupRole.EditValueChanged += new System.EventHandler(this.lookUpEdit1_EditValueChanged);
             // 
             // roleBindingSource
             // 
@@ -239,9 +231,9 @@
             // panelControl3
             // 
             this.panelControl3.Controls.Add(this.dtgvFunctionRole);
-            this.panelControl3.Location = new System.Drawing.Point(609, 48);
+            this.panelControl3.Location = new System.Drawing.Point(609, 56);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(442, 415);
+            this.panelControl3.Size = new System.Drawing.Size(442, 439);
             this.panelControl3.TabIndex = 8;
             // 
             // dtgvFunctionRole
@@ -259,8 +251,21 @@
             this.dtgvFunctionRole.RowHeadersWidth = 51;
             this.dtgvFunctionRole.RowTemplate.Height = 24;
             this.dtgvFunctionRole.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvFunctionRole.Size = new System.Drawing.Size(438, 411);
+            this.dtgvFunctionRole.Size = new System.Drawing.Size(438, 435);
             this.dtgvFunctionRole.TabIndex = 0;
+            // 
+            // functionIdDataGridViewComboBoxColumn
+            // 
+            this.functionIdDataGridViewComboBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.functionIdDataGridViewComboBoxColumn.DataPropertyName = "FunctionId";
+            this.functionIdDataGridViewComboBoxColumn.DataSource = this.functionBindingSource;
+            this.functionIdDataGridViewComboBoxColumn.DisplayMember = "FunctionName";
+            this.functionIdDataGridViewComboBoxColumn.HeaderText = "Tên Chức Năng";
+            this.functionIdDataGridViewComboBoxColumn.MinimumWidth = 6;
+            this.functionIdDataGridViewComboBoxColumn.Name = "functionIdDataGridViewComboBoxColumn";
+            this.functionIdDataGridViewComboBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.functionIdDataGridViewComboBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.functionIdDataGridViewComboBoxColumn.ValueMember = "FunctionId";
             // 
             // functionBindingSource
             // 
@@ -275,9 +280,9 @@
             this.panelControl2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelControl2.Controls.Add(this.btnAdd);
             this.panelControl2.Controls.Add(this.btnRemove);
-            this.panelControl2.Location = new System.Drawing.Point(447, 48);
+            this.panelControl2.Location = new System.Drawing.Point(447, 56);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(156, 415);
+            this.panelControl2.Size = new System.Drawing.Size(156, 439);
             this.panelControl2.TabIndex = 7;
             // 
             // btnAdd
@@ -285,7 +290,7 @@
             this.btnAdd.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnAdd.Location = new System.Drawing.Point(84, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(70, 411);
+            this.btnAdd.Size = new System.Drawing.Size(70, 435);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = ">>";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -295,7 +300,7 @@
             this.btnRemove.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnRemove.Location = new System.Drawing.Point(2, 2);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(69, 411);
+            this.btnRemove.Size = new System.Drawing.Size(69, 435);
             this.btnRemove.TabIndex = 0;
             this.btnRemove.Text = "<<";
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
@@ -303,9 +308,9 @@
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.dtgvFunction);
-            this.panelControl1.Location = new System.Drawing.Point(16, 48);
+            this.panelControl1.Location = new System.Drawing.Point(16, 56);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(425, 415);
+            this.panelControl1.Size = new System.Drawing.Size(425, 439);
             this.panelControl1.TabIndex = 6;
             // 
             // dtgvFunction
@@ -324,7 +329,7 @@
             this.dtgvFunction.RowHeadersWidth = 51;
             this.dtgvFunction.RowTemplate.Height = 24;
             this.dtgvFunction.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvFunction.Size = new System.Drawing.Size(421, 411);
+            this.dtgvFunction.Size = new System.Drawing.Size(421, 435);
             this.dtgvFunction.TabIndex = 0;
             // 
             // functionNameDataGridViewTextBoxColumn
@@ -343,8 +348,7 @@
             this.layoutControlItem3,
             this.layoutControlItem2,
             this.layoutControlItem4,
-            this.layoutControlItem5,
-            this.layoutControlItem6});
+            this.layoutControlItem1});
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(1067, 511);
             this.Root.TextVisible = false;
@@ -352,59 +356,38 @@
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.panelControl1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 32);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 40);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(431, 421);
+            this.layoutControlItem3.Size = new System.Drawing.Size(431, 445);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.panelControl2;
-            this.layoutControlItem2.Location = new System.Drawing.Point(431, 32);
+            this.layoutControlItem2.Location = new System.Drawing.Point(431, 40);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(162, 421);
+            this.layoutControlItem2.Size = new System.Drawing.Size(162, 445);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.panelControl3;
-            this.layoutControlItem4.Location = new System.Drawing.Point(593, 32);
+            this.layoutControlItem4.Location = new System.Drawing.Point(593, 40);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(448, 421);
+            this.layoutControlItem4.Size = new System.Drawing.Size(448, 445);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
-            // layoutControlItem5
+            // layoutControlItem1
             // 
-            this.layoutControlItem5.Control = this.cbRole;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(1041, 32);
-            this.layoutControlItem5.Text = "Role";
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(110, 16);
-            // 
-            // layoutControlItem6
-            // 
-            this.layoutControlItem6.Control = this.comboBox2;
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 453);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(1041, 32);
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(110, 16);
-            // 
-            // functionIdDataGridViewComboBoxColumn
-            // 
-            this.functionIdDataGridViewComboBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.functionIdDataGridViewComboBoxColumn.DataPropertyName = "FunctionId";
-            this.functionIdDataGridViewComboBoxColumn.DataSource = this.functionBindingSource;
-            this.functionIdDataGridViewComboBoxColumn.DisplayMember = "FunctionName";
-            this.functionIdDataGridViewComboBoxColumn.HeaderText = "Tên Chức Năng";
-            this.functionIdDataGridViewComboBoxColumn.MinimumWidth = 6;
-            this.functionIdDataGridViewComboBoxColumn.Name = "functionIdDataGridViewComboBoxColumn";
-            this.functionIdDataGridViewComboBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.functionIdDataGridViewComboBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.functionIdDataGridViewComboBoxColumn.ValueMember = "FunctionId";
+            this.layoutControlItem1.Control = this.cblookupRole;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(1041, 40);
+            this.layoutControlItem1.Text = "Quyền Sử Dụng";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(93, 16);
             // 
             // UC_AuthenticationManager
             // 
@@ -421,6 +404,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemUnderlineStyle1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cblookupRole.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roleBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
@@ -436,8 +420,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,10 +455,8 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox cbRole;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private System.Windows.Forms.DataGridViewComboBoxColumn functionIdDataGridViewComboBoxColumn;
+        private DevExpress.XtraEditors.LookUpEdit cblookupRole;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
     }
 }

@@ -32,7 +32,8 @@ namespace DXApplication.UI
         {
             if(functionRoleBindingSource.DataSource != null)
             {
-                Role role = cbRole.SelectedItem as Role;
+                //  Role role = cbRole.SelectedItem as Role;
+                Role role = cblookupRole.GetSelectedDataRow() as Role;
                 if (role != null)
                 {
                     foreach (DataGridViewRow row in dtgvFunctionRole.SelectedRows)
@@ -45,7 +46,11 @@ namespace DXApplication.UI
                         }    
                     }
                    await db.SaveChangesAsync();
-                }    
+                }
+                else
+                {
+                    MessageBox.Show("Bạn cần chọn quyền để xóa !");
+                }
             }    
         }
 
@@ -53,7 +58,8 @@ namespace DXApplication.UI
         {
             if (functionRoleBindingSource.DataSource != null)
             {
-                Role role = cbRole.SelectedItem as Role;
+                // Role role = cbRole.SelectedItem as Role;
+                Role role = cblookupRole.GetSelectedDataRow() as Role;
                 if (role != null)
                 {
                     foreach (DataGridViewRow row in dtgvFunction.SelectedRows)
@@ -76,7 +82,10 @@ namespace DXApplication.UI
                     }
                     await db.SaveChangesAsync();
                     functionRoleBindingSource.DataSource = db.FunctionRoles.Where(r => r.RoleId == role.RoleId).ToList();
-                }
+                }else
+                {
+                    MessageBox.Show("Bạn cần chọn quyền để thêm !");
+                }    
             }
         }
 
@@ -87,19 +96,35 @@ namespace DXApplication.UI
         db_final_winformEntities db;
         private void UC_AuthenticationManager_Load(object sender, EventArgs e)
         {
+            
             db = new db_final_winformEntities();
+            cblookupRole.Properties.NullText = "Vui lòng chọn quyền sử dụng ! ";
+            cblookupRole.Properties.PopulateColumns();
+            cblookupRole.Properties.Columns["FunctionRoles"].Visible = false;
+            cblookupRole.Properties.Columns["Users"].Visible = false;
+
             roleBindingSource.DataSource = db.Roles.ToList();
             functionBindingSource.DataSource = db.Functions.ToList();
-            Role role = cbRole.SelectedItem as Role;
-            if(role!=null)
+            // Role role = cbRole.SelectedItem as Role;
+            Role role = cblookupRole.GetSelectedDataRow() as Role;
+            if (role!=null)
             {
                 functionRoleBindingSource.DataSource=db.FunctionRoles.Where(r=>r.RoleId==role.RoleId).ToList();
             }    
         }
 
-        private void cbRole_SelectionChangeCommitted(object sender, EventArgs e)
+        //private void cbRole_SelectionChangeCommitted(object sender, EventArgs e)
+        //{
+        //    //Role role = cbRole.SelectedItem as Role;
+        //    //if (role != null)
+        //    //{
+        //    //    functionRoleBindingSource.DataSource = db.FunctionRoles.Where(r => r.RoleId == role.RoleId).ToList();
+        //    //}
+        //}
+
+        private void lookUpEdit1_EditValueChanged(object sender, EventArgs e)
         {
-            Role role = cbRole.SelectedItem as Role;
+            Role role = cblookupRole.GetSelectedDataRow() as Role;
             if (role != null)
             {
                 functionRoleBindingSource.DataSource = db.FunctionRoles.Where(r => r.RoleId == role.RoleId).ToList();
