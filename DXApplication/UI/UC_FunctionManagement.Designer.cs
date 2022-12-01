@@ -45,12 +45,11 @@
             this.btnFEdit = new DevExpress.XtraBars.BarButtonItem();
             this.btnFDelete = new DevExpress.XtraBars.BarButtonItem();
             this.btnFRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDetails = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.btnDetails = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlFunctions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.functionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvFunctions)).BeginInit();
@@ -209,12 +208,19 @@
             this.btnFRefresh.Name = "btnFRefresh";
             this.btnFRefresh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnFRefresh_ItemClick);
             // 
+            // btnDetails
+            // 
+            this.btnDetails.Caption = "Chi tiết";
+            this.btnDetails.Id = 20;
+            this.btnDetails.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDetails.ImageOptions.SvgImage")));
+            this.btnDetails.Name = "btnDetails";
+            this.btnDetails.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDetails_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
-            this.ribbonPageGroup2,
-            this.ribbonPageGroup3});
+            this.ribbonPageGroup2});
             this.ribbonPage1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPage1.ImageOptions.SvgImage")));
             this.ribbonPage1.MergeOrder = 0;
             this.ribbonPage1.Name = "ribbonPage1";
@@ -247,20 +253,6 @@
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
             this.ribbonStatusBar.Size = new System.Drawing.Size(1067, 45);
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.btnDetails);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "ribbonPageGroup3";
-            // 
-            // btnDetails
-            // 
-            this.btnDetails.Caption = "Chi tiết";
-            this.btnDetails.Id = 20;
-            this.btnDetails.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
-            this.btnDetails.Name = "btnDetails";
-            this.btnDetails.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDetails_ItemClick);
             // 
             // UC_FunctionManagement
             // 
@@ -304,6 +296,5 @@
         private DevExpress.XtraGrid.Columns.GridColumn colFunctionRoles;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit lookupEditFormName;
         private DevExpress.XtraBars.BarButtonItem btnDetails;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
     }
 }

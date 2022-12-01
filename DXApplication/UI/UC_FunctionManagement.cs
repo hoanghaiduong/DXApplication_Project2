@@ -1,21 +1,9 @@
-﻿using DevExpress.Utils.MVVM;
-using DevExpress.XtraBars;
-using DevExpress.XtraEditors;
-using DevExpress.XtraGrid.Views.Grid;
-using DevExpress.XtraGrid;
+﻿using DevExpress.XtraBars;
 using DXApplication.Entity;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraExport.Helpers;
-using System.Data.Entity;
 
 namespace DXApplication.UI
 {
@@ -25,19 +13,19 @@ namespace DXApplication.UI
         {
             InitializeComponent();
 
-          
+
         }
         db_final_winformEntities _db_;
         private void loadData()
         {
             _db_ = new db_final_winformEntities();
-           
+
             functionBindingSource.DataSource = _db_.Functions.ToList();
             List<AppForm> appForms = new List<AppForm>();
             appForms.Add(new AppForm()
             {
-                Id= "DXApplication.UI.UC_RoleManagement",
-                FormName="Role"
+                Id = "DXApplication.UI.UC_RoleManagement",
+                FormName = "Role"
             });
             appForms.Add(new AppForm()
             {
@@ -64,13 +52,13 @@ namespace DXApplication.UI
             lookupEditFormName.DisplayMember = "FormName";
             lookupEditFormName.PopulateColumns();
             lookupEditFormName.Columns["Id"].Visible = false;
-            
+
         }
         void bbiPrintPreview_ItemClick(object sender, ItemClickEventArgs e)
         {
             gridControlFunctions.ShowRibbonPrintPreview();
         }
-      
+
 
         private void btnFAddNew_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -125,15 +113,12 @@ namespace DXApplication.UI
         {
             loadData();
         }
-      
-     
+
+
         private void btnDetails_ItemClick(object sender, ItemClickEventArgs e)
         {
-           
-            MessageBox.Show(dtgvFunctions.GetRowCellValue(dtgvFunctions.FocusedRowHandle, "FormName").ToString());
-            MessageBox.Show(dtgvFunctions.GetRowCellValue(dtgvFunctions.FocusedRowHandle, "FunctionId").ToString());
-            FormDetails formDetails = new FormDetails(functionBindingSource.Current as Function);
-            formDetails.ShowDialog();
+
+        
         }
     }
 }

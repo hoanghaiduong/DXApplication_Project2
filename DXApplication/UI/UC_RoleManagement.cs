@@ -1,15 +1,7 @@
 ﻿using DevExpress.XtraBars;
-using DevExpress.XtraEditors;
 using DXApplication.Entity;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DXApplication.UI
@@ -30,8 +22,8 @@ namespace DXApplication.UI
         {
             gridControlRoles.ShowRibbonPrintPreview();
         }
-    
-      
+
+
         private void ribbonControl_Click(object sender, EventArgs e)
         {
 
@@ -55,9 +47,9 @@ namespace DXApplication.UI
             try
             {
                 roleBindingSource.EndEdit();
-            await _db_.SaveChangesAsync();
-            dtgvRoles.RefreshData();
-            MessageBox.Show("Your data has been successfully saved", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                await _db_.SaveChangesAsync();
+                dtgvRoles.RefreshData();
+                MessageBox.Show("Your data has been successfully saved", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

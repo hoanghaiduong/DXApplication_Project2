@@ -40,16 +40,16 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnLogin = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblPassError = new DevExpress.XtraEditors.LabelControl();
             this.txbPassword = new DevExpress.XtraEditors.TextEdit();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblMailOrUsernameErr = new DevExpress.XtraEditors.LabelControl();
             this.txbUsername = new DevExpress.XtraEditors.TextEdit();
             this.switchToggleRemember = new DevExpress.XtraEditors.ToggleSwitch();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
-            this.lblPassError = new DevExpress.XtraEditors.LabelControl();
-            this.lblMailOrUsernameErr = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
@@ -196,6 +196,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mật Khẩu";
             // 
+            // lblPassError
+            // 
+            this.lblPassError.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblPassError.Location = new System.Drawing.Point(3, 71);
+            this.lblPassError.Name = "lblPassError";
+            this.lblPassError.Size = new System.Drawing.Size(0, 16);
+            this.lblPassError.TabIndex = 1;
+            // 
             // txbPassword
             // 
             this.txbPassword.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -227,6 +235,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tên tài khoản hoặc email";
             // 
+            // lblMailOrUsernameErr
+            // 
+            this.lblMailOrUsernameErr.Location = new System.Drawing.Point(7, 64);
+            this.lblMailOrUsernameErr.Name = "lblMailOrUsernameErr";
+            this.lblMailOrUsernameErr.Size = new System.Drawing.Size(0, 16);
+            this.lblMailOrUsernameErr.TabIndex = 1;
+            // 
             // txbUsername
             // 
             this.behaviorManager1.SetBehaviors(this.txbUsername, new DevExpress.Utils.Behaviors.Behavior[] {
@@ -238,6 +253,7 @@
             this.txbUsername.Properties.Padding = new System.Windows.Forms.Padding(10);
             this.txbUsername.Size = new System.Drawing.Size(456, 54);
             this.txbUsername.TabIndex = 0;
+            this.txbUsername.EditValueChanged += new System.EventHandler(this.txbUsername_EditValueChanged);
             // 
             // switchToggleRemember
             // 
@@ -287,21 +303,6 @@
             this.imageSlider1.Size = new System.Drawing.Size(484, 485);
             this.imageSlider1.TabIndex = 0;
             this.imageSlider1.Text = "imageSlider1";
-            // 
-            // lblPassError
-            // 
-            this.lblPassError.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblPassError.Location = new System.Drawing.Point(3, 71);
-            this.lblPassError.Name = "lblPassError";
-            this.lblPassError.Size = new System.Drawing.Size(0, 16);
-            this.lblPassError.TabIndex = 1;
-            // 
-            // lblMailOrUsernameErr
-            // 
-            this.lblMailOrUsernameErr.Location = new System.Drawing.Point(7, 64);
-            this.lblMailOrUsernameErr.Name = "lblMailOrUsernameErr";
-            this.lblMailOrUsernameErr.Size = new System.Drawing.Size(0, 16);
-            this.lblMailOrUsernameErr.TabIndex = 1;
             // 
             // Frm_Login
             // 

@@ -1,15 +1,10 @@
-﻿
-using DevExpress.Utils;
-using DevExpress.XtraBars.Alerter;
-using DevExpress.XtraBars.FluentDesignSystem;
-using DevExpress.XtraBars.Navigation;
+﻿using DevExpress.XtraBars.Navigation;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
 using DXApplication.Entity;
 using DXApplication.Form;
 using DXApplication.Global;
 using DXApplication.UI;
-using NETWORKLIST;
 using System;
 using System.Linq;
 using System.Threading;
@@ -20,16 +15,16 @@ namespace DXApplication
     public partial class Frm_Dashboard : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
         CheckerInternetHelper helper;
-       
+
         public Frm_Dashboard()
         {
             InitializeComponent();
-           
+
             helper = new CheckerInternetHelper(this);
             if (!mvvmContext1.IsDesignMode)
                 InitializeBindings();
         }
-      
+
         UC_UserManagement uC__UserManagement;
         Uc__designDashboard uc__designDashboard;
         Uc_DashboardViewer uc__designDashboardViewer;
@@ -40,10 +35,8 @@ namespace DXApplication
         {
             var fluent = mvvmContext1.OfType<MainViewModel>();
         }
-
-        private void mnQLND_Click(object sender, EventArgs e)
+        private void addControlToMain(XtraUserControl control)
         {
-
             SplashScreenManager.ShowForm(this, typeof(Global_WaitForm), true, true, false);
             SplashScreenManager.Default.SetWaitFormCaption("Loading ...");
             for (int i = 0; i < 100; i++)
@@ -51,16 +44,76 @@ namespace DXApplication
                 Thread.Sleep(10);
             }
 
-     
-                mainContainer.Controls.Clear();
-                uC__UserManagement = new UC_UserManagement();
-                uC__UserManagement.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(uC__UserManagement);
-                uC__UserManagement.BringToFront();
-                SplashScreenManager.CloseForm();
-          
+            mainContainer.Controls.Clear();
+            control.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(control);
+            control.BringToFront();
+            SplashScreenManager.CloseForm();
         }
-       private void loadMenuItemForSQL()
+        private void mnQLND_Click(object sender, EventArgs e)
+        {
+
+
+            uC__UserManagement = new UC_UserManagement();
+            addControlToMain(uC__UserManagement);
+
+
+        }
+        private void createDynamicMenu(AccordionControlElement item,Boolean root,String name,ElementStyle style,String tag,String Text,String imageURI)
+        {
+            item.Expanded = root;
+            item.Name = name;
+            item.Style = style;
+            item.Tag = tag;
+            item.Text =Text;
+            item.ImageOptions.ImageUri.Uri = imageURI;
+            item.Click += Item_Click1;
+       
+        }
+
+        private void Item_Click1(object sender, EventArgs e)
+        {
+            try
+            {
+                AccordionControlElement item = sender as AccordionControlElement;
+                if (item != null)
+                {
+                    Type type = Type.GetType(item.Tag.ToString());
+
+                    string str1 = type.ToString().ToUpper();
+                    string str2 = "UC_";
+                    bool checkExists = str1.Contains(str2);
+                    if (checkExists)
+                    {
+                        //MessageBox.Show("DAy la usercontrol");
+                        var uc_ = (XtraUserControl)Activator.CreateInstance(type);
+                        if (uc_ != null)
+                        {
+
+                            addControlToMain(uc_);
+
+                        }
+                    }
+                    else
+                    {
+                        //  MessageBox.Show("DAy la Form");
+                        var xtraform = (XtraForm)Activator.CreateInstance(type);
+                        if (xtraform != null)
+                        {
+                            xtraform.ShowDialog();
+                        }
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void loadMenuItemForSQL()
         {
 
             using (db_final_winformEntities db = new db_final_winformEntities())
@@ -90,44 +143,21 @@ namespace DXApplication
                     item.Text = obj.FunctionName;
                     mnCollapseManagement.Elements.AddRange(new AccordionControlElement[]
                   {item});
-                    MessageBox.Show(obj.ToString()+" | "+obj.FunctionName + " | " + obj.FormName);
+                    //MessageBox.Show(obj.ToString() + " | " + obj.FunctionName + " | " + obj.FormName);
                 }
-
+               
                 AccordionControlElement acRootAccount = new AccordionControlElement();
                 AccordionControlElement acViewAccount = new AccordionControlElement();
-                AccordionControlElement acLogout= new AccordionControlElement();
-                // 
-                // Root Group 
-                // 
-
-                acRootAccount.Expanded = true;
-                acRootAccount.ImageOptions.ImageUri.Uri = "Home;Office2013";
-                acRootAccount.Name = "acRootAccount";
-                acRootAccount.Text = "Tài Khoản";
-
-                // 
-                // Child Item 
-                // 
-                acViewAccount.Name = "acViewAccount";
-                acViewAccount.Style = ElementStyle.Item;
-                acViewAccount.Tag = "idAcViewAccount";
-                acViewAccount.Text = "Thông tin tài khoản";
-                acLogout.ImageOptions.ImageUri.Uri = "Customization;Office2013";
-                // 
-                // Child Item
-                // 
-                acLogout.Name = "acLogout";
-                acLogout.Style = ElementStyle.Item;
-                acLogout.Tag = "idAcLogout";
-                acLogout.Text = "Đăng Xuất";
-                acLogout.ImageOptions.ImageUri.Uri = "Customization;Office2013";
-                acLogout.Click += AcLogout_Click;
-                // 
-                // Root Item 'Settings' with ContentContainer
-                // 
-
+                AccordionControlElement acLogout = new AccordionControlElement();
+          
+                createDynamicMenu(acRootAccount,true, "acRootAccount",ElementStyle.Group,"", "Tài Khoản", "");
+             
+                createDynamicMenu(acViewAccount, false, "acViewAccount", ElementStyle.Item, "idAcViewAccount", "Thông tin tài khoản", "Settings;Office2013");
+      
+                createDynamicMenu(acLogout, false, "acLogout", ElementStyle.Item, "idAcLogout", "Đăng Xuất", "Settings;Office2013");
+          
                 //add item to group
-                acRootAccount.Elements.AddRange(new AccordionControlElement[] 
+                acRootAccount.Elements.AddRange(new AccordionControlElement[]
                 {
                     acViewAccount,
                     acLogout});
@@ -135,7 +165,7 @@ namespace DXApplication
                 accordionControl1.Elements.Add(acRootAccount);
 
                 accordionControl1.EndUpdate();
-                
+
             }
         }
 
@@ -148,7 +178,7 @@ namespace DXApplication
 
         private void frm_Dashboard_Load(object sender, EventArgs e)
         {
-            
+
             //loading Splash Screen
             for (int i = 0; i < 50; i++)
             {
@@ -156,10 +186,10 @@ namespace DXApplication
             }
             try
             {
-             
+
                 loadMenuItemForSQL();
                 loadDesignDashboardViewer();
-             
+
             }
             catch (Exception ex)
             {
@@ -174,31 +204,21 @@ namespace DXApplication
             try
             {
                 AccordionControlElement item = sender as AccordionControlElement;
-                if(item != null)
+                if (item != null)
                 {
                     Type type = Type.GetType(item.Tag.ToString());
-                   
-                    string str1=type.ToString().ToUpper();
+
+                    string str1 = type.ToString().ToUpper();
                     string str2 = "UC_";
                     bool checkExists = str1.Contains(str2);
-                    if(checkExists)
+                    if (checkExists)
                     {
                         //MessageBox.Show("DAy la usercontrol");
                         var uc_ = (XtraUserControl)Activator.CreateInstance(type);
                         if (uc_ != null)
                         {
-                            SplashScreenManager.ShowForm(this, typeof(Global_WaitForm), true, true, false);
-                            SplashScreenManager.Default.SetWaitFormCaption("Loading ...");
-                            for (int i = 0; i < 50; i++)
-                            {
-                                Thread.Sleep(10);
-                            }
-                            mainContainer.Controls.Clear();
-                            uc_.Dock = DockStyle.Fill;
-                            mainContainer.Controls.Add(uc_);
-                            uc_.BringToFront();
-                            SplashScreenManager.CloseForm();
-
+                  
+                            addControlToMain(uc_);
 
                         }
                     }
@@ -206,12 +226,12 @@ namespace DXApplication
                     {
                         //  MessageBox.Show("DAy la Form");
                         var xtraform = (XtraForm)Activator.CreateInstance(type);
-                        if(xtraform!=null)
+                        if (xtraform != null)
                         {
                             xtraform.ShowDialog();
-                        }    
+                        }
                     }
-                
+
                 }
             }
             catch (Exception ex)
@@ -239,28 +259,12 @@ namespace DXApplication
         private void loadDesignDashboard()
         {
             uc__designDashboard = new Uc__designDashboard();
-            uc__designDashboard.Dock = DockStyle.Fill;
-            mainContainer.Controls.Add(uc__designDashboard);
-            uc__designDashboard.BringToFront();
+            addControlToMain(uc__designDashboard);
         }
         private void loadDesignDashboardViewer()
-        {
-            SplashScreenManager.ShowForm(this, typeof(Global_WaitForm), true, true, false);
-            SplashScreenManager.Default.SetWaitFormCaption("Loading ...");
-            for (int i = 0; i < 50; i++)
-            {
-                Thread.Sleep(10);
-            }
-
-       
-                mainContainer.Controls.Clear();
-                uc__designDashboardViewer = new Uc_DashboardViewer();
-                uc__designDashboardViewer.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(uc__designDashboardViewer);
-                uc__designDashboardViewer.BringToFront();
-                SplashScreenManager.CloseForm();
-    
-          
+        { 
+            uc__designDashboardViewer = new Uc_DashboardViewer();
+            addControlToMain(uc__designDashboardViewer);
         }
         private void mnDashboard_Click(object sender, EventArgs e)
         {
@@ -274,7 +278,7 @@ namespace DXApplication
 
         private void accordionControlElement4_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void accordionControlElement1_Click(object sender, EventArgs e)
@@ -301,57 +305,25 @@ namespace DXApplication
 
         private void mnQLRole_Click(object sender, EventArgs e)
         {
-            SplashScreenManager.ShowForm(this, typeof(Global_WaitForm), true, true, false);
-            SplashScreenManager.Default.SetWaitFormCaption("Loading ...");
-            for (int i = 0; i < 100; i++)
-            {
-                Thread.Sleep(10);
-            }
-
-          
-                mainContainer.Controls.Clear();
-                uC__RoleManagement = new UC_RoleManagement();
-                uC__RoleManagement.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(uC__RoleManagement);
-                uC__RoleManagement.BringToFront();
-                SplashScreenManager.CloseForm();
-         
-            
+            uC__RoleManagement = new UC_RoleManagement();
+            addControlToMain(uC__RoleManagement);
         }
 
         private void mnQLFunctions_Click(object sender, EventArgs e)
         {
-            SplashScreenManager.ShowForm(this, typeof(Global_WaitForm), true, true, false);
-            SplashScreenManager.Default.SetWaitFormCaption("Loading ...");
-            for (int i = 0; i < 100; i++)
-            {
-                Thread.Sleep(10);
-            }
 
-                mainContainer.Controls.Clear();
-                uC__FunctionRoleManagement = new UC_FunctionManagement();
-                uC__FunctionRoleManagement.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(uC__FunctionRoleManagement);
-                uC__FunctionRoleManagement.BringToFront();
-                SplashScreenManager.CloseForm();
-            
+        
+            uC__FunctionRoleManagement = new UC_FunctionManagement();
+            addControlToMain(uC__FunctionRoleManagement);
+
         }
 
         private void mnQLFunctionRole_Click(object sender, EventArgs e)
         {
-            SplashScreenManager.ShowForm(this, typeof(Global_WaitForm), true, true, false);
-            SplashScreenManager.Default.SetWaitFormCaption("Loading ...");
-            for (int i = 0; i < 100; i++)
-            {
-                Thread.Sleep(10);
-            }
-
-            mainContainer.Controls.Clear();
+     
             UC_AuthenticationManager = new UC_AuthenticationManager();
-            UC_AuthenticationManager.Dock = DockStyle.Fill;
-            mainContainer.Controls.Add(UC_AuthenticationManager);
-            UC_AuthenticationManager.BringToFront();
-            SplashScreenManager.CloseForm();
+            addControlToMain(UC_AuthenticationManager);
+ 
 
         }
 
@@ -360,7 +332,7 @@ namespace DXApplication
             this.Hide();
             Frm_Dashboard frm_Dashboard = new Frm_Dashboard();
             frm_Dashboard.ShowDialog();
-            
+
 
         }
 

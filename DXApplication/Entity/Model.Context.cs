@@ -25,9 +25,15 @@ namespace DXApplication.Entity
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Class> Classes { get; set; }
+        public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<FunctionRole> FunctionRoles { get; set; }
         public virtual DbSet<Function> Functions { get; set; }
+        public virtual DbSet<Person> Persons { get; set; }
+        public virtual DbSet<Profile> Profiles { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<TypeAccountUser> TypeAccountUsers { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }
 }

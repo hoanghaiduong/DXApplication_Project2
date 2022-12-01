@@ -42,10 +42,9 @@
             this.bbiClose = new DevExpress.XtraBars.BarButtonItem();
             this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txbPhonePeople = new DevExpress.XtraEditors.TextEdit();
             this.txbPhone = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit7 = new DevExpress.XtraEditors.DateEdit();
+            this.dateOfBirthEdit = new DevExpress.XtraEditors.DateEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -78,6 +77,7 @@
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutLastName = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.cbLookUpGender = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
@@ -87,11 +87,10 @@
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txbAddress.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txbPhonePeople.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txbPhone.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateOfBirthEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateOfBirthEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
@@ -127,6 +126,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutLastName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbLookUpGender.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // dataLayoutControl1
@@ -172,10 +172,10 @@
             // layoutControl1
             // 
             this.layoutControl1.Controls.Add(this.txbAddress);
-            this.layoutControl1.Controls.Add(this.comboBoxEdit1);
             this.layoutControl1.Controls.Add(this.txbPhonePeople);
             this.layoutControl1.Controls.Add(this.txbPhone);
-            this.layoutControl1.Controls.Add(this.textEdit7);
+            this.layoutControl1.Controls.Add(this.dateOfBirthEdit);
+            this.layoutControl1.Controls.Add(this.cbLookUpGender);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
@@ -284,17 +284,6 @@
             this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
             this.mainRibbonPageGroup.Text = "Thao Tác";
             // 
-            // comboBoxEdit1
-            // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(479, 16);
-            this.comboBoxEdit1.MenuManager = this.mainRibbonControl;
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(136, 34);
-            this.comboBoxEdit1.StyleController = this.layoutControl1;
-            this.comboBoxEdit1.TabIndex = 8;
-            // 
             // txbPhonePeople
             // 
             this.txbPhonePeople.Location = new System.Drawing.Point(148, 56);
@@ -313,24 +302,26 @@
             this.txbPhone.StyleController = this.layoutControl1;
             this.txbPhone.TabIndex = 4;
             // 
-            // textEdit7
+            // dateOfBirthEdit
             // 
-            this.textEdit7.EditValue = null;
-            this.textEdit7.Location = new System.Drawing.Point(479, 56);
-            this.textEdit7.MenuManager = this.mainRibbonControl;
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateOfBirthEdit.EditValue = null;
+            this.dateOfBirthEdit.Location = new System.Drawing.Point(479, 56);
+            this.dateOfBirthEdit.MenuManager = this.mainRibbonControl;
+            this.dateOfBirthEdit.Name = "dateOfBirthEdit";
+            this.dateOfBirthEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEdit7.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateOfBirthEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEdit7.Properties.DisplayFormat.FormatString = "";
-            this.textEdit7.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.textEdit7.Properties.EditFormat.FormatString = "";
-            this.textEdit7.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.textEdit7.Properties.MaskSettings.Set("mask", "d");
-            this.textEdit7.Size = new System.Drawing.Size(136, 34);
-            this.textEdit7.StyleController = this.layoutControl1;
-            this.textEdit7.TabIndex = 7;
+            this.dateOfBirthEdit.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.Fluent;
+            this.dateOfBirthEdit.Properties.DisplayFormat.FormatString = "";
+            this.dateOfBirthEdit.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateOfBirthEdit.Properties.EditFormat.FormatString = "";
+            this.dateOfBirthEdit.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateOfBirthEdit.Properties.MaskSettings.Set("mask", "d");
+            this.dateOfBirthEdit.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
+            this.dateOfBirthEdit.Size = new System.Drawing.Size(136, 34);
+            this.dateOfBirthEdit.StyleController = this.layoutControl1;
+            this.dateOfBirthEdit.TabIndex = 7;
             // 
             // Root
             // 
@@ -366,7 +357,7 @@
             // 
             // layoutControlItem7
             // 
-            this.layoutControlItem7.Control = this.textEdit7;
+            this.layoutControlItem7.Control = this.dateOfBirthEdit;
             this.layoutControlItem7.Location = new System.Drawing.Point(331, 40);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(274, 40);
@@ -375,7 +366,7 @@
             // 
             // layoutControlItem8
             // 
-            this.layoutControlItem8.Control = this.comboBoxEdit1;
+            this.layoutControlItem8.Control = this.cbLookUpGender;
             this.layoutControlItem8.Location = new System.Drawing.Point(331, 0);
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.Size = new System.Drawing.Size(274, 40);
@@ -648,6 +639,19 @@
             this.simpleSeparator1.Name = "simpleSeparator1";
             this.simpleSeparator1.Size = new System.Drawing.Size(381, 1);
             // 
+            // cbLookUpGender
+            // 
+            this.cbLookUpGender.Location = new System.Drawing.Point(479, 16);
+            this.cbLookUpGender.MenuManager = this.mainRibbonControl;
+            this.cbLookUpGender.Name = "cbLookUpGender";
+            this.cbLookUpGender.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbLookUpGender.Properties.NullText = "";
+            this.cbLookUpGender.Properties.PopupSizeable = false;
+            this.cbLookUpGender.Size = new System.Drawing.Size(136, 34);
+            this.cbLookUpGender.StyleController = this.layoutControl1;
+            this.cbLookUpGender.TabIndex = 8;
+            // 
             // FormDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -673,11 +677,10 @@
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txbAddress.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txbPhonePeople.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txbPhone.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateOfBirthEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateOfBirthEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
@@ -713,6 +716,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutLastName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbLookUpGender.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -747,10 +751,9 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutEmail;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
         private DevExpress.XtraEditors.TextEdit txbPhonePeople;
         private DevExpress.XtraEditors.TextEdit txbPhone;
-        private DevExpress.XtraEditors.DateEdit textEdit7;
+        private DevExpress.XtraEditors.DateEdit dateOfBirthEdit;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
@@ -768,5 +771,6 @@
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator1;
         private DevExpress.XtraEditors.MemoEdit txbAddress;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
+        private DevExpress.XtraEditors.LookUpEdit cbLookUpGender;
     }
 }

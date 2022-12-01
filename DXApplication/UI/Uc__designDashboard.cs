@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Windows.Forms;
 
 namespace DXApplication.UI
 {
-    public partial class Uc__designDashboard : UserControl
+    public partial class Uc__designDashboard : XtraUserControl
     {
         public Uc__designDashboard()
         {

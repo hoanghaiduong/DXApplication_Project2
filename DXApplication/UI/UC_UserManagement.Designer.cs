@@ -38,27 +38,34 @@
             this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
             this.bbiRefresh = new DevExpress.XtraBars.BarButtonItem();
             this.btnSave = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDetails = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.roleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.gridControlUsers = new DevExpress.XtraGrid.GridControl();
             this.dtgvUsers = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colUserId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRoleId = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.colUserName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDisabled = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOtp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmail = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPassword = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colVerifiedEmail = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPersons = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRole = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.roleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roleBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlUsers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvUsers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roleBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -74,10 +81,11 @@
             this.bbiEdit,
             this.bbiDelete,
             this.bbiRefresh,
-            this.btnSave});
+            this.btnSave,
+            this.btnDetails});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbonControl.MaxItemId = 22;
+            this.ribbonControl.MaxItemId = 23;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.OptionsMenuMinWidth = 440;
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -145,12 +153,22 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSave_ItemClick);
             // 
+            // btnDetails
+            // 
+            this.btnDetails.Caption = "Chi Tiết Người Dùng";
+            this.btnDetails.Id = 22;
+            this.btnDetails.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDetails.ImageOptions.Image")));
+            this.btnDetails.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDetails.ImageOptions.LargeImage")));
+            this.btnDetails.Name = "btnDetails";
+            this.btnDetails.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDetails_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
             this.ribbonPageGroup3,
-            this.ribbonPageGroup2});
+            this.ribbonPageGroup2,
+            this.ribbonPageGroup4});
             this.ribbonPage1.MergeOrder = 0;
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Quản Lí Người Dùng";
@@ -180,6 +198,12 @@
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "In và Xuất";
             // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnDetails);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            this.ribbonPageGroup4.Text = "Thông Tin";
+            // 
             // ribbonStatusBar
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.bsiRecordsCount);
@@ -193,20 +217,26 @@
             // 
             this.userBindingSource.DataSource = typeof(DXApplication.Entity.User);
             // 
+            // roleBindingSource
+            // 
+            this.roleBindingSource.DataSource = typeof(DXApplication.Entity.Role);
+            // 
+            // userBindingSource1
+            // 
+            this.userBindingSource1.DataSource = typeof(DXApplication.Entity.User);
+            // 
             // gridControlUsers
             // 
             this.gridControlUsers.DataSource = this.userBindingSource;
             this.gridControlUsers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControlUsers.Location = new System.Drawing.Point(0, 182);
             this.gridControlUsers.MainView = this.dtgvUsers;
+            this.gridControlUsers.MenuManager = this.ribbonControl;
             this.gridControlUsers.Name = "gridControlUsers";
-            this.gridControlUsers.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemComboBox1});
             this.gridControlUsers.Size = new System.Drawing.Size(1067, 511);
-            this.gridControlUsers.TabIndex = 4;
+            this.gridControlUsers.TabIndex = 7;
             this.gridControlUsers.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.dtgvUsers});
-            this.gridControlUsers.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // dtgvUsers
             // 
@@ -214,10 +244,16 @@
             this.colUserId,
             this.colRoleId,
             this.colUserName,
+            this.colDisabled,
+            this.colOtp,
+            this.colEmail,
             this.colPassword,
+            this.colVerifiedEmail,
+            this.colPersons,
             this.colRole});
             this.dtgvUsers.GridControl = this.gridControlUsers;
             this.dtgvUsers.Name = "dtgvUsers";
+            this.dtgvUsers.OptionsBehavior.Editable = false;
             this.dtgvUsers.OptionsBehavior.EditingMode = DevExpress.XtraGrid.Views.Grid.GridEditingMode.EditFormInplaceHideCurrentRow;
             // 
             // colUserId
@@ -226,30 +262,18 @@
             this.colUserId.MinWidth = 25;
             this.colUserId.Name = "colUserId";
             this.colUserId.OptionsColumn.AllowEdit = false;
-            this.colUserId.OptionsColumn.ReadOnly = true;
             this.colUserId.Visible = true;
             this.colUserId.VisibleIndex = 0;
             this.colUserId.Width = 94;
             // 
             // colRoleId
             // 
-            this.colRoleId.ColumnEdit = this.repositoryItemComboBox1;
             this.colRoleId.FieldName = "Role.RoleName";
             this.colRoleId.MinWidth = 25;
             this.colRoleId.Name = "colRoleId";
-            this.colRoleId.OptionsColumn.AllowEdit = false;
-            this.colRoleId.OptionsColumn.ReadOnly = true;
-            this.colRoleId.OptionsEditForm.Caption = "Quyền:";
             this.colRoleId.Visible = true;
             this.colRoleId.VisibleIndex = 1;
             this.colRoleId.Width = 94;
-            // 
-            // repositoryItemComboBox1
-            // 
-            this.repositoryItemComboBox1.AutoHeight = false;
-            this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
             // 
             // colUserName
             // 
@@ -260,6 +284,33 @@
             this.colUserName.VisibleIndex = 2;
             this.colUserName.Width = 94;
             // 
+            // colDisabled
+            // 
+            this.colDisabled.FieldName = "Disabled";
+            this.colDisabled.MinWidth = 25;
+            this.colDisabled.Name = "colDisabled";
+            this.colDisabled.Visible = true;
+            this.colDisabled.VisibleIndex = 3;
+            this.colDisabled.Width = 94;
+            // 
+            // colOtp
+            // 
+            this.colOtp.FieldName = "Otp";
+            this.colOtp.MinWidth = 25;
+            this.colOtp.Name = "colOtp";
+            this.colOtp.Visible = true;
+            this.colOtp.VisibleIndex = 4;
+            this.colOtp.Width = 94;
+            // 
+            // colEmail
+            // 
+            this.colEmail.FieldName = "Email";
+            this.colEmail.MinWidth = 25;
+            this.colEmail.Name = "colEmail";
+            this.colEmail.Visible = true;
+            this.colEmail.VisibleIndex = 5;
+            this.colEmail.Width = 94;
+            // 
             // colPassword
             // 
             this.colPassword.FieldName = "Password";
@@ -267,16 +318,28 @@
             this.colPassword.Name = "colPassword";
             this.colPassword.Width = 94;
             // 
+            // colVerifiedEmail
+            // 
+            this.colVerifiedEmail.FieldName = "VerifiedEmail";
+            this.colVerifiedEmail.MinWidth = 25;
+            this.colVerifiedEmail.Name = "colVerifiedEmail";
+            this.colVerifiedEmail.Visible = true;
+            this.colVerifiedEmail.VisibleIndex = 6;
+            this.colVerifiedEmail.Width = 94;
+            // 
+            // colPersons
+            // 
+            this.colPersons.FieldName = "Persons";
+            this.colPersons.MinWidth = 25;
+            this.colPersons.Name = "colPersons";
+            this.colPersons.Width = 94;
+            // 
             // colRole
             // 
             this.colRole.FieldName = "Role";
             this.colRole.MinWidth = 25;
             this.colRole.Name = "colRole";
             this.colRole.Width = 94;
-            // 
-            // roleBindingSource
-            // 
-            this.roleBindingSource.DataSource = typeof(DXApplication.Entity.Role);
             // 
             // UC_UserManagement
             // 
@@ -291,10 +354,10 @@
             this.Load += new System.EventHandler(this.UC_UserManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roleBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlUsers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvUsers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roleBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,14 +378,21 @@
         private System.Windows.Forms.BindingSource userBindingSource;
         private DevExpress.XtraBars.BarButtonItem btnSave;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private System.Windows.Forms.BindingSource roleBindingSource;
+        private System.Windows.Forms.BindingSource userBindingSource1;
         private DevExpress.XtraGrid.GridControl gridControlUsers;
         private DevExpress.XtraGrid.Views.Grid.GridView dtgvUsers;
         private DevExpress.XtraGrid.Columns.GridColumn colUserId;
         private DevExpress.XtraGrid.Columns.GridColumn colRoleId;
         private DevExpress.XtraGrid.Columns.GridColumn colUserName;
+        private DevExpress.XtraGrid.Columns.GridColumn colDisabled;
+        private DevExpress.XtraGrid.Columns.GridColumn colOtp;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmail;
         private DevExpress.XtraGrid.Columns.GridColumn colPassword;
+        private DevExpress.XtraGrid.Columns.GridColumn colVerifiedEmail;
+        private DevExpress.XtraGrid.Columns.GridColumn colPersons;
         private DevExpress.XtraGrid.Columns.GridColumn colRole;
-        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
-        private System.Windows.Forms.BindingSource roleBindingSource;
+        private DevExpress.XtraBars.BarButtonItem btnDetails;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
     }
 }

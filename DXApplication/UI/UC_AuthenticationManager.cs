@@ -1,15 +1,8 @@
 ﻿using DevExpress.XtraBars;
-using DevExpress.XtraEditors;
 using DXApplication.Entity;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DXApplication.UI
@@ -20,17 +13,17 @@ namespace DXApplication.UI
         {
             InitializeComponent();
 
-           
+
         }
         void bbiPrintPreview_ItemClick(object sender, ItemClickEventArgs e)
         {
-           
+
         }
-      
-     
+
+
         private async void btnRemove_Click(object sender, EventArgs e)
         {
-            if(functionRoleBindingSource.DataSource != null)
+            if (functionRoleBindingSource.DataSource != null)
             {
                 //  Role role = cbRole.SelectedItem as Role;
                 Role role = cblookupRole.GetSelectedDataRow() as Role;
@@ -39,19 +32,19 @@ namespace DXApplication.UI
                     foreach (DataGridViewRow row in dtgvFunctionRole.SelectedRows)
                     {
                         FunctionRole functionRole = row.DataBoundItem as FunctionRole;
-                        if(functionRole!=null)
+                        if (functionRole != null)
                         {
                             db.FunctionRoles.Remove(functionRole);
                             functionRoleBindingSource.Remove(functionRole);
-                        }    
+                        }
                     }
-                   await db.SaveChangesAsync();
+                    await db.SaveChangesAsync();
                 }
                 else
                 {
                     MessageBox.Show("Bạn cần chọn quyền để xóa !");
                 }
-            }    
+            }
         }
 
         private async void btnAdd_Click(object sender, EventArgs e)
@@ -68,7 +61,7 @@ namespace DXApplication.UI
                         if (function != null)
                         {
                             FunctionRole fr = db.FunctionRoles.Where(p => p.FunctionId == function.FunctionId && p.RoleId == role.RoleId).SingleOrDefault();
-                            if(fr==null)
+                            if (fr == null)
                             {
                                 FunctionRole obj = new FunctionRole()
                                 {
@@ -76,16 +69,17 @@ namespace DXApplication.UI
                                     RoleId = role.RoleId
                                 };
                                 db.FunctionRoles.Add(obj);
-                            }    
+                            }
 
                         }
                     }
                     await db.SaveChangesAsync();
                     functionRoleBindingSource.DataSource = db.FunctionRoles.Where(r => r.RoleId == role.RoleId).ToList();
-                }else
+                }
+                else
                 {
                     MessageBox.Show("Bạn cần chọn quyền để thêm !");
-                }    
+                }
             }
         }
 
@@ -96,7 +90,7 @@ namespace DXApplication.UI
         db_final_winformEntities db;
         private void UC_AuthenticationManager_Load(object sender, EventArgs e)
         {
-            
+
             db = new db_final_winformEntities();
             cblookupRole.Properties.NullText = "Vui lòng chọn quyền sử dụng ! ";
             cblookupRole.Properties.PopulateColumns();
@@ -107,10 +101,10 @@ namespace DXApplication.UI
             functionBindingSource.DataSource = db.Functions.ToList();
             // Role role = cbRole.SelectedItem as Role;
             Role role = cblookupRole.GetSelectedDataRow() as Role;
-            if (role!=null)
+            if (role != null)
             {
-                functionRoleBindingSource.DataSource=db.FunctionRoles.Where(r=>r.RoleId==role.RoleId).ToList();
-            }    
+                functionRoleBindingSource.DataSource = db.FunctionRoles.Where(r => r.RoleId == role.RoleId).ToList();
+            }
         }
 
         //private void cbRole_SelectionChangeCommitted(object sender, EventArgs e)

@@ -1,22 +1,15 @@
 ﻿using DevExpress.XtraBars;
-using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Grid;
 using DXApplication.Entity;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DXApplication.UI
 {
     public partial class UC_UserManagement : DevExpress.XtraEditors.XtraUserControl
     {
-       
+
         public UC_UserManagement()
         {
             InitializeComponent();
@@ -25,9 +18,9 @@ namespace DXApplication.UI
         {
             gridControlUsers.ShowRibbonPrintPreview();
         }
-     
-      
-     
+
+
+
         private void bbiNew_ItemClick(object sender, ItemClickEventArgs e)
         {
             User user = new User();
@@ -40,7 +33,7 @@ namespace DXApplication.UI
         {
             try
             {
-              
+
                 userBindingSource.EndEdit();
                 await _db_.SaveChangesAsync();
                 dtgvUsers.RefreshData();
@@ -63,6 +56,19 @@ namespace DXApplication.UI
         {
             _db_ = new db_final_winformEntities();
             userBindingSource.DataSource = _db_.Users.ToList();
+            if(Cls_Main.UserInfo.RoleId==1)
+            {
+                dtgvUsers.OptionsBehavior.Editable = true;
+                dtgvUsers.OptionsBehavior.ReadOnly = false;
+                dtgvUsers.OptionsBehavior.EditingMode = GridEditingMode.EditFormInplaceHideCurrentRow;
+
+            }
+            else
+            {
+                dtgvUsers.OptionsBehavior.Editable = false;
+                dtgvUsers.OptionsBehavior.ReadOnly = true;
+                MessageBox.Show("Bạn không có quyền chỉnh sửa !");
+            }    
         }
         private void UC_UserManagement_Load(object sender, EventArgs e)
         {
@@ -76,13 +82,13 @@ namespace DXApplication.UI
                 userBindingSource.EndEdit();
                 await _db_.SaveChangesAsync();
                 dtgvUsers.RefreshData();
-                MessageBox.Show("Your data has been successfully saved","Message",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+                MessageBox.Show("Your data has been successfully saved", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message,"Message",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -98,18 +104,24 @@ namespace DXApplication.UI
 
         private void bbiDelete_ItemClick(object sender, ItemClickEventArgs e)
         {
-           var result= MessageBox.Show("Bạn có muốn xoá người dùng này không ?","Message",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
-            if(result==DialogResult.Yes)
+            var result = MessageBox.Show("Bạn có muốn xoá người dùng này không ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
             {
                 _db_.Users.Remove(userBindingSource.Current as User);
                 userBindingSource.RemoveCurrent();
-            }    
+            }
         }
 
-        private  void bbiRefresh_ItemClick(object sender, ItemClickEventArgs e)
+        private void bbiRefresh_ItemClick(object sender, ItemClickEventArgs e)
         {
-            
+
             loadUserData();
+        }
+
+        private void btnDetails_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            FormDetails formDetails = new FormDetails(userBindingSource.Current as User);
+            formDetails.ShowDialog();
         }
     }
 }

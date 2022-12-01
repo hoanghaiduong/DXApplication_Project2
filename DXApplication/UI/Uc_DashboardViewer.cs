@@ -1,31 +1,23 @@
 ﻿using DevExpress.DashboardCommon;
 using DevExpress.DataAccess.ConnectionParameters;
-using DevExpress.DataAccess.UI.Wizard;
-using DevExpress.Xpo.Helpers;
+using DevExpress.XtraEditors;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DXApplication.UI
 {
-    public partial class Uc_DashboardViewer : UserControl
+    public partial class Uc_DashboardViewer : XtraUserControl
     {
         public Uc_DashboardViewer()
         {
             InitializeComponent();
         }
 
-        
+
 
         private void dashboardViewer_ConfigureDataConnection(object sender, DashboardConfigureDataConnectionEventArgs e)
         {
-           
+
 
             if (e.DataSourceName == "SQL Data Source 1")
             {
@@ -39,7 +31,7 @@ namespace DXApplication.UI
 
         private void dashboardViewer_Load(object sender, EventArgs e)
         {
-       
+
             dashboardViewer.ConfigureDataConnection += dashboardViewer_ConfigureDataConnection;
             dashboardViewer.LoadDashboard(@"..\..\dashboard_XML.xml");
 

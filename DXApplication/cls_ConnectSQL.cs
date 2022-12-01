@@ -20,7 +20,7 @@ namespace DXApplication
             }
         }
         //
-        public static SqlConnection conn=new SqlConnection();
+        public static SqlConnection conn = new SqlConnection();
         public static void createConnect()
         {
             //Cấu trúc chuỗi kết nối
@@ -33,10 +33,10 @@ namespace DXApplication
             {
                 MessageBox.Show(ex.Message);
                 conn.Close();
-                
+
             }
-        }   
-         
+        }
+
         public static void closeConnect()
         {
             conn.Close();
@@ -45,8 +45,8 @@ namespace DXApplication
         public static DataTable getData(string query)
         {
             createConnect();
-            DataTable dataTable= new DataTable();
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query,conn);
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, conn);
             sqlDataAdapter.Fill(dataTable);
             closeConnect();
             return dataTable;

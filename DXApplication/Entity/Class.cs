@@ -12,25 +12,19 @@ namespace DXApplication.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class Class
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public User()
+        public Class()
         {
-            this.Persons = new HashSet<Person>();
+            this.Profiles = new HashSet<Profile>();
         }
     
-        public int UserId { get; set; }
-        public Nullable<int> RoleId { get; set; }
-        public string UserName { get; set; }
-        public Nullable<bool> Disabled { get; set; }
-        public Nullable<int> Otp { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public Nullable<bool> VerifiedEmail { get; set; }
+        public int ClassId { get; set; }
+        public string ClassesName { get; set; }
+        public Nullable<int> ClassesYear { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Person> Persons { get; set; }
-        public virtual Role Role { get; set; }
+        public virtual ICollection<Profile> Profiles { get; set; }
     }
 }

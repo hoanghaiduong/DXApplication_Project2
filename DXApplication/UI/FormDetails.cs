@@ -1,23 +1,8 @@
-﻿using DevExpress.Mvvm.POCO;
-using DevExpress.XtraEditors;
-using DevExpress.XtraLayout;
-using DevExpress.XtraLayout.Helpers;
-using DevExpress.XtraRichEdit.Model;
-using DXApplication.Entity;
+﻿using DXApplication.Entity;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.Data;
-using System.Data.Entity;
-using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Function = DXApplication.Entity.Function;
+
 
 namespace DXApplication.UI
 {
@@ -27,27 +12,36 @@ namespace DXApplication.UI
         public FormDetails()
         {
             InitializeComponent();
-         
+
         }
-        Function functions;
-        public FormDetails(Function function)
+        User user;
+        Person person;
+        public FormDetails(User user)
         {
-             this.functions=function;
+            this.user = user;
+           
+          
             InitializeComponent();
         }
         private void FormDetails_Load(object sender, EventArgs e)
         {
             _db_ = new db_final_winformEntities();
-          
-            txbEmail.Text = functions.FunctionName;
+            var sql = _db_.Persons.Where(item => item.UserId.Equals(user.UserId)).SingleOrDefault();
+            txbEmail.Text = user.Email;
+            txbFirstName.Text = sql.Profile.FirstName;
+            txbLastName.Text = sql.Profile.LastName;
+            txbPhone.Text = sql.Profile.PhoneNumber;
+            dateOfBirthEdit.DateTime= sql.Profile.DateOfBirth.Value;
+            cbLookUpGender.Properties.DataSource = sql.Profile.Gender.Value;
+
         }
         private async void bbiSave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try
             {
-                var functionName = _db_.Functions.First(a => a.FunctionName == functions.FunctionName);
-                functionName.FunctionName = functions.FunctionName = txbEmail.Text;
-              
+                //var functionName = _db_.Functions.First(a => a.FunctionName == functions.FunctionName);
+                //functionName.FunctionName = functions.FunctionName = txbEmail.Text;
+
                 await _db_.SaveChangesAsync();
                 MessageBox.Show("Your data has been successfully saved", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -74,8 +68,8 @@ namespace DXApplication.UI
         {
             try
             {
-                var functionName = _db_.Functions.First(a => a.FunctionName == functions.FunctionName);
-                functionName.FunctionName = functions.FunctionName = txbEmail.Text;
+                //var functionName = _db_.Functions.First(a => a.FunctionName == functions.FunctionName);
+                //functionName.FunctionName = functions.FunctionName = txbEmail.Text;
 
                 await _db_.SaveChangesAsync();
                 MessageBox.Show("Your data has been successfully saved", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -90,7 +84,7 @@ namespace DXApplication.UI
         private void bbiReset_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Close();
-            FormDetails formDetails = new FormDetails(this.functions);
+            FormDetails formDetails = new FormDetails(this.user);
             formDetails.ShowDialog();
         }
     }

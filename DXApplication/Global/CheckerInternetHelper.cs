@@ -1,27 +1,21 @@
 ﻿using NETWORKLIST;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
-using System.Text;
-using System.Threading.Tasks;
-using DXApplication;
 using System.Drawing;
+using System.Runtime.InteropServices.ComTypes;
 using System.Windows.Forms;
-using DevExpress.Utils.Svg;
 
 namespace DXApplication.Global
 {
-    public class CheckerInternetHelper:INetworkListManagerEvents
+    public class CheckerInternetHelper : INetworkListManagerEvents
     {
         private int m_cookie = 0;
         private IConnectionPoint m_icp;
         private INetworkListManager m_nlm;
         public Frm_Dashboard frm_Dashboard;
-        
+
 
         public INetworkListManager Nlm { get => m_nlm; }
-        public IConnectionPoint Icp { get => m_icp;}
+        public IConnectionPoint Icp { get => m_icp; }
 
         public CheckerInternetHelper(Frm_Dashboard frm_Dashboard)
         {
@@ -30,7 +24,7 @@ namespace DXApplication.Global
         }
         public void SetText(string message, Color color, Color color2)
         {
-          
+
         }
         public void ConnectivityChanged(NLM_CONNECTIVITY newConnectivity)
         {
@@ -69,7 +63,7 @@ namespace DXApplication.Global
         {
             try
             {
-               // Icp.Unadvise(m_cookie);
+                // Icp.Unadvise(m_cookie);
             }
             catch (Exception ex)
             {
