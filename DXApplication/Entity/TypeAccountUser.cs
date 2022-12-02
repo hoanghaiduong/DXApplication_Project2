@@ -17,7 +17,7 @@ namespace DXApplication.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TypeAccountUser()
         {
-            this.Persons = new HashSet<Person>();
+            this.Profiles = new HashSet<Profile>();
         }
     
         public int TypeId { get; set; }
@@ -25,6 +25,6 @@ namespace DXApplication.Entity
         public string TypeDescription { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Person> Persons { get; set; }
+        public virtual ICollection<Profile> Profiles { get; set; }
     }
 }

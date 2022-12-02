@@ -29,7 +29,6 @@ namespace DXApplication.Entity
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<FunctionRole> FunctionRoles { get; set; }
         public virtual DbSet<Function> Functions { get; set; }
-        public virtual DbSet<Person> Persons { get; set; }
         public virtual DbSet<Profile> Profiles { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }

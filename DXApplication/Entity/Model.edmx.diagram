@@ -4,24 +4,22 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="05a074408cba488a9629b05476709bd8" Name="Diagram1" ZoomLevel="86">
-        <EntityTypeShape EntityType="db_final_winformModel.Class" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="db_final_winformModel.Department" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="db_final_winformModel.FunctionRole" Width="1.5" PointX="6" PointY="9.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="db_final_winformModel.Function" Width="1.5" PointX="3.75" PointY="13.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="db_final_winformModel.Person" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="db_final_winformModel.Profile" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="db_final_winformModel.Role" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="db_final_winformModel.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="db_final_winformModel.TypeAccountUser" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="db_final_winformModel.User" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+      <Diagram DiagramId="713cdf580bd440ccbfc6fa5857ee3e6e" Name="Diagram1">
+        <EntityTypeShape EntityType="db_final_winformModel.Class" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_final_winformModel.Department" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_final_winformModel.FunctionRole" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_final_winformModel.Function" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_final_winformModel.Profile" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_final_winformModel.Role" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_final_winformModel.sysdiagram" Width="1.5" PointX="7.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_final_winformModel.TypeAccountUser" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_final_winformModel.User" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
         <AssociationConnector Association="db_final_winformModel.FK_Profiles_Classes" ManuallyRouted="false" />
         <AssociationConnector Association="db_final_winformModel.FK_Profiles_Departments" ManuallyRouted="false" />
         <AssociationConnector Association="db_final_winformModel.FK_FunctionRole_Functions" ManuallyRouted="false" />
         <AssociationConnector Association="db_final_winformModel.FK_FunctionRole_Roles" ManuallyRouted="false" />
-        <AssociationConnector Association="db_final_winformModel.FK_Persons_Profiles" ManuallyRouted="false" />
-        <AssociationConnector Association="db_final_winformModel.FK_Persons_TypeAccountUser" ManuallyRouted="false" />
-        <AssociationConnector Association="db_final_winformModel.FK_Persons_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="db_final_winformModel.FK_Profiles_TypeAccountUser" ManuallyRouted="false" />
+        <AssociationConnector Association="db_final_winformModel.FK_Users_Profiles" ManuallyRouted="false" />
         <AssociationConnector Association="db_final_winformModel.FK_Users_Roles" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

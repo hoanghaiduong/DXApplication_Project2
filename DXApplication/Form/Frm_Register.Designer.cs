@@ -33,6 +33,8 @@
             this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txbRepeatPass = new DevExpress.XtraEditors.TextEdit();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txbPassword = new DevExpress.XtraEditors.TextEdit();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -45,8 +47,6 @@
             this.txbUsername = new DevExpress.XtraEditors.TextEdit();
             this.label1 = new System.Windows.Forms.Label();
             this.waitingForm = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::DXApplication.Global_WaitForm), true, true, true);
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).BeginInit();
             this.splitContainerControl1.Panel1.SuspendLayout();
@@ -58,6 +58,8 @@
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txbRepeatPass.Properties)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txbPassword.Properties)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -66,8 +68,6 @@
             this.panelControl4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txbUsername.Properties)).BeginInit();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -135,6 +135,28 @@
             this.panelControl2.Padding = new System.Windows.Forms.Padding(10);
             this.panelControl2.Size = new System.Drawing.Size(513, 396);
             this.panelControl2.TabIndex = 1;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.txbRepeatPass);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.groupBox4.Location = new System.Drawing.Point(10, 196);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(493, 62);
+            this.groupBox4.TabIndex = 16;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Nhập lại mật khẩu";
+            // 
+            // txbRepeatPass
+            // 
+            this.txbRepeatPass.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txbRepeatPass.Location = new System.Drawing.Point(3, 18);
+            this.txbRepeatPass.Name = "txbRepeatPass";
+            this.txbRepeatPass.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txbRepeatPass.Size = new System.Drawing.Size(487, 34);
+            this.txbRepeatPass.TabIndex = 0;
             // 
             // groupBox3
             // 
@@ -228,6 +250,7 @@
             this.btnRegister.Size = new System.Drawing.Size(169, 56);
             this.btnRegister.TabIndex = 9;
             this.btnRegister.Text = "Đăng Ký";
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // groupBox2
             // 
@@ -269,28 +292,6 @@
             // 
             this.waitingForm.ClosingDelay = 500;
             // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.textEdit1);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox4.Location = new System.Drawing.Point(10, 196);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(493, 62);
-            this.groupBox4.TabIndex = 16;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Nhập lại mật khẩu";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit1.Location = new System.Drawing.Point(3, 18);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit1.Size = new System.Drawing.Size(487, 34);
-            this.textEdit1.TabIndex = 0;
-            // 
             // Frm_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -315,6 +316,8 @@
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txbRepeatPass.Properties)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txbPassword.Properties)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -323,8 +326,6 @@
             this.panelControl4.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txbUsername.Properties)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,6 +349,6 @@
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraSplashScreen.SplashScreenManager waitingForm;
         private System.Windows.Forms.GroupBox groupBox4;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txbRepeatPass;
     }
 }

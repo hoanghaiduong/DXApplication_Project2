@@ -17,7 +17,7 @@ namespace DXApplication.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Profile()
         {
-            this.Persons = new HashSet<Person>();
+            this.Users = new HashSet<User>();
         }
     
         public int ProfileId { get; set; }
@@ -27,12 +27,16 @@ namespace DXApplication.Entity
         public string PhoneNumber { get; set; }
         public Nullable<System.DateTime> DateOfBirth { get; set; }
         public Nullable<int> DepartmentId { get; set; }
+        public Nullable<int> TypeId { get; set; }
         public Nullable<int> ClassId { get; set; }
-        public Nullable<Gender> Gender { get; set; }
+        public Nullable<int> Gender { get; set; }
+        public string Addresses { get; set; }
+        public string About { get; set; }
     
         public virtual Class Class { get; set; }
         public virtual Department Department { get; set; }
+        public virtual TypeAccountUser TypeAccountUser { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Person> Persons { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

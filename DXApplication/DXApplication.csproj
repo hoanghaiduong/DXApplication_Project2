@@ -148,9 +148,6 @@
     <Compile Include="Entity\FunctionRole.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entity\Gender.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
     <Compile Include="Entity\Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -165,9 +162,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\Person.cs">
-      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\Profile.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -195,6 +189,12 @@
     </Compile>
     <Compile Include="Form\Frm_Register.Designer.cs">
       <DependentUpon>Frm_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm_VerifiyAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm_VerifiyAccount.Designer.cs">
+      <DependentUpon>Frm_VerifiyAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Module1.cs">
       <SubType>Form</SubType>
@@ -285,6 +285,9 @@
     <EmbeddedResource Include="Form\Frm_Register.resx">
       <DependentUpon>Frm_Register.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm_VerifiyAccount.resx">
+      <DependentUpon>Frm_VerifiyAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Module1.resx">
       <DependentUpon>Frm_Module1.cs</DependentUpon>
     </EmbeddedResource>
@@ -341,6 +344,7 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\DXApplication.Entity.Profile.datasource" />
     <None Include="Properties\DataSources\DXApplication.Entity.User.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>

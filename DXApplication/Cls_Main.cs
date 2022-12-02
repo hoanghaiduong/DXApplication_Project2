@@ -1,5 +1,9 @@
 ﻿using DXApplication.Entity;
+using System.Net.Mail;
+using System.Net;
+using System;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace DXApplication
 {
@@ -52,6 +56,42 @@ namespace DXApplication
             {
                 return true;
             }
+        }
+
+        public static bool isEmail(string inputEmail)
+        {
+
+            string strRegex = @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +
+                  @"\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\" +
+                  @".)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
+            Regex re = new Regex(strRegex);
+            if (re.IsMatch(inputEmail))
+                return (true);
+            else
+                return (false);
+        }
+        public static void sendMail(string to, string subject, string body)
+        {
+            MailMessage mailMessage = new MailMessage("hoanghaiduong1711@gmail.com", to);
+            mailMessage.Subject = subject;
+            mailMessage.Body = body;
+            SmtpClient smtp = new SmtpClient();
+            smtp.Host = "smtp.gmail.com";
+            smtp.Port = 587;
+            NetworkCredential networkCredential = new NetworkCredential("hoanghaiduong1711@gmail.com", "oysgpdcgcujpmoua");
+            smtp.Credentials = networkCredential;
+            smtp.EnableSsl = true;
+
+            try
+            {
+                smtp.Send(mailMessage);
+                MessageBox.Show("Send Mail successfully to " + to);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
     }
 }

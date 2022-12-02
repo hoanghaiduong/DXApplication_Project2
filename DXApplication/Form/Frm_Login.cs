@@ -24,7 +24,7 @@ namespace DXApplication.Form
             //loading Splash Screen
             for (int i = 0; i < 50; i++)
             {
-                Thread.Sleep(100);
+                Thread.Sleep(10);
             }
 
             try
