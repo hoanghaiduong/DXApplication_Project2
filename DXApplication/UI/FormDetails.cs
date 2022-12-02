@@ -44,67 +44,77 @@ namespace DXApplication.UI
      
         private void FormDetails_Load(object sender, EventArgs e)
         {
-            
-            _db_ = new db_final_winformEntities();
-            List<GioiTinh> genders = new List<GioiTinh>();
-            genders.Add(new GioiTinh()
+
+            try
             {
-               
-                Gender = "1",
-                Id1 = "Nam",
+                _db_ = new db_final_winformEntities();
+                List<GioiTinh> genders = new List<GioiTinh>();
+                genders.Add(new GioiTinh()
+                {
 
-            });
-            genders.Add(new GioiTinh()
-            {
-                Gender = "2",
-                Id1 = "Nữ",
+                    Gender = "1",
+                    Id1 = "Nam",
 
-            });
-           
-            var sql = _db_.Users.Where(item => item.ProfileId.Equals(user.ProfileId)).SingleOrDefault();
-            
-            cbLookUpGender.Properties.DataSource = genders;
-            cbLookUpGender.Properties.DisplayMember = "Id1";
-            cbLookUpGender.Properties.ValueMember = "Gender";
-            txbEmail.Text = user.Email;
-            searchLookUpDepartment.Properties.DataSource = _db_.Departments.ToList();
-            searchLookUpDepartment.Properties.DisplayMember = "DepartmentName";
-            searchLookUpDepartment.Properties.ValueMember = "DepartmentId";
-            searchLookUpClasses.Properties.DataSource = _db_.Classes.ToList();
-            searchLookUpClasses.Properties.DisplayMember = "ClassesName";
-            searchLookUpClasses.Properties.ValueMember = "ClassId";
+                });
+                genders.Add(new GioiTinh()
+                {
+                    Gender = "2",
+                    Id1 = "Nữ",
 
-            searchLookUpType.Properties.DataSource = _db_.TypeAccountUsers.ToList();
+                });
 
-            searchLookUpType.Properties.DisplayMember = "TypeName";
-            searchLookUpType.Properties.ValueMember = "TypeId";
+                var sql = _db_.Profiles.Where(item => item.ProfileId.Equals(user.ProfileId)).FirstOrDefault();
+                var sql2= _db_.Profiles.SingleOrDefault(item => item.ProfileId.Equals(user.ProfileId));
+                MessageBox.Show(sql2.ToString());
+                MessageBox.Show(sql.ToString());
+                cbLookUpGender.Properties.DataSource = genders;
+                cbLookUpGender.Properties.DisplayMember = "Id1";
+                cbLookUpGender.Properties.ValueMember = "Gender";
+                txbEmail.Text = user.Email;
+                searchLookUpDepartment.Properties.DataSource = _db_.Departments.ToList();
+                searchLookUpDepartment.Properties.DisplayMember = "DepartmentName";
+                searchLookUpDepartment.Properties.ValueMember = "DepartmentId";
+                searchLookUpClasses.Properties.DataSource = _db_.Classes.ToList();
+                searchLookUpClasses.Properties.DisplayMember = "ClassesName";
+                searchLookUpClasses.Properties.ValueMember = "ClassId";
+
+                searchLookUpType.Properties.DataSource = _db_.TypeAccountUsers.ToList();
+
+                searchLookUpType.Properties.DisplayMember = "TypeName";
+                searchLookUpType.Properties.ValueMember = "TypeId";
 
 
-            searchLookUpDepartment.Properties.PopulateViewColumns();
-            searchLookUpClasses.Properties.PopulateViewColumns();
-            searchLookUpDepartment.Properties.PopupView.Columns["Profiles"].Visible = false;
-            searchLookUpClasses.Properties.PopupView.Columns["Profiles"].Visible = false;
-            if (sql!=null)//if có person
-            {     
-           
-            txbFirstName.Text = sql.Profile.FirstName;
-            txbLastName.Text = sql.Profile.LastName;
-            txbPhone.Text = sql.Profile.PhoneNumber;
-            dateOfBirthEdit.DateTime= sql.Profile.DateOfBirth.Value;
-          
-    
-            searchLookUpDepartment.EditValue = sql.Profile.Department;
-            searchLookUpClasses.EditValue = sql.Profile.Class;
+                searchLookUpDepartment.Properties.PopulateViewColumns();
+                searchLookUpClasses.Properties.PopulateViewColumns();
+                searchLookUpDepartment.Properties.PopupView.Columns["Profiles"].Visible = false;
+                searchLookUpClasses.Properties.PopupView.Columns["Profiles"].Visible = false;
+                if (sql != null)//if có person
+                {
 
-          
-              //  searchLookUpType.Properties.PopupView.Columns["Persons"].Visible = false;
+                    txbFirstName.Text = sql.FirstName;
+                    txbLastName.Text = sql.LastName;
+                    txbPhone.Text = sql.PhoneNumber;
+                    dateOfBirthEdit.DateTime = sql.DateOfBirth.Value;
+
+
+                    searchLookUpDepartment.EditValue = sql.Department;
+                    searchLookUpClasses.EditValue = sql.Class;
+
+
+                    //  searchLookUpType.Properties.PopupView.Columns["Persons"].Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Chưa có profile này vui lòng tạo");
+                }
+
+
             }
-            else
+            catch (Exception ex)
             {
 
+                MessageBox.Show(ex.Message);
             }
-         
-             
 
         }
       
